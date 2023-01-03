@@ -10,7 +10,7 @@ export const Header = ({ theme, setTheme }) => {
   css.default === Object && console.log(css);
 
   return (
-    <div key='headers' id="headers" className={`header_${theme}`}>
+    <div key="headers" id="headers" className={`header_${theme}`}>
       <div className="left">
         {/* <button onClick={() => (setTheme("light"))}>key</button> */}
         <ThemeEditor setTheme={setTheme} />

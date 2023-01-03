@@ -1,20 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import ThemeContext from "./ThemeContext";
 import logo from "./logo.svg";
 import Header from "./components/Header/Header";
 import "./App.css";
-import { createContext, useState } from "react";
-import { ConstantThemse } from "./components/Theme/Constant";
-
-export const ThemeContext = createContext(null);
+import { useEffect, useState } from "react";
 
 function App() {
-  const ThemDef = Object.keys(ConstantThemse)[0];
-  const ThemeDefault = localStorage.getItem("Themes");
-  if (!ThemeDefault) localStorage.setItem("Themes", ThemDef);
-
-  const [theme, setTheme] = useState(
-    !ThemeDefault ? localStorage.getItem("Themes") : ThemeDefault
-  );
-  
+  const [theme, setTheme] = useState(ThemeContext.Provider.theme);
 
   return (
     <ThemeContext.Provider value={{ theme }}>
