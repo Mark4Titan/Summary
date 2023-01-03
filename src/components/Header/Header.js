@@ -1,19 +1,20 @@
-import * as css from "./Header.css";
+import { useSelector } from "react-redux";
+import { getTheme } from "../../redux/services/Theme";
+import "./Header.css";
 import { ThemeEditor } from "../Theme/Theme";
 const header = {
-  left: ["a", "b", "c"],
+  left: ["c"],
   center: ["a", "b", "c"],
   right: ["a", "b", "c"],
 };
 
-export const Header = ({ theme, setTheme }) => {
-  css.default === Object && console.log(css);
+export const Header = () => {
+  const { theme } = useSelector(getTheme);
 
   return (
     <div key="headers" id="headers" className={`header_${theme}`}>
       <div className="left">
-        {/* <button onClick={() => (setTheme("light"))}>key</button> */}
-        <ThemeEditor setTheme={setTheme} />
+        <ThemeEditor />
         {header.left.map((key) => (
           <button id={key} key={key}>
             {key}

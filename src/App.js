@@ -1,17 +1,17 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import ThemeContext from "./ThemeContext";
 import logo from "./logo.svg";
 import Header from "./components/Header/Header";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { getTheme } from "./redux/services/Theme";
+import { useSelector } from "react-redux";
+
 
 function App() {
-  const [theme, setTheme] = useState(ThemeContext.Provider.theme);
+  const { theme } = useSelector(getTheme);
+
 
   return (
-    <ThemeContext.Provider value={{ theme }}>
       <div className="App" id={theme}>
-        <Header theme={theme} setTheme={setTheme} />
+        <Header theme={theme} />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -26,8 +26,7 @@ function App() {
             Learn React
           </a>
         </header>
-      </div>
-    </ThemeContext.Provider>
+      </div>   
   );
 }
 
