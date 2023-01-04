@@ -1,0 +1,14 @@
+.header_dark{
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: inherit;
+}
+.header_light{
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: inherit;
+}
