@@ -1,0 +1,18 @@
+.main {
+  padding-top: 200px;
+  width: auto;
+  padding-left: 250px;
+  border-bottom: solid 2px rgb(255 0 0 / 30%);
+}
+.aboutItems_avatar{
+    visibility: visible;
+    display: none;
+}
+
+.main_light  {
+  background-color: #fff;
+}
+
+.main_dark {
+  background-color: #38004c;
+}

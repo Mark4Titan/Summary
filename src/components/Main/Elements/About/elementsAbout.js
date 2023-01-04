@@ -1,14 +1,10 @@
 import { useSelector } from "react-redux";
 import Resume from "../../Resume/Resume";
 import { getTheme } from "../../redux/services/Theme";
-import "./Main.css";
+import "./about.css";
 
-const Main = () => {
+const About = () => {
   const { theme } = useSelector(getTheme);
-  // const itemAbout = Object.keys(Resume.about).map(
-  //   (key) => console.log(Resume.about[key])
-  // );
-  // console.log(itemAbout);
 
   return (
     <div className={`main main_${theme}`}>
@@ -34,5 +30,4 @@ const Main = () => {
     </div>
   );
 };
-
-export default Main;
+export default About;

@@ -1,16 +1,14 @@
-.header_dark{
-  background: red;
+.header{ 
   display: flex;
   justify-content: space-between;
   padding: 20px;
   width: inherit;
   z-index: 2;
+  position: fixed;
+}
+.header_dark{
+  background: red; 
 }
 .header_light{
-  background: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  width: inherit;
-  z-index: 2;
+  background: #ffffff; 
 }

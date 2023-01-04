@@ -7,23 +7,20 @@
 .spanImg{
     max-width: 220px;
 }
-.sidebar_light{
-    background-color: antiquewhite;
+.sidebar{
     min-width: 250px;
     position: fixed;
     height: 100%;
     left: 0;
-    box-shadow: rgb(206, 206, 206) 40px 1px 55px;
     padding-top: 200px;
+}
+.sidebar_light{
+    background-color: antiquewhite;    
+    /* box-shadow: rgb(206, 206, 206) 40px 1px 55px; */
     background-color: rgb(155, 134, 141);
 }
 .sidebar_dark{
-    background-color: antiquewhite;
-    min-width: 250px;
-    position: fixed;
-    height: 100%;
-    left: 0;
-    box-shadow: rgb(80 16 16) 40px 1px 55px;
-    padding-top: 200px;
+    background-color: antiquewhite;    
+    /* box-shadow: rgb(80 16 16) 40px 1px 55px; */
     background-color: brown;
 }

@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
-import Resume from "../../Resume/Resume";
 import { getTheme } from "../../redux/services/Theme";
+import Resume from "../../Resume/Resume";
 import "./Sidebar.css";
 
 const Sidebar = () => {
-  const { theme } = useSelector(getTheme);
+    const { theme } = useSelector(getTheme);
 
   return (
     <div className={`sidebar sidebar_${theme}`}>
@@ -12,7 +12,7 @@ const Sidebar = () => {
         <img
           className={`avatar avatar_${theme}`}
           src={Resume.about.avatar}
-          alt=""
+          alt="avatar"
         ></img>
       </span>
       <div className={`listSideBar listSideBar_${theme}`}>

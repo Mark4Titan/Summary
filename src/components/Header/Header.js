@@ -12,7 +12,7 @@ export const Header = () => {
   const { theme } = useSelector(getTheme);
 
   return (
-    <div key="headers" id="headers" className={`header_${theme}`}>
+    <div key="headers" id="headers" className={`header header_${theme}`}>
       <div className="left">
         <ThemeEditor />
         {header.left.map((key) => (
