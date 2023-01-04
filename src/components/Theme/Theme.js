@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import { getTheme, setThemeActions } from "../../redux/services/Theme";
-// import ThemeContext from "../../ThemeContext";
 import { ConstantThemse } from "./Constant";
 
 export const ThemeEditor = () => {
@@ -11,7 +10,7 @@ export const ThemeEditor = () => {
     const { value } = e.target;
     dispatch(setThemeActions(value));
   };
-  //  console.log(ThemeContext);
+  
   const arrOpt = [];
   Object.keys(ConstantThemse).map((opt) =>
     opt === theme ? arrOpt.unshift(opt) : arrOpt.push(opt)
