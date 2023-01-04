@@ -7,7 +7,7 @@ const Sidebar = () => {
     const { theme } = useSelector(getTheme);
 
   return (
-    <div className={`sidebar sidebar_${theme}`}>
+    <div key="sidebar" className={`sidebar sidebar_${theme}`}>
       <span className={`spanImg spanImg_${theme}`}>
         <img
           className={`avatar avatar_${theme}`}

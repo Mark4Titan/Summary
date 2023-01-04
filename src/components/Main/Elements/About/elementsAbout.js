@@ -1,32 +1,20 @@
-import { useSelector } from "react-redux";
-import Resume from "../../Resume/Resume";
-import { getTheme } from "../../redux/services/Theme";
 import "./about.css";
 
-const About = () => {
-  const { theme } = useSelector(getTheme);
-
+export const About = ({ theme, about }) => {
   return (
-    <div className={`main main_${theme}`}>
-      {/*  */}
-      {Object.keys(Resume).map(
+    <div key="about" id="about" className="about">
+      {Object.keys(about).map(
         (key) =>
-          key === "about" &&
-          Object.keys(Resume.about).map(
-            (key) =>
-              key !== "social" && (
-                // console.log(Resume.about[key])
-                <div
-                  id={`abouttem_${key} ${key}`}
-                  key={key}
-                  className={`aboutItems aboutItems_${key} aboutItems_${theme} ${key}`}
-                >
-                  {Resume.about[key]}
-                </div>
-              )
+          key !== "social" && (
+            <div
+              id={`${key}Item_${key} ${key}`}
+              key={key}
+              className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
+            >
+              {about[key]}
+            </div>
           )
       )}
-      {/*  */}
     </div>
   );
 };

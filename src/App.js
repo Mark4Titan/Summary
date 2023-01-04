@@ -10,10 +10,10 @@ function App() {
   const { theme } = useSelector(getTheme);
 
   return (
-    <div className="App" id={theme}>
+    <div key="app" className="App" id={theme}>
       <Header />
       <Sidebar />
-      <Main />     
+      <Main />
     </div>
   );
 }
