@@ -2,7 +2,7 @@ import "./awards.css";
 
 export const Awards = ({ theme, awards }) => {
   return (
-    <div key="awards" id="awards" className="awards">
+    <div key="awards" id="awards" className={`awards awards_${theme} ${theme}`}>
       {awards.map((element) =>
         Object.keys(element).map((key) => (
           <div

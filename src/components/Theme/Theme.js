@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { getTheme, setThemeActions } from "../../redux/services/Theme";
+import { getTheme, setThemeActions } from "../../redux/services/ThemeSlice";
 import { ConstantThemse } from "./Constant";
 
 export const ThemeEditor = () => {

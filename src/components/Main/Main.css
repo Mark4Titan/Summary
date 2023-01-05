@@ -1,7 +1,8 @@
 .main {
   /* padding-top: 200px; */
   width: auto;
-  padding-left: 250px;
+  padding-left: 300px;
+  padding-right: 40px;
   border-bottom: solid 2px rgb(255 0 0 / 30%);
 }
 
@@ -11,4 +12,13 @@
 
 .main_dark {
   background-color: #38004c;
+}
+
+.dark{
+ /* background-color: rgb(222, 210, 234); */
+ color: blanchedalmond;
+}
+
+.light{
+color: dimgrey;;
 }

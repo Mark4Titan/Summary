@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import Resume from "../../Resume/Resume";
-import { getTheme } from "../../redux/services/Theme";
+import { getTheme } from "../../redux/services/ThemeSlice";
+import Converter from "../Converter/Converter";
 import About from "./Elements/About/elementsAbout";
 import Experience from "./Elements/Experience/elementsExperience";
 import Education from "./Elements/Education/elementsEducation";
@@ -11,16 +11,17 @@ import "./Main.css";
 
 const Main = () => {
   const { theme } = useSelector(getTheme);
+  const { Summary } = Converter();
 
   return (
     <div key="main" className={`main main_${theme}`}>
       {/*  */}
-      <About about={Resume.about} theme={theme} />
-      <Experience experience={Resume.experience} theme={theme} />
-      <Education education={Resume.education} theme={theme} />
-      <Skills skills={Resume.skills} theme={theme} />
-      <Interests interests={Resume.interests} theme={theme} />
-      <Awards awards={Resume.awards} theme={theme} />
+      <About about={Summary.about} theme={theme} />
+      <Experience experience={Summary.experience} theme={theme} />
+      <Education education={Summary.education} theme={theme} />
+      <Skills skills={Summary.skills} theme={theme} />
+      <Interests interests={Summary.interests} theme={theme} />
+      <Awards awards={Summary.awards} theme={theme} />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.header{ 
+.header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -6,9 +6,17 @@
   z-index: 2;
   position: fixed;
 }
-.header_dark{
-  background: red; 
+.header_dark {
+  background-color: slategray;
+  border-bottom: solid 3px dimgrey;;
 }
-.header_light{
-  background: #e5e5e5; 
+.header_light {
+  background-color: rgb(188 188 188);
+  border-bottom: solid 3px rgb(152 149 149 / 80%);
+}
+.left {
+  padding-left: 20px;
+}
+.right {
+  padding-right: 20px;
 }

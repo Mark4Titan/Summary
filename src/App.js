@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import Header from "./components/Header/Header";
 import "./App.css";
-import { getTheme } from "./redux/services/Theme";
+import { getTheme } from "./redux/services/ThemeSlice";
 import { useSelector } from "react-redux";
 import  Sidebar  from "./components/Sidebar/Sidebar";
 import Main from "./components/Main/Main";

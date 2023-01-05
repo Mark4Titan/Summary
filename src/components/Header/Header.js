@@ -1,11 +1,13 @@
 import { useSelector } from "react-redux";
-import { getTheme } from "../../redux/services/Theme";
-import "./Header.css";
+import { getTheme } from "../../redux/services/ThemeSlice";
 import { ThemeEditor } from "../Theme/Theme";
+import Language from "../Language/Language";
+import "./Header.css";
+
 const header = {
   left: ["c"],
   center: ["a", "b", "c"],
-  right: ["a", "b", "c"],
+  right: ["a"],
 };
 
 export const Header = () => {
@@ -34,6 +36,7 @@ export const Header = () => {
             {key}
           </button>
         ))}
+        <Language/>
       </div>
     </div>
   );

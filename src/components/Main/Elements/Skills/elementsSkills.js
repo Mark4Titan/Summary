@@ -2,7 +2,11 @@ import "./skills.css";
 
 export const Skills = ({ theme, skills }) => {
   return (
-    <div key="skills" id="skills" className="skills">
+    <div
+      key="skills"
+      id="skills"
+      className={`skills skills_${theme} ${theme}`}
+    >
       {skills.map((element) =>
         Object.keys(element).map((key) => (
           <div

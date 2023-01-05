@@ -1,23 +1,25 @@
 import { useSelector } from "react-redux";
-import { getTheme } from "../../redux/services/Theme";
-import Resume from "../../Resume/Resume";
+import { getTheme } from "../../redux/services/ThemeSlice";
+import Converter from "../Converter/Converter";
 import "./Sidebar.css";
 
 const Sidebar = () => {
-    const { theme } = useSelector(getTheme);
+  const { theme } = useSelector(getTheme);
+
+  const { avatar, keys } = Converter();
 
   return (
     <div key="sidebar" className={`sidebar sidebar_${theme}`}>
       <span className={`spanImg spanImg_${theme}`}>
         <img
           className={`avatar avatar_${theme}`}
-          src={Resume.about.avatar}
+          src={avatar.avatar}
           alt="avatar"
         ></img>
       </span>
       <div className={`listSideBar listSideBar_${theme}`}>
         <ul className={`ulSideBar ulSideBar_${theme}`}>
-          {Object.keys(Resume).map((key) => (
+          {Object.keys(keys).map((key) => (
             <li
               id={`liItem liItem_${key} liItem_${theme}`}
               key={key}
@@ -27,9 +29,9 @@ const Sidebar = () => {
                 id={`a_${key}`}
                 key={key}
                 href={`#${key}`}
-                className={`aHref aHref_${key} aHref_${theme}`}
+                className={`aHref aHref_${key} aHref_${theme} ${theme}`}
               >
-                {key}
+                {keys[key]}
               </a>
             </li>
           ))}

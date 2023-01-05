@@ -17,10 +17,10 @@
 .sidebar_light{
     background-color: antiquewhite;    
     /* box-shadow: rgb(206, 206, 206) 40px 1px 55px; */
-    background-color: rgb(155, 134, 141);
+    background-color: rgb(188 188 188 / 50%);
 }
 .sidebar_dark{
     background-color: antiquewhite;    
     /* box-shadow: rgb(80 16 16) 40px 1px 55px; */
-    background-color: brown;
+    background-color: dimgrey;
 }

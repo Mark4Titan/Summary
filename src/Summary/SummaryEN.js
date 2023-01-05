@@ -1,8 +1,12 @@
 import avatar from "./avatar.png";
 
-const Resume = {
-  about: 
+export const Resume = {
+  language: [{ EN: "EN" }],
+  about: [
+    { title: "about" },
+    { avatar },
     // {
+    //   title: "",
     //   name: "",
     //   avatar,
     //   aboutMe: "",
@@ -13,15 +17,16 @@ const Resume = {
     // },
     {
       name: "Clarence Taylor",
-      avatar: avatar,
       aboutMe:
         "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
       address: "3542 BERRY STREET · CHEYENNE WELLS",
       phone: "CO 80810 · (317) 585-8468",
       mail: "NAME@EMAIL.COM",
-      social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
-    }, 
+      // social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
+    },
+  ],
   experience: [
+    { title: "experience" },
     // { position: "", period: "", company: "", content: "" },
     {
       position: "SENIOR WEB DEVELOPER",
@@ -54,6 +59,7 @@ const Resume = {
   ],
 
   education: [
+    { title: "education" },
     // { institution: "", period: "", received: "", faculty: "", GPA: "" },
     {
       institution: "UNIVERSITY OF COLORADO BOULDER",
@@ -71,6 +77,7 @@ const Resume = {
     },
   ],
   skills: [
+    { title: "skills" },
     // { Title: "", workflow: [], tools: [] },
     {
       Title: "PROGRAMMING LANGUAGES & TOOLS",
@@ -96,6 +103,7 @@ const Resume = {
     },
   ],
   interests: [
+    { title: "interests" },
     // { content: "" },
     {
       content:
@@ -107,6 +115,7 @@ const Resume = {
     },
   ],
   awards: [
+    { title: "awards" },
     // { Title: "", content: [] },
     {
       Title: "AWARDS & CERTIFICATIONS",
