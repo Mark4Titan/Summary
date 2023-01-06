@@ -1,44 +1,26 @@
 import { useSelector } from "react-redux";
 import { getTheme } from "../../redux/services/ThemeSlice";
-import { ThemeEditor } from "../Theme/Theme";
-import Language from "../Language/Language";
+import { IconContext } from "react-icons";
+import Preview from "./Preview/Preview";
+import Specifics from "./Specifics/Specifics";
+import HeadersLeft from "./Specifics/HeadersLeft";
 import "./Header.css";
 
-const header = {
-  left: ["c"],
-  center: ["a", "b", "c"],
-  right: ["a"],
-};
-
-export const Header = () => {
+export const Header = ({ preview }) => {
   const { theme } = useSelector(getTheme);
 
   return (
-    <div key="headers" id="headers" className={`header header_${theme}`}>
-      <div className="left">
-        <ThemeEditor />
-        {header.left.map((key) => (
-          <button id={key} key={key}>
-            {key}
-          </button>
-        ))}
+    <IconContext.Provider value={{ className: "react_icons" }}>
+      <div
+        key="headers"
+        id="headers"
+        className={`header header_${theme} header_${preview}`}
+      >
+        <HeadersLeft />
+        <Preview />
+        <Specifics />
       </div>
-      <div className="center">
-        {header.center.map((key) => (
-          <button id={key} key={key}>
-            {key}
-          </button>
-        ))}
-      </div>
-      <div className="right">
-        {header.right.map((key) => (
-          <button id={key} key={key}>
-            {key}
-          </button>
-        ))}
-        <Language/>
-      </div>
-    </div>
+    </IconContext.Provider>
   );
 };
 export default Header;

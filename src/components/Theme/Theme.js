@@ -17,7 +17,7 @@ export const ThemeEditor = () => {
   );
 
   return (
-    <select onChange={ThemeEditorClick}>
+    <select className="select" onChange={ThemeEditorClick}>
       {arrOpt.map((opt) => (
         <option key={opt} value={opt}>
           {ConstantThemse[opt]}

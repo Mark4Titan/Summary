@@ -9,12 +9,12 @@ import Interests from "./Elements/Interests/elementsInterests";
 import Awards from "./Elements/Awards/elementsAwards";
 import "./Main.css";
 
-const Main = () => {
+const Main = ({ preview }) => {
   const { theme } = useSelector(getTheme);
   const { Summary } = Converter();
 
   return (
-    <div key="main" className={`main main_${theme}`}>
+    <div key="main" className={`main main_${theme} main_${preview}`}>
       {/*  */}
       <About about={Summary.about} theme={theme} />
       <Experience experience={Summary.experience} theme={theme} />

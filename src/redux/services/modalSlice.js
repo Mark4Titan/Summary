@@ -1,24 +1,23 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  selector: '',
-  contactId: null,
+  content: "",
+  isOpen: false,
 };
 
 export const modalSlice = createSlice({
-  name: 'modal',
+  name: "modal",
   initialState,
   reducers: {
-    selector: (state, action) => {
-      state.selector = action.payload;
+    content: (state, action) => {
+      state.content = action.payload;
     },
-    contactId: (state, action) => {
-      state.contactId = action.payload;
+    isOpen: (state, action) => {
+      state.isOpen = !action.payload;
     },
   },
 });
 
-export const { selector, contactId } = modalSlice.actions;
+export const { content, isOpen } = modalSlice.actions;
 
 export const ModalReducer = modalSlice.reducer;
-

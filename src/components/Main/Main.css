@@ -1,7 +1,7 @@
 .main {
   /* padding-top: 200px; */
   width: auto;
-  padding-left: 300px;
+  padding-left: 40px;
   padding-right: 40px;
   border-bottom: solid 2px rgb(255 0 0 / 30%);
 }
@@ -21,4 +21,10 @@
 
 .light{
 color: dimgrey;;
+}
+.main_Mobile{
+  padding-left: 40px;
+}
+.main_Tablet{
+  padding-left: 40px;
 }

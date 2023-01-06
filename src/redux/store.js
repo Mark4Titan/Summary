@@ -4,6 +4,7 @@ import { tokenSlice } from "./auth/tokenSlice";
 import { modalSlice } from "./services/modalSlice";
 import { languageSlice } from "./services/languageSlice";
 import { themeSlice } from "./services/ThemeSlice";
+import { PreviewSlice } from "./services/PreviewSlice";
 import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 
 import {
@@ -27,7 +28,7 @@ const persistConfig = {
   key: "root",
   storage,
   stateReconciler: autoMergeLevel2,
-  whitelist: ["Language", "Theme", "Token"],
+  whitelist: ["Language", "Theme", "Preview", "Token"],
   // whitelist: [{Auth: ['token']}],
   // blacklist: ["name"],
   // blacklist: ["Auth.user"],
@@ -40,6 +41,7 @@ const rootReducer = combineReducers({
   [modalSlice.name]: modalSlice.reducer,
   [languageSlice.name]: languageSlice.reducer,
   [themeSlice.name]: themeSlice.reducer,
+  [PreviewSlice.name]: PreviewSlice.reducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

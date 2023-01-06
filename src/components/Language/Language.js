@@ -22,7 +22,7 @@ export const Language = () => {
   );
 
   return (
-    <select onChange={LangOptionsClick}>
+    <select className="select selectlang" onChange={LangOptionsClick}>
       {arrOpt.map((opt) => (
         <option key={opt} value={opt}>
           {lenDefaultLeng[opt]}
