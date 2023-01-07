@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-// import { statusOptions } from "./constants";
 import Converter from "../Converter/Converter";
 import {
   setLanguageActions,
@@ -15,7 +14,7 @@ export const Language = () => {
   const LangOptionsClick = (e) => {
     dispatch(setLanguageActions(e.target.value));
   };
-
+  
   const arrOpt = [];
   Object.keys(lenDefaultLeng).map((opt) =>
     opt === language ? arrOpt.unshift(opt) : arrOpt.push(opt)

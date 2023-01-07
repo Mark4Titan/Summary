@@ -1,4 +1,3 @@
-import "./education.css";
 
 export const Education = ({ theme, education }) => {
   return (

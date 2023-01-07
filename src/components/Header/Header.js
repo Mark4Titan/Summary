@@ -4,7 +4,6 @@ import { IconContext } from "react-icons";
 import Preview from "./Preview/Preview";
 import Specifics from "./Specifics/Specifics";
 import HeadersLeft from "./Specifics/HeadersLeft";
-import "./Header.css";
 
 export const Header = ({ preview }) => {
   const { theme } = useSelector(getTheme);

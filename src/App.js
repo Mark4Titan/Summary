@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { getPreview } from "./redux/services/PreviewSlice";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Main from "./components/Main/Main";
-import "./App.css";
+
 
 function App() {
   const { theme } = useSelector(getTheme);

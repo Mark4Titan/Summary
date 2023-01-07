@@ -1,13 +1,13 @@
-import "./interests.css";
+// import "./skills.css";
 
-export const Interests = ({ theme, interests }) => {
+export const Skills = ({ theme, skills }) => {
   return (
     <div
-      key="interests"
-      id="interests"
-      className={`interests interests_${theme} ${theme}`}
+      key="skills"
+      id="skills"
+      className={`skills skills_${theme} ${theme}`}
     >
-      {interests.map((element) =>
+      {skills.map((element) =>
         Object.keys(element).map((key) => (
           <div
             id={`${key}Item_${key} ${key}`}
@@ -21,4 +21,4 @@ export const Interests = ({ theme, interests }) => {
     </div>
   );
 };
-export default Interests;
+export default Skills;

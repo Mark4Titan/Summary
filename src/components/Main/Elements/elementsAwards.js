@@ -1,4 +1,4 @@
-import "./awards.css";
+
 
 export const Awards = ({ theme, awards }) => {
   return (

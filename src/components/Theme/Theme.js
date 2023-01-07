@@ -6,6 +6,7 @@ export const ThemeEditor = () => {
   const dispatch = useDispatch();
   const { theme } = useSelector(getTheme);
 
+
   const ThemeEditorClick = (e) => {
     const { value } = e.target;
     dispatch(setThemeActions(value));

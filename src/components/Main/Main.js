@@ -1,13 +1,13 @@
 import { useSelector } from "react-redux";
 import { getTheme } from "../../redux/services/ThemeSlice";
 import Converter from "../Converter/Converter";
-import About from "./Elements/About/elementsAbout";
-import Experience from "./Elements/Experience/elementsExperience";
-import Education from "./Elements/Education/elementsEducation";
-import Skills from "./Elements/Skills/elementsSkills";
-import Interests from "./Elements/Interests/elementsInterests";
-import Awards from "./Elements/Awards/elementsAwards";
-import "./Main.css";
+import About from "./Elements/elementsAbout";
+import Experience from "./Elements/elementsExperience";
+import Education from "./Elements/elementsEducation";
+import Skills from "./Elements/elementsSkills";
+import Interests from "./Elements/elementsInterests";
+import Awards from "./Elements/elementsAwards";
+
 
 const Main = ({ preview }) => {
   const { theme } = useSelector(getTheme);

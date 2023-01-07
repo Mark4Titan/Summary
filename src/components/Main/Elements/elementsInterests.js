@@ -1,9 +1,12 @@
-import "./about.css";
 
-export const About = ({ theme, about }) => {
+export const Interests = ({ theme, interests }) => {
   return (
-    <div key="about" id="about" className={`about about_${theme} ${theme}`}>
-      {about.map((element) =>
+    <div
+      key="interests"
+      id="interests"
+      className={`interests interests_${theme} ${theme}`}
+    >
+      {interests.map((element) =>
         Object.keys(element).map((key) => (
           <div
             id={`${key}Item_${key} ${key}`}
@@ -17,4 +20,4 @@ export const About = ({ theme, about }) => {
     </div>
   );
 };
-export default About;
+export default Interests;

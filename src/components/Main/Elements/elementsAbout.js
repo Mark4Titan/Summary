@@ -1,13 +1,9 @@
-import "./experience.css";
 
-export const Experience = ({ theme, experience }) => {
+
+export const About = ({ theme, about }) => {
   return (
-    <div
-      key="experience"
-      id="experience"
-      className={`experience experience_${theme} ${theme}`}
-    >
-      {experience.map((element) =>
+    <div key="about" id="about" className={`about about_${theme} ${theme}`}>
+      {about.map((element) =>
         Object.keys(element).map((key) => (
           <div
             id={`${key}Item_${key} ${key}`}
@@ -21,4 +17,4 @@ export const Experience = ({ theme, experience }) => {
     </div>
   );
 };
-export default Experience;
+export default About;

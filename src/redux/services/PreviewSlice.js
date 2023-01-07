@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  preview: "Desctop",
+  preview: "Desktop",
 };
 
 export const PreviewSlice = createSlice({
