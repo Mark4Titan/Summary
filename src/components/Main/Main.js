@@ -14,15 +14,17 @@ const Main = ({ preview }) => {
   const { Summary } = Converter();
 
   return (
-    <div key="main" className={`main main_${theme} main_${preview}`}>
-      {/*  */}
-      <About about={Summary.about} theme={theme} />
-      <Experience experience={Summary.experience} theme={theme} />
-      <Education education={Summary.education} theme={theme} />
-      <Skills skills={Summary.skills} theme={theme} />
-      <Interests interests={Summary.interests} theme={theme} />
-      <Awards awards={Summary.awards} theme={theme} />
-    </div>
+    <>
+      <div key="main" className={`main main_${theme} main_${preview}`}>
+        {/*  */}
+        <About about={Summary.about} theme={theme} />
+        <Experience experience={Summary.experience} theme={theme} />
+        <Education education={Summary.education} theme={theme} />
+        <Skills skills={Summary.skills} theme={theme} />
+        <Interests interests={Summary.interests} theme={theme} />
+        <Awards awards={Summary.awards} theme={theme} />
+      </div>
+    </>
   );
 };
 

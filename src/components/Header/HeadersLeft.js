@@ -1,14 +1,12 @@
-import {
-    AiOutlineGithub,
-} from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineBulb } from "react-icons/ai";
 
 const HeadersLeft = () => {
-  const left = { AiOutlineGithub };
+  const left = { AiOutlineGithub, AiOutlineBulb };
 
   return (
     <div className="left">
       {Object.keys(left).map((key) => (
-        <div id={key} key={key} className={`left leftItem left_${key}`}>
+        <div id={key} key={key} className={`leftItem left_${key}`}>
           <button
             id={key}
             key={key}

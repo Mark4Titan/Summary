@@ -1,5 +1,5 @@
-import { ThemeEditor } from "../../Theme/Theme"
-import Language from "../../Language/Language";
+import { ThemeEditor } from "../Theme/Theme"
+import Language from "../Language/Language";
 
 const Specifics = () => { 
     const right= { ThemeEditor, Language }

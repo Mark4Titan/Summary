@@ -5,7 +5,7 @@ export const Skills = ({ theme, skills }) => {
     <div
       key="skills"
       id="skills"
-      className={`skills skills_${theme} ${theme}`}
+      className={`main_item skills skills_${theme} ${theme}`}
     >
       {skills.map((element) =>
         Object.keys(element).map((key) => (

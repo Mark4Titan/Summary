@@ -1,22 +1,18 @@
-.header_light {
-  background-color: rgb(188 188 188);
-  border-bottom: solid 3px rgb(152 149 149 / 80%);
-}
 
-.main_light  {
+.main_lightStyle  {
   background-color: #fff;
 }
 
-.light{
+.lightStyle{
 color: dimgrey;;
 }
-.sidebar_light {
+.sidebar_lightStyle {
   background-color: antiquewhite;
   /* box-shadow: rgb(206, 206, 206) 40px 1px 55px; */
   background-color: rgb(188 188 188 / 50%);
 }
 
-#light {
+#lightStyle {
   /* background-color: #f3ebf6; */
   justify-content: flex-start;
 }

@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import {
   // getPreview,
   setPreviewActions,
-} from "../../../redux/services/PreviewSlice";
+} from "../../redux/services/PreviewSlice";
 
 // const previewItem = { AiOutlineDesktop, AiOutlineTablet, AiOutlineMobile };
 
@@ -42,7 +42,7 @@ const Preview = () => {
         ngbtooltip="Tablet_Preview"
         className="previewButton btn_icon btn active"
       >
-        <div id="Tablet" key="Tablet" className="preview_Tablet previewIco ">
+        <div id="Tablet" key="Tablet" className="preview_Tablet previewIco">
           <AiOutlineTablet />
         </div>
       </button>

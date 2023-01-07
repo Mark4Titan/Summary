@@ -1,29 +1,27 @@
 
-.main_dark {
+.main_darkStyle {
   background-color: #38004c;
 }
 
-.dark{
- /* background-color: rgb(222, 210, 234); */
+.darkStyle{
  color: blanchedalmond;
+ 
 }
 
 
-.sidebar_dark {
-  background-color: antiquewhite;
+.sidebar_darkStyle {
+  /* background-color: antiquewhite; */
   /* box-shadow: rgb(80 16 16) 40px 1px 55px; */
   background-color: dimgrey;
 }
 
-#dark {
+#darkStyle {
   /* background-color: #46045e; */
   justify-content: flex-start;
 }
 
 body {
-  background: darkgray;
-}
-.header_dark {
+  /* background: darkStylegray; */
   background-color: slategray;
-  border-bottom: solid 3px dimgrey;
 }
+
