@@ -4,7 +4,7 @@ export const Interests = ({ theme, interests }) => {
     <div
       key="interests"
       id="interests"
-      className={`interests interests_${theme} ${theme}`}
+      className={`main_item interests interests_${theme} ${theme}`}
     >
       {interests.map((element) =>
         Object.keys(element).map((key) => (

@@ -10,14 +10,14 @@ export const initialState = {
 };
 
 export const authSlice = createSlice({
-  name: 'Auth',
+  name: "Auth",
   initialState,
   reducers: {
     setPath: (state, action) => {
       state.currentPath = action.payload;
     },
   },
-  extraReducers: {
+  incrementByAmount: {
     [authOperations.register.fulfilled]: (state, action) => {
       state.user = action.payload.user;
       state.token = action.payload.token;
@@ -42,7 +42,7 @@ export const authSlice = createSlice({
       state.isLoggedIn = true;
       state.pendingUserData = false;
     },
-    [authOperations.fetchCurrentUser.rejected]: state => {
+    [authOperations.fetchCurrentUser.rejected]: (state) => {
       state.pendingUserData = false;
     },
   },

@@ -4,7 +4,7 @@ export const Education = ({ theme, education }) => {
     <div
       key="education"
       id="education"
-      className={`education education_${theme} ${theme}`}
+      className={`main_item education education_${theme} ${theme}`}
     >
       {education.map((element) =>
         Object.keys(element).map((key) => (

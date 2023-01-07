@@ -2,7 +2,11 @@
 
 export const Awards = ({ theme, awards }) => {
   return (
-    <div key="awards" id="awards" className={`awards awards_${theme} ${theme}`}>
+    <div
+      key="awards"
+      id="awards"
+      className={`main_item awards awards_${theme} ${theme}`}
+    >
       {awards.map((element) =>
         Object.keys(element).map((key) => (
           <div
