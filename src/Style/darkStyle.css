@@ -1,0 +1,29 @@
+
+.main_dark {
+  background-color: #38004c;
+}
+
+.dark{
+ /* background-color: rgb(222, 210, 234); */
+ color: blanchedalmond;
+}
+
+
+.sidebar_dark {
+  background-color: antiquewhite;
+  /* box-shadow: rgb(80 16 16) 40px 1px 55px; */
+  background-color: dimgrey;
+}
+
+#dark {
+  /* background-color: #46045e; */
+  justify-content: flex-start;
+}
+
+body {
+  background: darkgray;
+}
+.header_dark {
+  background-color: slategray;
+  border-bottom: solid 3px dimgrey;
+}

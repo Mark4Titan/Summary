@@ -1,0 +1,252 @@
+:root {
+  --accent-color: #FC842D;
+  --primary-text-color: #212121;
+  --secondary-text-color: #9B9FAA;
+  --dark-bg-text-color: #ffffff;
+  --sidebar-bg: #F0F1F3;
+  --menu-bg: #264061;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: local('fonts'),
+}
+@font-face {
+  font-family: 'Verdana';
+  src: local('fonts'),
+}
+body {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p{
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: inherit;
+  z-index: 2;
+  position: fixed;
+  max-width: 1280px;
+  align-items: center;
+  /* left: calc((100vw - 1134px) / 2); */
+}
+
+.left {
+  padding-left: 20px;
+  display: flex;
+}
+.right {
+  padding-right: 20px;
+  display: flex;
+}
+
+.right_Language {
+  /* padding-left: 10px; */
+  padding-right: 20px;
+  /* border-right: 2px solid rgb(224 224 224 / 50%); */
+}
+.preview {
+  display: flex;
+  padding-left: calc((100vw) / 5);
+}
+.previewButton {
+  margin: 0 4px;
+}
+
+.previewButton {
+  cursor: pointer;
+}
+
+.react_icons {
+  height: 25px;
+  width: 25px;
+  color: black;
+  z-index: -1;
+}
+
+.btn_icon {
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  border-radius: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(255 255 255 / 10%);
+  height: calc((0.875rem * 1) + (0.875rem * 2) + (2px));
+  width: calc((0.875rem * 1) + (0.875rem * 2) + (2px));
+}
+
+.previewIco {
+  z-index: -1;
+}
+
+.select {
+  cursor: pointer;
+  border: none;
+  border-left: 2px solid rgb(224 224 224 / 50%);
+  background-color: transparent;
+  -moz-appearance: none;
+  outline: none;
+  padding-left: 12px;
+  margin-left: 12px;
+}
+.selectlang {
+  border-right: 2px solid rgb(224 224 224 / 50%);
+  padding-right: 12px;
+  margin-right: 12px;
+}
+
+.main {
+  /* padding-top: 200px; */
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: solid 2px rgb(255 0 0 / 30%);
+}
+
+.main_Mobile{
+  padding-left: 40px;
+}
+.main_Tablet{
+  padding-left: 40px;
+}
+.awards {
+  border-bottom: solid 2px rgb(255 0 0 / 30%);
+  height: 100vh;
+  padding-top: 200px;
+ 
+}
+.education{
+  border-bottom: solid 2px rgb(255 0 0 / 30%);
+  height: 100vh;
+  padding-top: 200px;
+}
+.experience{
+    border-bottom: solid 2px rgb(255 0 0 / 30%);
+    height: 100vh;
+    padding-top: 200px;
+}
+.interests {
+  border-bottom: solid 2px rgb(255 0 0 / 30%);
+  height: 100vh;
+  padding-top: 200px;
+}
+.skills {
+  border-bottom: solid 2px rgb(255 0 0 / 30%);
+  height: 100vh;
+  padding-top: 200px;
+}
+.sidebar_Desktop {
+  min-width: 250px;
+  /* position: fixed; */
+  /* height: 100%; */
+  /* left: 0; */
+}
+.sidebar_Tablet {
+}
+.sidebar_Mobile {
+}
+
+.avatar {
+  max-width: 100px;
+  border: solid 3px;
+  border-radius: 10%;
+}
+
+.spanImg {
+  max-width: 220px;
+}
+.sidebar {
+
+  padding-top: 200px;
+}
+.sidContent_Desktop {
+  /* position: fixed; */
+  position: fixed;
+  top: 200px;
+  left: calc((100vw - 1134px) / 2);
+}
+* {
+  transition: color, scale, 250ms;
+  font-family: Verdana, Geneva, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.app_Desktop {
+  max-width: 1280px;
+  display: flex;
+}
+.app_Tablet {
+  width: 768px;
+}
+.app_Mobile {
+  width: 470px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App {
+  font-family: "Ubuntu", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  /* color: blanchedalmond; */
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .main {
+    border-radius: 0px;
+  }
+}
+
+.logo {
+  height: 40vmin;
+  pointer-events: none;
+  min-width: 100vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 1520ms linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

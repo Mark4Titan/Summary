@@ -1,31 +1,23 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import Header from "./components/Header/Header";
-import "./App.css";
-import { getTheme } from "./redux/services/Theme";
+import { getTheme } from "./redux/services/ThemeSlice";
 import { useSelector } from "react-redux";
-import  Sidebar  from "./components/Sidebar/Sidebar";
+import { getPreview } from "./redux/services/PreviewSlice";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Main from "./components/Main/Main";
+
 
 function App() {
   const { theme } = useSelector(getTheme);
+  const { preview } = useSelector(getPreview);
 
   return (
-    <div className="App" id={theme}>
-      <Header />
-      <Sidebar />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div key="app" className="App" id={theme}>
+      <Header preview={preview} />
+      <div key="content" className={`app_${preview}`}>
+        <Sidebar preview={preview} />
+        <Main preview={preview} />
+      </div>
     </div>
   );
 }
