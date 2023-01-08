@@ -7,12 +7,22 @@
 color: dimgrey;;
 }
 .sidebar_lightStyle {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   /* box-shadow: rgb(206, 206, 206) 40px 1px 55px; */
-  background-color: rgb(188 188 188 / 50%);
+  background-color: rgb(255 255 255 / 93%);
 }
 
 #lightStyle {
   /* background-color: #f3ebf6; */
   justify-content: flex-start;
+}
+.surnameItems_lightStyle{
+  color: brown;
+}
+.icoBt_lightStyle {
+  /* background-color: dimgrey; */
+  background-color: rgb(232, 232, 232);
+  /* z-index: 0; */
+  height: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
+  width: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
 }

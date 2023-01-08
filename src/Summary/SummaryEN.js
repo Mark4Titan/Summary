@@ -16,13 +16,19 @@ export const Resume = {
     //   social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
     // },
     {
-      name: "Clarence Taylor",
+      fullName: { name: "Clarence ", surname: "Taylor" },
       address: "3542 BERRY STREET · CHEYENNE WELLS",
       phone: "CO 80810 · (317) 585-8468",
       mail: "NAME@EMAIL.COM",
       aboutMe:
         "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
-      // social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
+      social: {
+        linkedinIn: "https://www.linkedin.com/",
+        github: "https://github.com/Mark4Titan?tab=repositories",
+        twitter: "https://twitter.com/i/flow/single_sign_on",
+        facebook: "https://uk-ua.facebook.com/",
+        youtube: "https://www.youtube.com/channel/UCWIV9JNJ6nFAI8P9_f1BPhA",
+      },
     },
   ],
   experience: [
@@ -81,12 +87,6 @@ export const Resume = {
     // { Title: "", workflow: [], tools: [] },
     {
       Title: "PROGRAMMING LANGUAGES & TOOLS",
-      workflow: [
-        "Mobile-First, Responsive Design",
-        "Cross Browser Testing & Debugging",
-        "Cross Functional Teams",
-        "Agile Development & Scrum",
-      ],
       tools: [
         "html5",
         "css3",
@@ -99,6 +99,12 @@ export const Resume = {
         "react",
         "redux",
         "nodjs",
+      ],
+      workflow: [
+        "Mobile-First, Responsive Design",
+        "Cross Browser Testing & Debugging",
+        "Cross Functional Teams",
+        "Agile Development & Scrum",
       ],
     },
   ],
@@ -117,8 +123,8 @@ export const Resume = {
   awards: [
     { title: "awards" },
     // { Title: "", content: [] },
+    { expansion: "AWARDS & CERTIFICATIONS" },
     {
-      Title: "AWARDS & CERTIFICATIONS",
       content: [
         "Google Analytics Certified Developer",
         "Mobile Web Specialist - Google Certification",

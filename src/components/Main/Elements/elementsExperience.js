@@ -7,25 +7,26 @@ export const Experience = ({ theme, experience }) => {
     >
       <ul
         id={`experience`}
-        key={experience}
-        className={`experience experience_${theme}`}
+        key={"experience"}
+        className={`ul_experience experience experience_${theme}`}
       >
-        {experience.map((element) => (
-          <li
-            id={`experienceEl`}
-            className={`experienceElItems experienceEl_${theme}`}
-          >
-            {Object.keys(element).map((key) => (
+        {experience.map((element) =>
+          Object.keys(element).map((key) => (
+            <li
+              key={`${element[key]}experienceLi`}
+              id={`${element[key]}experienceLi`}
+              className={`experienceElItems experienceEl_${theme}`}
+            >
               <div
                 id={`Item_${key}`}
-                key={key}
+                key={`Item_${key}`}
                 className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
               >
                 {element[key]}
               </div>
-            ))}
-          </li>
-        ))}
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );

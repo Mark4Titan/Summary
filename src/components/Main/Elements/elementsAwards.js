@@ -10,9 +10,9 @@ export const Awards = ({ theme, awards }) => {
       {awards.map((element) =>
         Object.keys(element).map((key) => (
           <div
-            id={`${key}Item_${key} ${key}`}
+            id={key}
             key={key}
-            className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
+            className={`element_${element[key]} ${key}Items ${key}Items_${key} ${key}Items_${theme}`}
           >
             {element[key]}
           </div>
