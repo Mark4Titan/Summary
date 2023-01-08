@@ -16,3 +16,13 @@ color: dimgrey;;
   /* background-color: #f3ebf6; */
   justify-content: flex-start;
 }
+.surnameItems_lightStyle{
+  color: brown;
+}
+.icoBt_lightStyle {
+  /* background-color: dimgrey; */
+  background-color: rgb(232, 232, 232);
+  /* z-index: 0; */
+  height: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
+  width: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
+}
