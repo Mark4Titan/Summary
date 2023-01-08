@@ -81,12 +81,6 @@ export const Resume = {
     // { Title: "", workflow: [], tools: [] },
     {
       Title: "PROGRAMMING LANGUAGES & TOOLS",
-      workflow: [
-        "Mobile-First, Responsive Design",
-        "Cross Browser Testing & Debugging",
-        "Cross Functional Teams",
-        "Agile Development & Scrum",
-      ],
       tools: [
         "html5",
         "css3",
@@ -99,6 +93,12 @@ export const Resume = {
         "react",
         "redux",
         "nodjs",
+      ],
+      workflow: [
+        "Mobile-First, Responsive Design",
+        "Cross Browser Testing & Debugging",
+        "Cross Functional Teams",
+        "Agile Development & Scrum",
       ],
     },
   ],
@@ -117,8 +117,8 @@ export const Resume = {
   awards: [
     { title: "awards" },
     // { Title: "", content: [] },
+    { expansion: "AWARDS & CERTIFICATIONS" },
     {
-      Title: "AWARDS & CERTIFICATIONS",
       content: [
         "Google Analytics Certified Developer",
         "Mobile Web Specialist - Google Certification",

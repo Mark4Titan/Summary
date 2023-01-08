@@ -8,7 +8,7 @@ export const Experience = ({ theme, experience }) => {
       <ul
         id={`experience`}
         key={experience}
-        className={`experience experience_${theme}`}
+        className={`ul_experience experience experience_${theme}`}
       >
         {experience.map((element) => (
           <li

@@ -185,9 +185,10 @@ h6 {
   position: fixed;
   top: 200px;
   left: calc((100vw - 1134px) / 2);
+  text-align: center;
 }
 * {
-  transition: color, scale, 250ms;
+  /* transition: color, scale, 250ms; */
   font-family: Verdana, Geneva, sans-serif;
   scroll-behavior: smooth;
 }
@@ -204,12 +205,12 @@ h6 {
 }
 
 .App {
-  text-align: center;
+  text-align: initial;
 }
 
 .App {
   font-family: "Ubuntu", sans-serif;
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -262,16 +263,37 @@ a {
 body {
   background-color: rgb(64, 64, 64);
 }
-.avatarItems_avatar {
-  display: none;
+
+.ul_experience {
 }
+
 .nameItems_name {
   text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 10px;
+  -webkit-text-stroke-width: medium;
+  width: -webkit-fill-available;
+  
+}
+.nameItems_name:first-child {
+  /* text-transform: uppercase; */
   font-size: 5rem;
+  /* padding-bottom: 10px; */
+  /* -webkit-text-stroke-width: medium; */
+  /* width: -webkit-fill-available; */
+  
 }
 .main_item {
   padding-bottom: 20px;
+  /* border: solid 2px; */
 }
+
+@media (max-height: 1000px) {
+  .experience {
+    height: auto;
+  }
+}
+
 .positionItems {
   display: flex;
   text-transform: uppercase;
@@ -280,19 +302,41 @@ body {
 .experienceElItems {
   padding-bottom: 40px;
 }
+.expansionItems,
 .titleItems {
   display: flex;
-  font-size: 4rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  -webkit-text-stroke-width: medium;
 }
 .periodItems {
   display: flex;
   flex-direction: row-reverse;
+  font-size: 12px;
 }
-
+.facultyItems,
 .companyItems {
   display: flex;
   padding-bottom: 20px;
 }
-.contentItems {
-  text-align: initial;
+.GPAItems {
+  padding-bottom: 60px;
+}
+.aboutMeItems {
+  padding-top: 50px;
+}
+.aboutEl {
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contentItems,
+.toolsItems,
+.TitleItems {
+  padding-bottom: 20px;
+}
+.element_awards,
+.avatarItems_avatar {
+  display: none;
 }
