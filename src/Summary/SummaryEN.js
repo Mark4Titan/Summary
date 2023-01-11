@@ -90,15 +90,14 @@ export const Resume = {
       tools: [
         "html5",
         "css3",
-        "js",
-        "js",
+        "javaScript",
         "sass",
         "css",
         "less",
         "npm",
-        "react",
+        "reactI",
         "redux",
-        "nodjs",
+        "nodejs",
       ],
       workflow: [
         "Mobile-First, Responsive Design",

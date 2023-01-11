@@ -2,6 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -39,7 +40,7 @@ h6 {
   display: flex;
   padding: 10px 0;
   width: inherit;
-  z-index: 2;
+  z-index: 3;
   /* position: fixed; */
   max-width: 1280px;
   align-items: center;
@@ -63,7 +64,8 @@ h6 {
 
 .right_Language {
   /* padding-left: 10px; */
-  /* padding-right: 20px; */
+  padding-right: 12px;
+  /* margin-right: 12px; */
   /* border-right: 2px solid rgb(224 224 224 / 50%); */
 }
 .preview {
@@ -85,6 +87,12 @@ h6 {
   color: #000000c8;
   /* z-index: 0; */
 }
+.about_react_icons {
+  height: 35px;
+  width: 35px;
+  color: #000000c8;
+  /* z-index: 0; */
+}
 
 .btn_icon {
   padding: 0;
@@ -97,8 +105,8 @@ h6 {
   flex-direction: column;
   justify-content: center;
   background: rgb(255 255 255 / 10%);
-  height: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
-  width: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
+  height: calc((0.175rem * 1) + (0.175rem * 2) + (28px));
+  width: calc((0.175rem * 1) + (0.175rem * 2) + (28px));
 }
 
 .previewIco {
@@ -115,14 +123,13 @@ h6 {
   padding-left: 12px;
   margin-left: 12px;
 }
-.selectlang {
-  border-right: 2px solid rgb(224 224 224 / 50%);
-  padding-right: 12px;
-  margin-right: 12px;
+
+.selectDiv {
+  padding-left: 12px;
+  border-left: 2px solid rgb(224 224 224 / 50%);
 }
 
 .main {
-  /* padding-top: 200px; */
   width: auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -136,9 +143,12 @@ h6 {
   padding-left: 40px;
 }
 .main_item {
-  border-bottom: solid 2px rgb(255 0 0 / 30%);
-  height: 100vh;
-  padding-top: 200px;
+  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
+  height: calc(100vh - 300px);
+  padding-top: 300px;
+}
+.awards {
+  height: calc(100vh - 320px);
 }
 
 .sidebarItems {
@@ -150,10 +160,10 @@ h6 {
   min-width: 250px;
 }
 .sidebar_Tablet {
-   display: none;
+  display: none;
 }
 .sidebar_Mobile {
-   display: none;
+  display: none;
 }
 
 .avatar {
@@ -166,7 +176,7 @@ h6 {
   max-width: 220px;
 }
 .sidebar {
-  padding-top: 200px;
+  padding-top: 300px;
 }
 @media (max-width: 1200px) {
   .sidebar {
@@ -183,9 +193,8 @@ h6 {
 } */
 
 .sidContent_Desktop {
-  /* position: fixed; */
   position: fixed;
-  top: 200px;
+  top: 300px;
   left: calc((100vw - 1134px) / 2);
   text-align: center;
 }
@@ -286,11 +295,11 @@ body {
   /* width: -webkit-fill-available; */
 }
 .main_item {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   /* border: solid 2px; */
 }
 
-@media (max-height: 1000px) {
+@media (max-height: 1600px) {
   .experience {
     height: auto;
   }
@@ -356,11 +365,24 @@ body {
   /* background: rgb(255 255 255 / 10%); */
   height: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
   width: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
+  margin-right: 25px;
+  margin-top: 50px;
 }
 .elsocial {
   display: flex;
 }
-.icoBt {
-  margin-right: 25px;
-  margin-top: 50px;
+
+.skills_react_icons {
+  height: 50px;
+  width: 50px;
+}
+.icoSkills {
+  padding-right: 14px;
+}
+.ulSkills {
+  display: inline-flex;
+  padding-bottom: 40px;
+}
+.TitleItems_Title {
+  padding-bottom: 70px;
 }

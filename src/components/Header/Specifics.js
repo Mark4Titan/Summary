@@ -11,6 +11,7 @@ const Specifics = () => {
             {right[key]()}
           </div>
         ))}
+        <div id="key3" key="key3" className="selectDiv" />
       </div>
     );
 }

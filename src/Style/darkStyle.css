@@ -1,18 +1,23 @@
-
+:root {
+  --bg-color: #2c2d2dd1;
+  --accent-color: red;
+  --body-color: rgba(112, 128, 144, 0.724);
+  --sibar-color: dimgrey;
+  --color-focus: rgb(255, 255, 255);
+  --color-data: #fa5f5f;
+}
 .main_darkStyle {
   background-color: #2c2d2dd1;
 }
 
-.darkStyle{
- color: blanchedalmond;
- 
+.darkStyle {
+  color: blanchedalmond;
 }
-
 
 .sidebar_darkStyle {
   /* background-color: antiquewhite; */
   /* box-shadow: rgb(80 16 16) 40px 1px 55px; */
-  background-color: dimgrey;
+  background-color: var(--sibar-color);
 }
 
 #darkStyle {
@@ -22,17 +27,33 @@
 
 body {
   /* background: darkStylegray; */
-  background-color: rgb(112, 128, 144);
+  background-color: var(--body-color);
 }
 .surnameItems_darkStyle {
-  color: red;
+  color: var(--accent-color);
 }
-.icoBt_darkStyle  {
-  /* background: darkStylegray; */
-  background-color: rgba(112, 128, 144, 0.724);
-  z-index: 0;
+.icoBt_darkStyle {
+  background-color: rgb(255 255 255 / 28%);
   height: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
   width: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
 }
+.aHref_darkStyle:hover {
+  color: var(--color-focus);
+  font-size: 15px;
+  transition: 250ms;
+}
+.aHref_darkStyle:focus {
+  color: var(--color-focus);
+}
 
+.periodItems_darkStyle {
+  color: var(--color-data);
+}
+.main_about_darkStyle {
+  border-bottom: solid 2px var(--accent-color);
+}
 
+.activ {
+  border-bottom: solid 2px var(--accent-color);
+  
+}
