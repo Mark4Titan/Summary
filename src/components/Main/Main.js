@@ -9,6 +9,8 @@ import Interests from "./Elements/elementsInterests";
 import Awards from "./Elements/elementsAwards";
 
 
+
+
 const Main = ({ preview }) => {
   const { theme } = useSelector(getTheme);
   const { Summary } = Converter();
@@ -16,7 +18,7 @@ const Main = ({ preview }) => {
   return (
     <>
       <div key="main" className={`main main_${theme} main_${preview}`}>
-        {/*  */}
+        {/*  */}       
         <About about={Summary.about} theme={theme} />
         <Experience experience={Summary.experience} theme={theme} />
         <Education education={Summary.education} theme={theme} />

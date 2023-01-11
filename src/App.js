@@ -6,7 +6,6 @@ import { getPreview } from "./redux/services/PreviewSlice";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Main from "./components/Main/Main";
 
-
 function App() {
   const { theme } = useSelector(getTheme);
   const { preview } = useSelector(getPreview);

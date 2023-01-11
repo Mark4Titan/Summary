@@ -3,7 +3,7 @@ export const Experience = ({ theme, experience }) => {
     <div
       key="experience"
       id="experience"
-      className={`main_item experience experience_${theme} ${theme}`}
+      className={`main_item main_about_${theme} experience experience_${theme} ${theme}`}
     >
       <ul
         id={`experience`}

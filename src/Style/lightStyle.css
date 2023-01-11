@@ -26,3 +26,9 @@ color: dimgrey;;
   height: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
   width: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
 }
+.periodItems_lightStyle {
+  color: dimgrey;
+}
+.main_about_lightStyle {
+  border-bottom: solid 2px brown;
+}
