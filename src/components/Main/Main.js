@@ -8,23 +8,36 @@ import Skills from "./Elements/elementsSkills";
 import Interests from "./Elements/elementsInterests";
 import Awards from "./Elements/elementsAwards";
 
-
-
-
 const Main = ({ preview }) => {
   const { theme } = useSelector(getTheme);
   const { Summary } = Converter();
 
   return (
     <>
-      <div key="main" className={`main main_${theme} main_${preview}`}>
-        {/*  */}       
-        <About about={Summary.about} theme={theme} />
-        <Experience experience={Summary.experience} theme={theme} />
-        <Education education={Summary.education} theme={theme} />
-        <Skills skills={Summary.skills} theme={theme} />
-        <Interests interests={Summary.interests} theme={theme} />
-        <Awards awards={Summary.awards} theme={theme} />
+      <div
+        key="main"
+        id="main"
+        className={`main main_${theme} main_${preview}`}
+      >
+        {/*  */}
+        <About about={Summary.about} theme={theme} preview={preview} />
+        <Experience
+          experience={Summary.experience}
+          theme={theme}
+          preview={preview}
+        />
+        <Education
+          education={Summary.education}
+          theme={theme}
+          preview={preview}
+        />
+        <Skills skills={Summary.skills} theme={theme} preview={preview} />
+        <Interests
+          interests={Summary.interests}
+          theme={theme}
+          preview={preview}
+        />
+        <Awards awards={Summary.awards} theme={theme} preview={preview} />
       </div>
     </>
   );

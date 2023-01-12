@@ -23,10 +23,9 @@ export const Resume = {
       aboutMe:
         "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
       social: {
-        linkedinIn: "https://www.linkedin.com/",
+        linkedinIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
         github: "https://github.com/Mark4Titan?tab=repositories",
-        twitter: "https://twitter.com/i/flow/single_sign_on",
-        facebook: "https://uk-ua.facebook.com/",
+        telegram: "https://t.me/MArkTitan",
         youtube: "https://www.youtube.com/channel/UCWIV9JNJ6nFAI8P9_f1BPhA",
       },
     },

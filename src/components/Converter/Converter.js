@@ -3,7 +3,7 @@ import { getLanguage } from "../../redux/services/languageSlice";
 import SummaryEN from "../../Summary/SummaryEN";
 import SummaryUA from "../../Summary/SummaryUA";
 
-const AllSummary = { SummaryEN, SummaryUA,  };
+const AllSummary = { SummaryEN, SummaryUA };
 
 const Converter = () => {
   const { language } = useSelector(getLanguage);
@@ -19,8 +19,6 @@ const Converter = () => {
     return key;
   });
 
-  //   console.log(language);
-
   const Summary = AllSummary[language];
   const avatar = {};
   const keys = {};
@@ -33,7 +31,6 @@ const Converter = () => {
       })
     )
   );
-  // console.log(Summary);
   return { lenDefaultLeng, avatar, keys, Summary };
 };
 

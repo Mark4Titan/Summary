@@ -1,19 +1,25 @@
+import { IconContext } from "react-icons";
 import Preview from "./Preview";
 import Specifics from "./Specifics";
-import HeadersLeft from "./HeadersLeft";
-import { IconContext } from "react-icons";
+// import HeadersLeft from "./HeadersLeft";
+import Burger from "./Burger";
 
-export const Header = ({ preview }) => {
+export const Header = ({ preview, theme }) => {
   return (
     <IconContext.Provider value={{ className: "react_icons" }}>
-      <div key="headers" id="headers" className={`header header_${preview}`}>
+      <div
+        key="headers"
+        id="headers"
+        className={`header header_${theme} header_${preview}`}
+      >
         <div
           key="headCon"
           id="headCon"
-          className={`headCon headCon_${preview}`}
+          className={`headCon headCon_${theme} headCon_${preview}`}
         >
           <Preview />
-          <HeadersLeft />
+          <Burger preview={preview} theme={theme} />
+          {/* <HeadersLeft /> */}
           <Specifics />
         </div>
       </div>

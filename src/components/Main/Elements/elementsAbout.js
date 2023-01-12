@@ -5,28 +5,44 @@ import {
   FaTwitter,
   FaFacebookSquare,
   FaYoutube,
+  FaTelegramPlane,
+  FaViber,
+  FaInstagram,
 } from "react-icons/fa";
+import { SiSignal } from "react-icons/si";
 
-export const About = ({ theme, about }) => {
+import { useInView } from "react-intersection-observer";
+import View from "./View";
+
+export const About = ({ theme, about, preview }) => {
+  const { ref, inView } = useInView(true);
+  View({about:inView});
+
   const iconsSoCial = {
     linkedinIn: FaLinkedinIn,
     github: FaGithub,
     twitter: FaTwitter,
     facebook: FaFacebookSquare,
     youtube: FaYoutube,
+    telegram: FaTelegramPlane,
+    viber: FaViber,
+    signal: SiSignal,
+    instagram: FaInstagram,
   };
   // IconsSoCial[key]()
   //  console.log(FaGithub());
+
   return (
     <IconContext.Provider value={{ className: "about_react_icons" }}>
       <div
         key="about"
         id="about"
-        className={`main_item about main_about_${theme} about_${theme} ${theme}`}
+        className={`main_item main_item_${preview} about main_about_${theme} about_${theme} ${theme}`}
       >
         <div
           key="aboutEl"
           id="aboutEl"
+          ref={ref}
           className={`aboutEl aboutEl_${theme} ${theme}`}
         >
           {about.map((element) =>

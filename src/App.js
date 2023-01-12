@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import Header from "./components/Header/Header";
 import { getTheme } from "./redux/services/ThemeSlice";
 import { useSelector } from "react-redux";
@@ -12,7 +11,7 @@ function App() {
 
   return (
     <div key="app" className="App" id={theme}>
-      <Header preview={preview} />
+      <Header preview={preview} theme={theme} />
       <div key="content" className={`app_${preview}`}>
         <Sidebar preview={preview} />
         <Main preview={preview} />

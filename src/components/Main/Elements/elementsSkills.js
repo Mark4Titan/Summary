@@ -9,8 +9,15 @@ import {
 } from "react-icons/si";
 import { FaLess, FaNodeJs, FaReact } from "react-icons/fa";
 import { IoLogoNpm } from "react-icons/io";
+import { useInView } from "react-intersection-observer";
+import View from "./View";
 
-export const Skills = ({ theme, skills }) => {
+
+export const Skills = ({ theme, skills, preview }) => {
+  
+  const { ref, inView } = useInView(false);
+  View({ skills: inView });
+
   const iconsSkills = {
     html5: SiHtml5,
     css3: SiCss3,
@@ -30,7 +37,8 @@ export const Skills = ({ theme, skills }) => {
       <div
         key="skills"
         id="skills"
-        className={`main_item main_about_${theme} skills skills_${theme} ${theme}`}
+        
+        className={`main_item main_item_${preview} main_about_${theme} skills skills_${theme} ${theme}`}
       >
         {skills.map((element) =>
           Object.keys(element).map((key) => {
@@ -62,6 +70,7 @@ export const Skills = ({ theme, skills }) => {
                 <div
                   id={key}
                   key={key}
+                  ref={ref}
                   className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
                 >
                   {element[key]}

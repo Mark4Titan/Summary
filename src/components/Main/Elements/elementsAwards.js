@@ -1,11 +1,16 @@
+import { useInView } from "react-intersection-observer";
+import View from "./View";
 
+export const Awards = ({ theme, awards, preview }) => {
+  const { ref, inView } = useInView(false);
+  View({ awards: inView });
 
-export const Awards = ({ theme, awards }) => {
   return (
     <div
       key="awards"
       id="awards"
-      className={`main_item main_about_${theme} awards awards_${theme} ${theme}`}
+      ref={ref}
+      className={`main_item main_item_${preview} main_about_${theme} awards awards_${theme} ${theme}`}
     >
       {awards.map((element) =>
         Object.keys(element).map((key) => (
