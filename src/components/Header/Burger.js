@@ -18,7 +18,11 @@ const Burger = ({ preview, theme }) => {
       Object.keys(element).filter(
         (key) => element[key] === true && (el[key] = element[key])
       );
-      setState(el);
+      const [k] = Object.keys(state);
+      const [y] = Object.keys(el);
+      if (k !== y) {
+        setState(el);
+      }
     }, 10);
 
   return (
