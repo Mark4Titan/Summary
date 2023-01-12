@@ -4,7 +4,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -41,10 +40,8 @@ h6 {
   padding: 10px 0;
   width: inherit;
   z-index: 3;
-  /* position: fixed; */
   max-width: 1280px;
   align-items: center;
-  /* padding-left: 260px; */
   justify-content: flex-end;
 }
 
@@ -54,24 +51,17 @@ h6 {
 }
 .leftItem {
   padding-left: 20px;
-  /* display: flex; */
 }
 .right {
-  /* padding-right: 20px; */
   display: flex;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .right_Language {
-  /* padding-left: 10px; */
   padding-right: 12px;
-  /* margin-right: 12px; */
-  /* border-right: 2px solid rgb(224 224 224 / 50%); */
 }
 .preview {
-  /* padding-left: 50px; */
   display: flex;
-  /* padding-left: calc((100vw) / 9); */
 }
 .previewButton {
   margin: 0 4px;
@@ -85,13 +75,11 @@ h6 {
   height: 25px;
   width: 25px;
   color: #000000c8;
-  /* z-index: 0; */
 }
 .about_react_icons {
   height: 35px;
   width: 35px;
-  color: #000000c8;
-  /* z-index: 0; */
+  color: rgb(64, 64, 64);
 }
 
 .btn_icon {
@@ -133,7 +121,7 @@ h6 {
   width: auto;
   padding-left: 40px;
   padding-right: 40px;
-  border-bottom: solid 2px rgb(255 0 0 / 30%);
+  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
 }
 
 .main_Mobile {
@@ -142,11 +130,22 @@ h6 {
 .main_Tablet {
   padding-left: 40px;
 }
-.main_item {
+.main_item_Desktop {
   /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
   height: calc(100vh - 300px);
   padding-top: 300px;
 }
+.main_item_Tablet {
+  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
+  height: calc(100vh - 200px);
+  padding-top: 200px;
+}
+.main_item_Mobile {
+  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
+  height: calc(100vh - 150px);
+  padding-top: 150px;
+}
+
 .awards {
   height: calc(100vh - 320px);
 }
@@ -154,6 +153,10 @@ h6 {
 .sidebarItems {
   padding-top: 17px;
   text-transform: uppercase;
+}
+
+.burger_Desktop {
+  visibility: collapse;
 }
 
 .sidebar_Desktop {
@@ -185,12 +188,20 @@ h6 {
   .preview {
     display: none;
   }
-}
-/* @media (min-width: 768px) {
-  .sidebar {
-    display:none
+  .burger_Desktop {
+    visibility: inherit;
   }
-} */
+}
+
+@media (max-width: 1000px) {
+  #root {
+    /* overflow: hidden;
+    background-color: red; */
+  }
+  .main {
+    /* overflow-y: hidden; */
+  }
+}
 
 .sidContent_Desktop {
   position: fixed;
@@ -212,7 +223,7 @@ h6 {
   width: 768px;
 }
 .app_Mobile {
-  width: 470px;
+  width: 420px;
 }
 
 .App {
@@ -286,17 +297,6 @@ body {
   -webkit-text-stroke-width: medium;
   width: -webkit-fill-available;
   display: contents;
-}
-.nameItems_name:first-child {
-  /* text-transform: uppercase; */
-  /* font-size: 5rem; */
-  /* padding-bottom: 10px; */
-  /* -webkit-text-stroke-width: medium; */
-  /* width: -webkit-fill-available; */
-}
-.main_item {
-  /* padding-bottom: 20px; */
-  /* border: solid 2px; */
 }
 
 @media (max-height: 1600px) {
@@ -385,4 +385,18 @@ body {
 }
 .TitleItems_Title {
   padding-bottom: 70px;
+}
+.burgerMenu {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  background-color: rgb(123, 73, 8);
+  padding: 5px 0 20px 14px;
+  width: calc(100vh / 4);
+}
+.burger {
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 6px;
 }

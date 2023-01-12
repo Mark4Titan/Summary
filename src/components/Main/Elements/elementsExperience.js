@@ -1,9 +1,9 @@
-export const Experience = ({ theme, experience }) => {
+export const Experience = ({ theme, experience, preview }) => {
   return (
     <div
       key="experience"
       id="experience"
-      className={`main_item main_about_${theme} experience experience_${theme} ${theme}`}
+      className={`main_item main_item_${preview} main_about_${theme} experience experience_${theme} ${theme}`}
     >
       <ul
         id={`experience`}

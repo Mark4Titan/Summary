@@ -7,7 +7,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-export const About = ({ theme, about }) => {
+export const About = ({ theme, about, preview }) => {
   const iconsSoCial = {
     linkedinIn: FaLinkedinIn,
     github: FaGithub,
@@ -22,7 +22,7 @@ export const About = ({ theme, about }) => {
       <div
         key="about"
         id="about"
-        className={`main_item about main_about_${theme} about_${theme} ${theme}`}
+        className={`main_item main_item_${preview} about main_about_${theme} about_${theme} ${theme}`}
       >
         <div
           key="aboutEl"

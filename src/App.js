@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div key="app" className="App" id={theme}>
-      <Header preview={preview} />
+      <Header preview={preview} theme={theme} />
       <div key="content" className={`app_${preview}`}>
         <Sidebar preview={preview} />
         <Main preview={preview} />

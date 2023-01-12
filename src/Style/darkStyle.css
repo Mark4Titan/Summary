@@ -18,6 +18,7 @@
   /* background-color: antiquewhite; */
   /* box-shadow: rgb(80 16 16) 40px 1px 55px; */
   background-color: var(--sibar-color);
+  border-right: solid 2px var(--accent-color);
 }
 
 #darkStyle {
@@ -55,5 +56,4 @@ body {
 
 .activ {
   border-bottom: solid 2px var(--accent-color);
-  
 }
