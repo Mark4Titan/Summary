@@ -1,5 +1,11 @@
+import { useInView } from "react-intersection-observer";
+import View from "./View";
+
 
 export const Education = ({ theme, education, preview }) => {
+  const { ref, inView } = useInView(false);
+  View({ education: inView });
+  
   return (
     <div
       key="education"
@@ -11,6 +17,7 @@ export const Education = ({ theme, education, preview }) => {
           <div
             id={`${key}Item_${key} ${key}`}
             key={key}
+            ref={ref}
             className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
           >
             {element[key]}

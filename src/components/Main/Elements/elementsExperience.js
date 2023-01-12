@@ -1,4 +1,9 @@
+import { useInView } from "react-intersection-observer";
+import View from "./View";
+
 export const Experience = ({ theme, experience, preview }) => {
+  const { ref, inView } = useInView(false);
+  View({ experience: inView });
   return (
     <div
       key="experience"
@@ -8,6 +13,7 @@ export const Experience = ({ theme, experience, preview }) => {
       <ul
         id={`experience`}
         key={"experience"}
+        ref={ref}
         className={`ul_experience experience experience_${theme}`}
       >
         {experience.map((element) =>

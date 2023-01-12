@@ -39,8 +39,8 @@ body {
   width: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
 }
 .aHref_darkStyle:hover {
-  color: var(--color-focus);
-  font-size: 15px;
+  color: #c9c7c7;
+  font-size: 17px;
   transition: 250ms;
 }
 .aHref_darkStyle:focus {
@@ -56,4 +56,6 @@ body {
 
 .activ {
   border-bottom: solid 2px var(--accent-color);
+  font-size: 17px;
+  transition: 250ms;
 }

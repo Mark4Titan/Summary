@@ -1,5 +1,9 @@
+import { useInView } from "react-intersection-observer";
+import View from "./View";
 
 export const Interests = ({ theme, interests, preview }) => {
+  const { ref, inView } = useInView(false);
+  View({ interests: inView });
   return (
     <div
       key="interests"
@@ -9,8 +13,9 @@ export const Interests = ({ theme, interests, preview }) => {
       {interests.map((element) =>
         Object.keys(element).map((key) => (
           <div
-            id={`${key}Item_${key} ${key}`}
+            id={key}
             key={key}
+            ref={ref}
             className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
           >
             {element[key]}
