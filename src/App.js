@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import Header from "./components/Header/Header";
 import { getTheme } from "./redux/services/ThemeSlice";
 import { useSelector } from "react-redux";

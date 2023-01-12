@@ -27,10 +27,7 @@ h6 {
 }
 
 .header {
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
+  width: 100vw; 
   position: fixed;
   background-color: slategray;
   border-bottom: solid 3px rgb(235, 0, 0);
@@ -40,7 +37,7 @@ h6 {
   padding: 10px 0;
   width: inherit;
   z-index: 3;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   align-items: center;
   justify-content: flex-end;
 }
@@ -121,29 +118,37 @@ h6 {
   width: auto;
   padding-left: 40px;
   padding-right: 40px;
-  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
 }
 
-.main_Mobile {
-  padding-left: 40px;
-}
-.main_Tablet {
-  padding-left: 40px;
-}
 .main_item_Desktop {
-  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
   height: calc(100vh - 300px);
   padding-top: 300px;
 }
 .main_item_Tablet {
-  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
   height: calc(100vh - 200px);
   padding-top: 200px;
 }
 .main_item_Mobile {
-  /* border-bottom: solid 2px rgb(255 0 0 / 30%); */
   height: calc(100vh - 150px);
   padding-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .main_item_Mobile,
+  .main_item_Tablet,
+ .main_item_Desktop {
+  height: calc(100vh - 200px);
+  padding-top: 200px;
+}
+}
+
+@media (max-width: 420px) {
+  .main_item_Mobile,
+  .main_item_Tablet,
+  .main_item_Desktop {
+  height: calc(100vh - 150px);
+  padding-top: 150px;
+}
 }
 
 .awards {
@@ -190,16 +195,6 @@ h6 {
   }
   .burger_Desktop {
     visibility: inherit;
-  }
-}
-
-@media (max-width: 1000px) {
-  #root {
-    /* overflow: hidden;
-    background-color: red; */
-  }
-  .main {
-    /* overflow-y: hidden; */
   }
 }
 
@@ -251,15 +246,8 @@ h6 {
 
 a {
   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-  /* color: blanchedalmond; */
   text-decoration: none;
 }
-
-/* @media (max-width: 600px) {
-  .main {
-    border-radius: 0px;
-  }
-} */
 
 .logo {
   height: 40vmin;
@@ -362,7 +350,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background: rgb(255 255 255 / 10%); */
   height: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
   width: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
   margin-right: 25px;
@@ -378,10 +365,12 @@ body {
 }
 .icoSkills {
   padding-right: 14px;
+  padding-top: 20px;
 }
 .ulSkills {
   display: inline-flex;
   padding-bottom: 40px;
+  flex-wrap: wrap;
 }
 .TitleItems_Title {
   padding-bottom: 70px;
@@ -393,7 +382,10 @@ body {
   background-color: rgb(123, 73, 8);
   padding: 5px 0 20px 14px;
   width: calc(100vh / 4);
+  font-size: 28px;
+  font-weight: bolder;
 }
+
 .burger {
   display: flex;
   padding-left: 20px;
