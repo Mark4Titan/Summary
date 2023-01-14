@@ -27,7 +27,7 @@ h6 {
 }
 
 .header {
-  width: 100vw; 
+  width: 100vw;
   position: fixed;
   background-color: slategray;
   border-bottom: solid 3px rgb(235, 0, 0);
@@ -35,11 +35,8 @@ h6 {
 .headCon {
   display: flex;
   padding: 10px 0;
-  width: inherit;
-  z-index: 3;
-  /* max-width: 1280px; */
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .left {
@@ -101,18 +98,18 @@ h6 {
 .select {
   cursor: pointer;
   border: none;
-  border-left: 2px solid rgb(224 224 224 / 50%);
+  /* border-left: 2px solid rgb(224 224 224 / 50%); */
   background-color: transparent;
   -moz-appearance: none;
-  outline: none;
-  padding-left: 12px;
-  margin-left: 12px;
+  /* outline: none; */
+  /* padding-left: 12px; */
+  /* margin-left: 12px; */
 }
 
-.selectDiv {
+/* .selectDiv {
   padding-left: 12px;
   border-left: 2px solid rgb(224 224 224 / 50%);
-}
+} */
 
 .main {
   width: auto;
@@ -136,19 +133,19 @@ h6 {
 @media (max-width: 768px) {
   .main_item_Mobile,
   .main_item_Tablet,
- .main_item_Desktop {
-  height: calc(100vh - 200px);
-  padding-top: 200px;
-}
+  .main_item_Desktop {
+    height: calc(100vh - 200px);
+    padding-top: 200px;
+  }
 }
 
 @media (max-width: 420px) {
   .main_item_Mobile,
   .main_item_Tablet,
   .main_item_Desktop {
-  height: calc(100vh - 150px);
-  padding-top: 150px;
-}
+    height: calc(100vh - 150px);
+    padding-top: 150px;
+  }
 }
 
 .awards {
@@ -340,6 +337,12 @@ body {
 .element_awards,
 .avatarItems_avatar {
   display: none;
+}
+.element {
+  padding: 0 20px;
+  margin: 0 20px;
+  border-left: 2px solid rgb(224 224 224 / 50%);
+  border-right: 2px solid rgb(224 224 224 / 50%);
 }
 
 .icoBt {

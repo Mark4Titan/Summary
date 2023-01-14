@@ -13,9 +13,9 @@ const Menu = () => {
     Object.keys(element).filter(
       (key) => element[key] === true && (el[key] = element[key])
     );
-    const [k] = Object.keys(state);
-    const [y] = Object.keys(el);
-    if (k !== y) {
+    const [s] = Object.keys(state);
+    const [e] = Object.keys(el);
+    if (s !== e) {
       setState(el);
     }
   }, 10);
