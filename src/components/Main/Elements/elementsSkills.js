@@ -30,8 +30,7 @@ export const Skills = ({ theme, skills, preview }) => {
     redux: SiRedux,
     nodejs: FaNodeJs,
   };
-  // IconsSoCial[key]()
-  //  console.log(FaGithub());
+  
   return (
     <IconContext.Provider value={{ className: "skills_react_icons" }}>
       <div

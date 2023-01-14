@@ -60,7 +60,7 @@ const Menu = ({ theme }) => {
               key={key}
               href={`#${key}`}
               className={`${
-                state[key] === true ? "activ" : key
+                state[key] === true ? `activ activ_${theme}` : key
               } aHref aHref_${key} aHref_${theme} ${theme}`}
             >
               {keys[key]}

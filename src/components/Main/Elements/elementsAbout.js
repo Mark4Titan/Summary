@@ -29,8 +29,6 @@ export const About = ({ theme, about, preview }) => {
     signal: SiSignal,
     instagram: FaInstagram,
   };
-  // IconsSoCial[key]()
-  //  console.log(FaGithub());
 
   return (
     <IconContext.Provider value={{ className: "about_react_icons" }}>
@@ -49,9 +47,10 @@ export const About = ({ theme, about, preview }) => {
             Object.keys(element).map((key) => {
               const el = [];
               const elsocial = [];
+              const fullname = [];
               key === "fullName" &&
                 Object.keys(element[key]).map((keys) =>
-                  el.push(
+                  fullname.push(
                     <div
                       id={keys}
                       key={keys}
@@ -61,6 +60,15 @@ export const About = ({ theme, about, preview }) => {
                     </div>
                   )
                 );
+              el.push(
+                <div
+                  id={`full_${key}`}
+                  key={`full_${key}`}
+                  className={`full_${key}Items full_${key}Items_${theme}`}
+                >
+                {fullname}
+                 </div>
+              );
               key === "social" &&
                 elsocial.push(
                   Object.keys(element[key]).map((keys) => (
@@ -73,7 +81,6 @@ export const About = ({ theme, about, preview }) => {
                       className={`${keys}Items icoBt icoBt_${theme} ${keys}Items_${theme}`}
                     >
                       {iconsSoCial[keys]()}
-                      {/* {console.log(element[key][keys])} */}
                     </a>
                   ))
                 );

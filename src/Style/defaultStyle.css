@@ -28,9 +28,7 @@ h6 {
 
 .header {
   width: 100vw;
-  position: fixed;
-  background-color: slategray;
-  border-bottom: solid 3px rgb(235, 0, 0);
+  position: fixed;  
 }
 .headCon {
   display: flex;
@@ -40,21 +38,6 @@ h6 {
   height: 30px;
 }
 
-.left {
-  padding-left: 90px;
-  display: flex;
-}
-.leftItem {
-  padding-left: 20px;
-}
-.right {
-  display: flex;
-  padding-left: 20px;
-}
-
-.right_Language {
-  padding-right: 12px;
-}
 .preview {
   display: flex;
 }
@@ -69,7 +52,7 @@ h6 {
 .react_icons {
   height: 25px;
   width: 25px;
-  color: #000000c8;
+  color: #c9c7c7
 }
 .about_react_icons {
   height: 35px;
@@ -99,18 +82,13 @@ h6 {
 .select {
   cursor: pointer;
   border: none;
-  /* border-left: 2px solid rgb(224 224 224 / 50%); */
   background-color: transparent;
   -moz-appearance: none;
-  /* outline: none; */
-  /* padding-left: 12px; */
-  /* margin-left: 12px; */
+  outline: none;
+
 }
 
-/* .selectDiv {
-  padding-left: 12px;
-  border-left: 2px solid rgb(224 224 224 / 50%);
-} */
+
 
 .main {
   width: auto;
@@ -160,7 +138,6 @@ h6 {
 }
 
 .burger_Desktop {
-  /* visibility: collapse; */
   display: none;
 }
 
@@ -201,14 +178,6 @@ h6 {
   display: flex;
 }
 
-/* .listSideBar {
-  position: fixed;
-  top: 430px;
-  left: calc((100vw - 1200px) / 2);
-  text-align: center;
-  width: 160px;
-} */
-
 @media (max-width: 1200px) {
   .sidebar {
     display: none;
@@ -223,7 +192,6 @@ h6 {
     display: none;
   }
   .burger {
-    /* visibility: inherit; */
     display: flex;
   }
   
@@ -267,11 +235,6 @@ h6 {
   flex-direction: column;
 }
 
-/* @media (max-width: 600px) {
-  .main {
-    border-radius: 0px;
-  }
-} */
 .aHref {
   font-size: 14px;
 }
@@ -306,17 +269,18 @@ body {
   background-color: rgb(64, 64, 64);
 }
 
-.ul_experience {
-}
-
 .surnameItems,
 .nameItems {
   text-transform: uppercase;
   font-size: 3rem;
   padding-bottom: 10px;
   -webkit-text-stroke-width: medium;
-  width: -webkit-fill-available;
-  display: contents;
+}
+.nameItems {
+  padding-right: 10px;
+}
+.surnameItems {
+  padding-left: 10px;
 }
 
 @media (max-height: 1600px) {
@@ -388,8 +352,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
-  width: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
+  /* height: calc((0.575rem * 1) + (0.575rem * 2) + (4px));
+  width: calc((0.575rem * 1) + (0.575rem * 2) + (4px)); */
   margin-right: 25px;
   margin-top: 50px;
 }
@@ -417,7 +381,6 @@ body {
   position: fixed;
   right: 0px;
   top: 60px;
-  background-color: rgb(123, 73, 8);
   padding: 5px 0 20px 14px;
   width: calc(100vh / 4);
   font-size: 28px;
@@ -436,21 +399,28 @@ body {
 .burgerMenu_close {
   background-color: rgb(255 255 255);
   right: -250px;
-  /* transition: color, scale, 50ms; */
 }
 .listSideBar_close {
   position: fixed;
-  /* display: none; */
   right: -250px;
   top: 80px;
   transition: color, scale, 300ms;
 }
 .listSideBar_activ {
   position: fixed;
-  width: 100px;
+  width: 120px;
   left: auto;
-  right: 100px;
+  right: 90px;
   top: 80px;
   text-align: inherit;
   transition: color, scale, 400ms;
+}
+.activ {
+  font-size: 17px;
+  transition: 250ms;
+}
+.full_fullNameItems {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }

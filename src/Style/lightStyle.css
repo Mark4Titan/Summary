@@ -1,34 +1,81 @@
-
-.main_lightStyle  {
+.main_lightStyle {
   background-color: #fff;
 }
 
-.lightStyle{
-color: dimgrey;;
+.lightStyle {
+  color: dimgrey;
 }
 .sidebar_lightStyle {
-  /* background-color: antiquewhite; */
-  /* box-shadow: rgb(206, 206, 206) 40px 1px 55px; */
-  background-color: rgb(255 255 255 / 93%);
+  background-color: dimgrey;
 }
 
 #lightStyle {
   /* background-color: #f3ebf6; */
   justify-content: flex-start;
 }
-.surnameItems_lightStyle{
-  color: brown;
+.full_fullNameItems_lightStyle {
+  color: rgb(232, 232, 232);
+  background-color: dimgrey;
+  /* border-left: solid 2px dimgrey; */
 }
+.nameItems_lightStyle {
+  color: dimgrey;
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 20%) 14px 14px 20px 0px;
+}
+
 .icoBt_lightStyle {
-  /* background-color: dimgrey; */
   background-color: rgb(232, 232, 232);
-  /* z-index: 0; */
   height: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
   width: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
+  box-shadow: rgb(0 0 0 / 20%) 1px 1px 20px 6px;
 }
+.icoBt_lightStyle:hover{
+
+}
+
 .periodItems_lightStyle {
   color: dimgrey;
 }
 .main_about_lightStyle {
   border-bottom: solid 2px rgb(232, 232, 232);
 }
+
+.aHref_lightStyle {
+  color: rgb(232, 232, 232);
+}
+.burgerMenu_lightStyle {
+  background-color: dimgrey;
+  
+}
+.burgerMenu_visual {
+box-shadow: rgb(0 0 0 / 20%) -12px 7px 20px 11px;
+}
+.burger_lightStyle {
+  color: rgb(232, 232, 232);  
+}
+.burger_true_lightStyle {
+  background-color: #c9c7c7;
+  border-radius: 10px;
+}
+
+.header_lightStyle {
+  background-color: rgb(90 90 90);
+  border-bottom: solid 3px dimgrey;
+}
+.select_lightStyle {
+  color: #c9c7c7;
+}
+.select_lightStyle:focus,
+.select_lightStyle:hover {
+  color: #c9c7c7;
+  background-color: rgb(90 90 90);
+}
+
+.activ_lightStyle {
+  background-color: #c9c7c7;
+  color: black;
+  border: solid 6px #c9c7c7;
+}
+
+/* display: contents; */

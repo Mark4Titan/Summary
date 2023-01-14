@@ -1,5 +1,4 @@
 
-
 const Specifics = ({ elements }) => { 
     
     return (

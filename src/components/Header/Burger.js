@@ -18,16 +18,16 @@ const Burger = ({ theme }) => {
       <div
         key="burger"
         id="burger"
-        className={`burger burger_${theme} burger_${preview}`}
+        className={`burger burger_${theme} burger_${burger}_${theme} burger_${preview}`}
         onClick={() => dispatch(setBurgerActions(!burger))}
       >
-        {!burger ? GiHamburgerMenu() : GrClose()}
+        {burger ? GrClose() : GiHamburgerMenu()}
       </div>
 
       <div
         key="burgerMenu"
         id="burgerMenu"
-        className={`burgerMenu burgerMenu_${theme} ${
+        className={`burgerMenu_${theme} ${
           burger ? "burgerMenu_visual" : "burgerMenu_close"
         } burgerMenu_${preview}`}
       />

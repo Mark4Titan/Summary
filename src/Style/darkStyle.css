@@ -15,9 +15,7 @@
 }
 
 .sidebar_darkStyle {
-  /* background-color: antiquewhite; */
-  /* box-shadow: rgb(80 16 16) 40px 1px 55px; */
-  background-color: var(--sibar-color);
+  background-color: #2c2d2d;
   border-right: solid 2px var(--accent-color);
 }
 
@@ -54,8 +52,31 @@ body {
   border-bottom: solid 2px var(--accent-color);
 }
 
-.activ {
+.activ_darkStyle {
   border-bottom: solid 2px var(--accent-color);
-  font-size: 17px;
-  transition: 250ms;
+}
+
+.burgerMenu_darkStyle {
+  background-color: rgb(123, 73, 8);
+}
+
+.header_darkStyle {
+  background-color: #2c2d2d;
+  border-bottom: solid 3px rgb(235, 0, 0);
+}
+
+.select_darkStyle {
+  color: #c9c7c7;
+}
+.select_darkStyle:focus,
+.select_darkStyle:hover {
+  color: #fff;
+  background-color: #2c2d2d;
+}
+
+.burger_true_darkStyle {
+  background: rgb(255 255 255 / 10%);
+  border-radius: 100%;
+  padding: 0 6px;
+  margin: 0 4px;
 }

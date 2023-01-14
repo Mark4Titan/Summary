@@ -3,7 +3,6 @@ import Preview from "./Preview";
 import Specifics from "./Specifics";
 import { ThemeEditor } from "../Theme/Theme";
 import Language from "../Language/Language";
-// import Burger from "./Burger";
 
 export const Header = ({ preview, theme }) => {
   return (
@@ -21,7 +20,6 @@ export const Header = ({ preview, theme }) => {
           <Specifics elements={{ ThemeEditor }} />
           <Preview preview={preview} theme={theme} />
           <Specifics elements={{ Language }} />
-          {/* <Burger preview={preview} theme={theme} /> */}
         </div>
       </div>
     </IconContext.Provider>

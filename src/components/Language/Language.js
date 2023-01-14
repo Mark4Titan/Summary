@@ -4,9 +4,11 @@ import {
   setLanguageActions,
   getLanguage,
 } from "../../redux/services/languageSlice";
+import { getTheme } from "../../redux/services/ThemeSlice";
 
 export const Language = () => {
   const dispatch = useDispatch();
+  const { theme } = useSelector(getTheme);
 
   const { language } = useSelector(getLanguage);
   const { lenDefaultLeng } = Converter();
@@ -14,14 +16,17 @@ export const Language = () => {
   const LangOptionsClick = (e) => {
     dispatch(setLanguageActions(e.target.value));
   };
-  
+
   const arrOpt = [];
   Object.keys(lenDefaultLeng).map((opt) =>
     opt === language ? arrOpt.unshift(opt) : arrOpt.push(opt)
   );
 
   return (
-    <select className="select selectlang" onChange={LangOptionsClick}>
+    <select
+      className={`select select_${theme} selectlang`}
+      onChange={LangOptionsClick}
+    >
       {arrOpt.map((opt) => (
         <option key={opt} value={opt}>
           {lenDefaultLeng[opt]}
