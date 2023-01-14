@@ -1,13 +1,18 @@
 import { useSelector } from "react-redux";
-import { getTheme } from "../../redux/services/ThemeSlice";
+import useMedia from "use-media";
 import Converter from "../Converter/Converter";
-import element from "../Main/Elements/Element";
 import React, { useState } from "react";
+import { getPreview } from "../../redux/services/PreviewSlice";
+import { getBurger } from "../../redux/services/BurgerSlice";
+import element from "../Main/Elements/Element";
 
-const Menu = () => {
+const Menu = ({ theme }) => {
+  const isWide = useMedia({ maxWidth: 1200 });
   const [state, setState] = useState({ about: true });
   const { keys } = Converter();
-  const { theme } = useSelector(getTheme);
+  const { preview } = useSelector(getPreview);
+  const { burger } = useSelector(getBurger);
+
   setInterval(() => {
     const el = {};
     Object.keys(element).filter(
@@ -20,10 +25,29 @@ const Menu = () => {
     }
   }, 10);
 
-  // console.log(Object.keys(state));
+  const trogle = () => {
+    if (!isWide) {
+      if (!burger && preview !== "Desktop") return "listSideBar_close";
+      if (burger && preview !== "Desktop") return "listSideBar_activ";
+      if (preview === "Desktop") return "listSideBar_redy";
+    } else { 
+      if (burger && preview === "Desktop") return "listSideBar_activ";
+      if (!burger && preview === "Desktop") return "listSideBar_close";
+      if (preview === "Desktop") return "listSideBar_redy";
+    }
+    console.log(
+      "preview =",
+      preview,
+      "| burger =",
+      burger,
+      "| isWide = ",
+      isWide
+    );
+    
+  };
 
   return (
-    <div className={`listSideBar listSideBar_${theme}`}>
+    <div className={`listSideBar ${trogle()} listSideBar_${theme}`}>
       <ul className={`ulSideBar ulSideBar_${theme}`}>
         {Object.keys(keys).map((key) => (
           <li

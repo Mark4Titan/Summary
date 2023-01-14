@@ -1,12 +1,12 @@
 
 
-const Specifics = ({ element }) => { 
+const Specifics = ({ elements }) => { 
     
     return (
       <div className="element">
-        {Object.keys(element).map((key) => (
+        {Object.keys(elements).map((key) => (
           <div id={key} key={key} className={`element_${key}`}>
-            {element[key]()}
+            {elements[key]()}
           </div>
         ))}
       </div>

@@ -1,6 +1,7 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import { languageSlice } from "./services/languageSlice";
 import { themeSlice } from "./services/ThemeSlice";
+import { burgerSlice } from "./services/BurgerSlice";
 import { PreviewSlice } from "./services/PreviewSlice";
 import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 
@@ -21,12 +22,13 @@ const persistConfig = {
   key: "root",
   storage,
   stateReconciler: autoMergeLevel2,
-  whitelist: ["Language", "Theme", "Preview",],
+  whitelist: ["Language", "Theme", "Preview", "Burger"],
 };
 
 const rootReducer = combineReducers({
   [languageSlice.name]: languageSlice.reducer,
   [themeSlice.name]: themeSlice.reducer,
+  [burgerSlice.name]: burgerSlice.reducer,
   [PreviewSlice.name]: PreviewSlice.reducer,
 });
 

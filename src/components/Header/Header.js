@@ -3,7 +3,7 @@ import Preview from "./Preview";
 import Specifics from "./Specifics";
 import { ThemeEditor } from "../Theme/Theme";
 import Language from "../Language/Language";
-import Burger from "./Burger";
+// import Burger from "./Burger";
 
 export const Header = ({ preview, theme }) => {
   return (
@@ -18,10 +18,10 @@ export const Header = ({ preview, theme }) => {
           id="headCon"
           className={`headCon headCon_${theme} headCon_${preview}`}
         >
-          <Specifics element={{ ThemeEditor }} />
-          <Preview />
-          <Specifics element={{ Language }} />
-          <Burger preview={preview} theme={theme} />
+          <Specifics elements={{ ThemeEditor }} />
+          <Preview preview={preview} theme={theme} />
+          <Specifics elements={{ Language }} />
+          {/* <Burger preview={preview} theme={theme} /> */}
         </div>
       </div>
     </IconContext.Provider>
