@@ -7,7 +7,7 @@ import { getBurger } from "../../redux/services/BurgerSlice";
 import element from "../Main/Elements/Element";
 
 const Menu = ({ theme }) => {
-  const isWide = useMedia({ maxWidth: 1200 });
+  const isWide = useMedia({ maxWidth: 1280 });
   const [state, setState] = useState({ about: true });
   const { keys } = Converter();
   const { preview } = useSelector(getPreview);

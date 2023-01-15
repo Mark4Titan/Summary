@@ -88,7 +88,7 @@ export const About = ({ theme, about, preview }) => {
                 <div
                   id="elsocial"
                   key="elsocial"
-                  className={`elsocial elsocial_${theme}`}
+                  className={`elsocial div_elsocial_${theme} elsocial_${theme}`}
                 >
                   {elsocial}
                 </div>

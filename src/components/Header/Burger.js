@@ -28,7 +28,9 @@ const Burger = ({ theme }) => {
         key="burgerMenu"
         id="burgerMenu"
         className={`burgerMenu_${theme} ${
-          burger ? "burgerMenu_visual" : "burgerMenu_close"
+          burger
+            ? `burgerMenu_visual burgerMenu_visual_${theme}`
+            : `burgerMenu_close burgerMenu_close_${theme}`
         } burgerMenu_${preview}`}
       />
     </>

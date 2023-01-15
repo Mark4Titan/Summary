@@ -13,7 +13,7 @@ import { useEffect } from "react";
 const Preview = ({ preview, theme }) => {
   const dispatch = useDispatch();
 
-  const isWide = useMedia({ maxWidth: 1200 });
+  const isWide = useMedia({ maxWidth: 1280 });
 
   const previewClick = (e) => {
     dispatch(setPreviewActions(e.target.id));

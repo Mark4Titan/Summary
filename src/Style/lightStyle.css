@@ -10,13 +10,11 @@
 }
 
 #lightStyle {
-  /* background-color: #f3ebf6; */
   justify-content: flex-start;
 }
 .full_fullNameItems_lightStyle {
   color: rgb(232, 232, 232);
   background-color: dimgrey;
-  /* border-left: solid 2px dimgrey; */
 }
 .nameItems_lightStyle {
   color: dimgrey;
@@ -29,9 +27,6 @@
   height: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
   width: calc((0.575rem * 1) + (0.575rem * 2) + (25px));
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 20px 6px;
-}
-.icoBt_lightStyle:hover{
-
 }
 
 .periodItems_lightStyle {
@@ -48,7 +43,7 @@
   background-color: dimgrey;
   
 }
-.burgerMenu_visual {
+.burgerMenu_visual_lightStyle {
 box-shadow: rgb(0 0 0 / 20%) -12px 7px 20px 11px;
 }
 .burger_lightStyle {
@@ -78,4 +73,6 @@ box-shadow: rgb(0 0 0 / 20%) -12px 7px 20px 11px;
   border: solid 6px #c9c7c7;
 }
 
-/* display: contents; */
+.sidContent_lightStyle {
+  left: calc((100vw - 1230px) / 2);
+}

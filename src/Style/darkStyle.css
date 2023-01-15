@@ -80,3 +80,7 @@ body {
   padding: 0 6px;
   margin: 0 4px;
 }
+
+.sidContent_darkStyle {
+  left: calc((100vw - 1230px) / 2);
+}

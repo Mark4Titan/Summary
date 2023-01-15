@@ -160,9 +160,6 @@ h6 {
 .spanImg {
   max-width: 220px;
 }
-.sidebar {
-  padding-top: 300px;
-}
 
 .burger {
   padding: 0 10px;
@@ -178,7 +175,7 @@ h6 {
   display: flex;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .sidebar {
     display: none;
   }
@@ -200,12 +197,11 @@ h6 {
 .sidContent_Desktop {
   position: fixed;
   top: 300px;
-  left: calc((100vw - 1200px) / 2);
+  left: calc((100vw - 1280px) / 2);
   text-align: center;
   width: 160px;
 }
 * {
-  /* transition: color, scale, 250ms; */
   font-family: Verdana, Geneva, sans-serif;
   scroll-behavior: smooth;
 }
@@ -391,7 +387,7 @@ body {
 .listSideBar_redy {
   position: fixed;
   top: 430px;
-  left: calc((100vw - 1200px) / 2);
+  left: calc((100vw - 1230px) / 2);
   text-align: center;
   width: 160px;
   }
