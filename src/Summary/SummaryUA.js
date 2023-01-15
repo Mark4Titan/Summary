@@ -3,7 +3,7 @@ import avatar from "./avatar.png";
 export const Resume = {
   language: [{ UA: "UA" }],
   about: [
-    { title: "про мене" },
+    { title: "Про мене" },
     { avatar },
     // {
     //   title: "",
@@ -16,24 +16,29 @@ export const Resume = {
     //   social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
     // },
     {
-      name: "Кларенс Тейлор",
+      fullName: { name: "Clarence ", surname: "Taylor" },
       address: "3542 BERRY STREET · CHEYENNE WELLS",
       phone: "CO 80810 · (317) 585-8468",
       mail: "NAME@EMAIL.COM",
       aboutMe:
         "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
-      // social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
+      social: {
+        linkedinIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
+        github: "https://github.com/Mark4Titan?tab=repositories",
+        telegram: "https://t.me/MArkTitan",
+        youtube: "https://www.youtube.com/channel/UCWIV9JNJ6nFAI8P9_f1BPhA",
+      },
     },
   ],
   experience: [
-    { title: "досвід" },
+    { title: "experience" },
     // { position: "", period: "", company: "", content: "" },
     {
       position: "SENIOR WEB DEVELOPER",
       period: "March 2013 - Present",
       company: "INTELITEC SOLUTIONS",
       content:
-        "Використовуйте безпрограшні стратегії виживання, щоб забезпечити проактивне домінування. Зрештою, у майбутньому нова норма, яка розвинулася з покоління X, на злітно-посадковій смузі, що прямує до оптимізованого хмарного рішення. Контент, створений користувачами, у реальному житті -time матиме кілька точок дотику для офшорингу.",
+        "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
     },
     {
       position: "WEB DEVELOPER",
@@ -59,7 +64,7 @@ export const Resume = {
   ],
 
   education: [
-    { title: "освіти" },
+    { title: "education" },
     // { institution: "", period: "", received: "", faculty: "", GPA: "" },
     {
       institution: "UNIVERSITY OF COLORADO BOULDER",
@@ -77,33 +82,32 @@ export const Resume = {
     },
   ],
   skills: [
-    { title: "навички" },
+    { title: "skills" },
     // { Title: "", workflow: [], tools: [] },
     {
       Title: "PROGRAMMING LANGUAGES & TOOLS",
+      tools: [
+        "html5",
+        "css3",
+        "javaScript",
+        "sass",
+        "css",
+        "less",
+        "npm",
+        "reactI",
+        "redux",
+        "nodejs",
+      ],
       workflow: [
         "Mobile-First, Responsive Design",
         "Cross Browser Testing & Debugging",
         "Cross Functional Teams",
         "Agile Development & Scrum",
       ],
-      tools: [
-        "html5",
-        "css3",
-        "js",
-        "js",
-        "sass",
-        "css",
-        "less",
-        "npm",
-        "react",
-        "redux",
-        "nodjs",
-      ],
     },
   ],
   interests: [
-    { title: "інтереси" },
+    { title: "interests" },
     // { content: "" },
     {
       content:
@@ -115,10 +119,10 @@ export const Resume = {
     },
   ],
   awards: [
-    { title: "нагороди" },
+    { title: "awards" },
     // { Title: "", content: [] },
+    { expansion: "AWARDS & CERTIFICATIONS" },
     {
-      Title: "AWARDS & CERTIFICATIONS",
       content: [
         "Google Analytics Certified Developer",
         "Mobile Web Specialist - Google Certification",

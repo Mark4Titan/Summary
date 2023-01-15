@@ -1,8 +1,8 @@
 import { IconContext } from "react-icons";
 import Preview from "./Preview";
 import Specifics from "./Specifics";
-// import HeadersLeft from "./HeadersLeft";
-import Burger from "./Burger";
+import { ThemeEditor } from "../Theme/Theme";
+import Language from "../Language/Language";
 
 export const Header = ({ preview, theme }) => {
   return (
@@ -17,10 +17,9 @@ export const Header = ({ preview, theme }) => {
           id="headCon"
           className={`headCon headCon_${theme} headCon_${preview}`}
         >
-          <Preview />
-          <Burger preview={preview} theme={theme} />
-          {/* <HeadersLeft /> */}
-          <Specifics />
+          <Specifics elements={{ ThemeEditor }} />
+          <Preview preview={preview} theme={theme} />
+          <Specifics elements={{ Language }} />
         </div>
       </div>
     </IconContext.Provider>

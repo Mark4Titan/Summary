@@ -1,17 +1,13 @@
-import { ThemeEditor } from "../Theme/Theme"
-import Language from "../Language/Language";
 
-const Specifics = () => { 
-    const right= { ThemeEditor, Language }
+const Specifics = ({ elements }) => { 
     
     return (
-      <div className="right">
-        {Object.keys(right).map((key) => (
-          <div id={key} key={key} className={`right_${key}`}>
-            {right[key]()}
+      <div className="element">
+        {Object.keys(elements).map((key) => (
+          <div id={key} key={key} className={`element_${key}`}>
+            {elements[key]()}
           </div>
         ))}
-        <div id="key3" key="key3" className="selectDiv" />
       </div>
     );
 }

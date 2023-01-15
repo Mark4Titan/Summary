@@ -1,0 +1,201 @@
+#modernStyle {
+  justify-content: flex-start;
+}
+body {
+  background-color: rgb(112, 128, 144);
+}
+.header_modernStyle {
+  display: flex;
+  margin-right: 8px;
+  justify-content: center;
+}
+.headCon_modernStyle {
+  position: fixed;
+  background-color: #59a3e3;
+  top: 0;
+  z-index: 1;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.burgerMenu_modernStyle {
+  background-color: #59a3e3;
+  border-top-left-radius: 23px;
+}
+.aHref_modernStyle {
+  color: black;
+}
+.activ_modernStyle::before {
+  position: absolute;
+  height: 27px;
+  width: 14px;
+  content: "";
+  right: 125px;
+  background-color: rgb(0, 128, 255);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.main_about_modernStyle {
+  background-color: azure;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  padding-top: 0;
+  height: auto;
+  padding-bottom: calc(100vh - 300px);
+}
+.main_about_modernStyle::before {
+  content: "";
+  display: flex;
+  height: 200px;
+  width: 50px;
+  margin-bottom: 90px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding-bottom: 20px;
+  background-color: rgb(0, 128, 255);
+}
+.awards_modernStyle {
+  padding-bottom: calc(100vh - 560px);
+}
+
+.sidContent_modernStyle {
+  top: 345px;
+  left: calc((100vw - 1190px) / 2);
+  width: auto;
+  border: solid 5px rgb(112, 128, 144);
+  border-radius: 100px;
+  background-color: rgb(112, 128, 144);
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 7px 2px;
+}
+.sidebar_modernStyle {
+  background-color: #59a3e3;
+  min-width: 150px;
+  margin-left: 27px;
+}
+.ulSideBar_modernStyle {
+}
+/* .listSideBar_redy {
+  width: 94px;
+  top: 80px;
+} */
+.listSideBar_modernStyle {
+  z-index: 1;
+  width: 120px;
+  top: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.main_modernStyle {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.sidebar_modernStyle::before {
+  position: fixed;
+  top: 500px;
+  left: calc((100vw - 1355px) / 2);
+  content: "";
+  height: 100vh;
+  width: 60px;
+  background-color: rgb(112, 128, 144);
+  transform: rotate(180deg);
+  border-bottom: 130px solid #ce1010;
+  border-left: 155px solid transparent;
+  box-shadow: rgb(0 0 0 / 20%) 0px 4px 1px 0px;
+}
+
+.avatar_modernStyle {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: transparent;
+}
+
+.periodItems_modernStyle::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 230px;
+  background-color: #ce1010;
+  margin-top: 20px;
+}
+.institutionItems_modernStyle {
+  padding-bottom: 20px;
+}
+.periodItems_modernStyle {
+  padding-bottom: 40px;
+}
+.div_elsocial_modernStyle ::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 65px;
+  background-color: #ce1010;
+  margin-top: 60px;
+}
+
+.youtubeItems_modernStyle :hover {
+  color: #ce1010;
+}
+
+.telegramItems_modernStyle :hover {
+  color: #336fff;
+}
+.githubItems_modernStyle :hover {
+  color: #000000;
+}
+.linkedinInItems_modernStyle :hover {
+  color: #000000;
+}
+
+.linkedinInItems_modernStyle :last-child,
+.githubItems_modernStyle :last-child,
+.telegramItems_modernStyle :last-child,
+.youtubeItems_modernStyle :last-child {
+  height: 50px;
+  width: 50px;
+}
+
+.telegramItems_modernStyle :hover {
+  color: #336fff;
+}
+.githubItems_modernStyle :hover {
+  color: #000000;
+}
+.linkedinInItems_modernStyle :hover {
+  color: #2f68ef;
+}
+.listSideBar_activ {
+  right: 75px;
+}
+/* .full_fullNameItems_modernStyle::after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 100vh;
+  margin-top: 47px;
+  margin-left: -20px;
+  box-shadow: rgb(0 0 0 / 20%) 0px -3px 1px 0px;
+  background-color: azure;
+} */
+.nameItems_modernStyle::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 40vh;
+  margin-top: 45px;
+  margin-left: -276px;
+  box-shadow: rgb(0 0 0 / 20%) -1px -4px 2px 0px;
+  background-color: azure;
+}
+.surnameItems_modernStyle::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 40vh;
+  margin-top: 45px;
+  margin-left: -215px;
+  box-shadow: rgb(0 0 0 / 20%) -1px -4px 2px 0px;
+  background-color: azure;
+}
