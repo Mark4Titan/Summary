@@ -1,12 +1,18 @@
 .main_lightStyle {
   background-color: #fff;
 }
-
+.mailItems_lightStyle,
 .lightStyle {
   color: dimgrey;
+  font-size: large;
+  font-family: revert;
 }
 .sidebar_lightStyle {
   background-color: dimgrey;
+  margin-right: 15px;
+  min-width: 208px;
+}
+.listSideBar_redy {
 }
 
 #lightStyle {
@@ -41,13 +47,12 @@
 }
 .burgerMenu_lightStyle {
   background-color: dimgrey;
-  
 }
 .burgerMenu_visual_lightStyle {
-box-shadow: rgb(0 0 0 / 20%) -12px 7px 20px 11px;
+  box-shadow: rgb(0 0 0 / 20%) -12px 7px 20px 11px;
 }
 .burger_lightStyle {
-  color: rgb(232, 232, 232);  
+  color: rgb(232, 232, 232);
 }
 .burger_true_lightStyle {
   background-color: #c9c7c7;
@@ -72,7 +77,19 @@ box-shadow: rgb(0 0 0 / 20%) -12px 7px 20px 11px;
   color: black;
   border: solid 6px #c9c7c7;
 }
+.sidContent_lightStyle,
+.listSideBar_lightStyle {
+  left: calc((100vw - 1260px) / 2);
+}
 
-.sidContent_lightStyle {
-  left: calc((100vw - 1230px) / 2);
+.icoBt_darkStyle :last-child {
+  color: blanchedalmond;
+}
+.listSideBar_close_lightStyle {
+  right: -375px;
+  left: auto;
+}
+.listSideBar_activ_lightStyle {
+  right: 75px;
+  left: auto;
 }

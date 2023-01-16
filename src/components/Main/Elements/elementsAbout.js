@@ -35,12 +35,12 @@ export const About = ({ theme, about, preview }) => {
       <div
         key="about"
         id="about"
+        ref={ref}
         className={`main_item main_item_${preview} about main_about_${theme} about_${theme} ${theme}`}
       >
         <div
           key="aboutEl"
           id="aboutEl"
-          ref={ref}
           className={`aboutEl aboutEl_${theme} ${theme}`}
         >
           {about.map((element) =>
@@ -51,13 +51,13 @@ export const About = ({ theme, about, preview }) => {
               key === "fullName" &&
                 Object.keys(element[key]).map((keys) =>
                   fullname.push(
-                    <div
+                    <h2
                       id={keys}
                       key={keys}
                       className={`${keys}Items about ${keys}Items_${theme}`}
                     >
                       {element[key][keys]}
-                    </div>
+                    </h2>
                   )
                 );
               el.push(
@@ -66,22 +66,27 @@ export const About = ({ theme, about, preview }) => {
                   key={`full_${key}`}
                   className={`full_${key}Items full_${key}Items_${theme}`}
                 >
-                {fullname}
-                 </div>
+                  {fullname}
+                </div>
               );
               key === "social" &&
                 elsocial.push(
                   Object.keys(element[key]).map((keys) => (
-                    <a
+                    <li
                       id={keys}
                       key={keys}
-                      href={element[key][keys]}
-                      rel="external"
-                      target={`_blank`}
-                      className={`${keys}Items icoBt icoBt_${theme} ${keys}Items_${theme}`}
+                      className={`lis_${keys}_Items lis lis_${theme} ${keys}_lis_${theme}`}
                     >
-                      {iconsSoCial[keys]()}
-                    </a>
+                      <a
+                        id={`a_${keys}`}
+                        key={`a_${keys}`}
+                        href={element[key][keys]}
+                        target={`_blank`}
+                        className={`${keys}Items icoBt icoBt_${theme} ${keys}Items_${theme}`}
+                      >
+                        {iconsSoCial[keys]()}
+                      </a>
+                    </li>
                   ))
                 );
               el.push(
@@ -90,18 +95,39 @@ export const About = ({ theme, about, preview }) => {
                   key="elsocial"
                   className={`elsocial div_elsocial_${theme} elsocial_${theme}`}
                 >
-                  {elsocial}
+                  <ul
+                    id="ul_social"
+                    key="ul_social"
+                    className={`ul_social ul_social_${theme} ul_social_${theme}`}
+                  >
+                    {elsocial}
+                  </ul>
                 </div>
               );
+
+              key === "mail" &&
+                el.push(
+                  <a
+                    id={`${key}`}
+                    key={key}
+                    target={`_blank`}
+                    href={element[key]}
+                    className={`${key}Items about ${key}Items_${theme}`}
+                  >
+                    {element[key]}
+                  </a>
+                );
+
               key !== "title" &&
                 key !== "avatar" &&
                 key !== "fullName" &&
                 key !== "social" &&
+                key !== "mail" &&
                 el.push(
                   <div
                     id={`${key}`}
                     key={key}
-                    className={`${key}Items about ${key}Items_${theme}`}
+                    className={`${key}Items about ${key}Items_${theme} ${theme}`}
                   >
                     {element[key]}
                   </div>

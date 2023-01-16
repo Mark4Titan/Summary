@@ -10,19 +10,30 @@ export const Education = ({ theme, education, preview }) => {
     <div
       key="education"
       id="education"
+      ref={ref}
       className={`main_item main_item_${preview} main_about_${theme} education education_${theme} ${theme}`}
     >
       {education.map((element) =>
-        Object.keys(element).map((key) => (
-          <div
-            id={`${key}Item_${key} ${key}`}
-            key={key}
-            ref={ref}
-            className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
-          >
-            {element[key]}
-          </div>
-        ))
+        Object.keys(element).map((key) =>
+          key === "title" ? (
+            <h3
+              id={`${key}Item_${key} ${key}`}
+              key={key}
+              className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
+            >
+              {element[key]}
+            </h3>
+          ) : (
+            <div
+              id={`${key}Item_${key} ${key}`}
+              key={key}
+              ref={ref}
+              className={`${key}Items ${key}Items_${key} ${key}Items_${theme} ${theme}`}
+            >
+              {element[key]}
+            </div>
+          )
+        )
       )}
     </div>
   );

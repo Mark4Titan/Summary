@@ -94,7 +94,7 @@ export const Resume = {
         "css",
         "less",
         "npm",
-        "reactI",
+        "react",
         "redux",
         "nodejs",
       ],
@@ -119,9 +119,11 @@ export const Resume = {
     },
   ],
   awards: [
-    { title: "awards" },
+    {
+      title: "awards",
+      expansion: "AWARDS & CERTIFICATIONS",
+    },
     // { Title: "", content: [] },
-    { expansion: "AWARDS & CERTIFICATIONS" },
     {
       content: [
         "Google Analytics Certified Developer",
