@@ -1,26 +1,32 @@
 #modernStyle {
   justify-content: flex-start;
 }
-body {
-  background-color: rgb(112, 128, 144);
-}
+
 .header_modernStyle {
   display: flex;
-  margin-right: 8px;
   justify-content: center;
 }
 .headCon_modernStyle {
   position: fixed;
   background-color: #59a3e3;
+  border-right: solid 5px #59a3e3;
   top: 0;
-  z-index: 1;
+  left: calc((100vw - 420px) / 2);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 4px 5px;
 }
 .burgerMenu_modernStyle {
   background-color: #59a3e3;
   border-top-left-radius: 23px;
 }
+.modernStyle,
+.mailItems_modernStyle {
+  color: black;
+  font-size: large;
+  font-family: cursive;
+}
+
 .aHref_modernStyle {
   color: black;
 }
@@ -30,14 +36,14 @@ body {
   width: 14px;
   content: "";
   right: 125px;
-  background-color: rgb(0, 128, 255);
+  background-color: #ce1010;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .main_about_modernStyle {
   background-color: azure;
-  padding-left: 20px;
+  padding-left: 50px;
   padding-right: 20px;
   margin-bottom: 40px;
   padding-top: 0;
@@ -54,6 +60,7 @@ body {
   border-bottom-left-radius: 6px;
   padding-bottom: 20px;
   background-color: rgb(0, 128, 255);
+  box-shadow: rgb(0 0 0 / 20%) 3px -1px;
 }
 .awards_modernStyle {
   padding-bottom: calc(100vh - 560px);
@@ -61,30 +68,44 @@ body {
 
 .sidContent_modernStyle {
   top: 345px;
-  left: calc((100vw - 1190px) / 2);
+  left: calc((100vw - 1242px) / 2);
   width: auto;
-  border: solid 5px rgb(112, 128, 144);
   border-radius: 100px;
-  background-color: rgb(112, 128, 144);
-  box-shadow: rgb(0 0 0 / 20%) 0px 0px 7px 2px;
 }
+.sidContent_modernStyle::before {
+  content: "";
+  display: flex;
+  border-radius: 100px;
+  height: 124px;
+  width: 124px;
+  margin-bottom: -111px;
+  box-shadow: inset rgb(0 0 0 / 20%) 11px 0px 7px 2px;
+}
+.spanImg_modernStyle {
+  position: relative;
+}
+.spanImg_modernStyle::before {
+  position: absolute;
+  content: "";
+  display: flex;
+  border-radius: 100px;
+  background-color: rgba(5, 100, 194, 0.333);
+  height: 114px;
+  width: 114px;
+  box-shadow: inset rgb(0 0 0 / 20%) 11px 1px 4px 5px;
+}
+
 .sidebar_modernStyle {
-  background-color: #59a3e3;
   min-width: 150px;
   margin-left: 27px;
 }
-.ulSideBar_modernStyle {
-}
-/* .listSideBar_redy {
-  width: 94px;
-  top: 80px;
-} */
+
 .listSideBar_modernStyle {
-  z-index: 1;
   width: 120px;
   top: 80px;
   margin-left: 15px;
   margin-right: 15px;
+  left: calc((100vw - 1270px) / 2);
 }
 .main_modernStyle {
   padding-left: 4px;
@@ -92,16 +113,16 @@ body {
 }
 .sidebar_modernStyle::before {
   position: fixed;
-  top: 500px;
-  left: calc((100vw - 1355px) / 2);
+  top: 0px;
+  left: calc((100vw - 1390px) / 2);
   content: "";
-  height: 100vh;
+  height: 56vh;
   width: 60px;
-  background-color: rgb(112, 128, 144);
-  transform: rotate(180deg);
-  border-bottom: 130px solid #ce1010;
-  border-left: 155px solid transparent;
-  box-shadow: rgb(0 0 0 / 20%) 0px 4px 1px 0px;
+  border-right: 147px solid rgb(0, 128, 255);
+  border-bottom: 43px solid #ce1010;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: inset rgb(0 0 0 / 20%) -12px -5px 10px 1px;
 }
 
 .avatar_modernStyle {
@@ -115,10 +136,12 @@ body {
 .periodItems_modernStyle::after {
   position: absolute;
   content: "";
-  height: 4px;
-  width: 230px;
+  height: 7px;
+  width: 270px;
   background-color: #ce1010;
-  margin-top: 20px;
+  margin-top: 28px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .institutionItems_modernStyle {
   padding-bottom: 20px;
@@ -126,13 +149,17 @@ body {
 .periodItems_modernStyle {
   padding-bottom: 40px;
 }
-.div_elsocial_modernStyle ::after {
+.lis_modernStyle ::after {
   position: absolute;
   content: "";
   height: 4px;
   width: 65px;
   background-color: #ce1010;
   margin-top: 60px;
+}
+.lis_modernStyle {
+  padding-right: 10px;
+  display: flex;
 }
 
 .youtubeItems_modernStyle :hover {
@@ -166,27 +193,25 @@ body {
 .linkedinInItems_modernStyle :hover {
   color: #2f68ef;
 }
-.listSideBar_activ {
+/* /// */
+.listSideBar_activ_modernStyle {
   right: 75px;
+  left: auto;
 }
-/* .full_fullNameItems_modernStyle::after {
-  position: absolute;
-  content: "";
-  height: 40px;
-  width: 100vh;
-  margin-top: 47px;
-  margin-left: -20px;
-  box-shadow: rgb(0 0 0 / 20%) 0px -3px 1px 0px;
-  background-color: azure;
-} */
+.listSideBar_close_modernStyle {
+  right: -375px;
+  left: auto;
+}
+
 .nameItems_modernStyle::after {
   position: absolute;
   content: "";
   height: 30px;
   width: 40vh;
+  border-top-right-radius: 14px;
   margin-top: 45px;
-  margin-left: -276px;
-  box-shadow: rgb(0 0 0 / 20%) -1px -4px 2px 0px;
+  margin-left: -330px;
+  box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
   background-color: azure;
 }
 .surnameItems_modernStyle::after {
@@ -194,8 +219,56 @@ body {
   content: "";
   height: 30px;
   width: 40vh;
+  border-top-right-radius: 14px;
   margin-top: 45px;
-  margin-left: -215px;
-  box-shadow: rgb(0 0 0 / 20%) -1px -4px 2px 0px;
+  margin-left: -274px;
+  box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
   background-color: azure;
+}
+
+.titleItems_modernStyle::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 40vh;
+  border-top-right-radius: 14px;
+  margin-top: 30px;
+  margin-left: -50px;
+  box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
+  background-color: azure;
+}
+
+@media (max-width: 1280px) {
+  .headCon_modernStyle {
+    left: calc((100vw - 308px) / 2);
+  }
+}
+
+@media (max-width: 720px) {
+  .awards_titleItems_modernStyle::after {
+    width: 70vh;
+  }
+}
+
+@media (min-width: 720px) {
+  .awards_titleItems_modernStyle::after {
+    width: 80vh;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .awards_titleItems_modernStyle::after {
+    width: 45vh;
+    margin-top: 70px;
+  }
+}
+
+.lis_modernStyle:hover:before,
+.icoSkills_modernStyle:hover:before {
+  box-shadow: rgb(0 0 0 / 20%) -1px -4px 2px 0px;
+}
+.titleItems_Mobile::after {
+  width: 44vh;
+  margin-top: 70px;
 }

@@ -23,17 +23,17 @@ const Menu = ({ theme }) => {
     if (s !== e) {
       setState(el);
     }
-  }, 10);
+  }, 600);
 
   const trogle = () => {
     if (!isWide) {
-      if (!burger && preview !== "Desktop") return "listSideBar_close";
-      if (burger && preview !== "Desktop") return "listSideBar_activ";
-      if (preview === "Desktop") return "listSideBar_redy";
+      if (!burger && preview !== "Desktop") return "close";
+      if (burger && preview !== "Desktop") return "activ";
+      if (preview === "Desktop") return "redy";
     } else { 
-      if (burger && preview === "Desktop") return "listSideBar_activ";
-      if (!burger && preview === "Desktop") return "listSideBar_close";
-      if (preview === "Desktop") return "listSideBar_redy";
+      if (burger && preview === "Desktop") return "activ";
+      if (!burger && preview === "Desktop") return "close";
+      if (preview === "Desktop") return "redy";
     }
     console.log(
       "preview =",
@@ -47,7 +47,9 @@ const Menu = ({ theme }) => {
   };
 
   return (
-    <div className={`listSideBar ${trogle()} listSideBar_${theme}`}>
+    <div
+      className={`listSideBar listSideBar_${trogle()} listSideBar_${theme} listSideBar_${trogle()}_${theme}`}
+    >
       <ul className={`ulSideBar ulSideBar_${theme}`}>
         {Object.keys(keys).map((key) => (
           <li
