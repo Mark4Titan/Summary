@@ -16,12 +16,12 @@ export const Resume = {
     //   social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
     // },
     {
-      fullName: { name: "Clarence ", surname: "Taylor" },
-      address: "3542 BERRY STREET · CHEYENNE WELLS",
-      phone: "CO 80810 · (317) 585-8468",
-      mail: "NAME@EMAIL.COM",
+      fullName: { name: "Василь ", surname: "Андрейчук" },
+      address: "Україна · м. Хмельницький",
+      phone: "· (+380) 983366033",
+      mail: "andreychukvasiliy@gmail.com",
       aboutMe:
-        "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
+        "Я маю досвід використання гнучких фреймворків, щоб забезпечити надійний синопсис для оглядів високого рівня. Ітераційні підходи до корпоративної стратегії сприяють спільному мисленню для просування загальної ціннісної пропозиції.",
       social: {
         linkedinIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
         github: "https://github.com/Mark4Titan?tab=repositories",
@@ -31,7 +31,7 @@ export const Resume = {
     },
   ],
   experience: [
-    { title: "experience" },
+    { title: "Досвід" },
     // { position: "", period: "", company: "", content: "" },
     {
       position: "SENIOR WEB DEVELOPER",
@@ -64,7 +64,7 @@ export const Resume = {
   ],
 
   education: [
-    { title: "education" },
+    { title: "освіта" },
     // { institution: "", period: "", received: "", faculty: "", GPA: "" },
     {
       institution: "UNIVERSITY OF COLORADO BOULDER",
@@ -82,10 +82,10 @@ export const Resume = {
     },
   ],
   skills: [
-    { title: "skills" },
+    { title: "навички" },
     // { Title: "", workflow: [], tools: [] },
     {
-      Title: "PROGRAMMING LANGUAGES & TOOLS",
+      Title: "МОВИ ПРОГРАМУВАННЯ ТА ІНСТРУМЕНТИ",
       tools: [
         "html5",
         "css3",
@@ -107,7 +107,7 @@ export const Resume = {
     },
   ],
   interests: [
-    { title: "interests" },
+    { title: "інтереси" },
     // { content: "" },
     {
       content:
@@ -120,8 +120,8 @@ export const Resume = {
   ],
   awards: [
     {
-      title: "awards",
-      expansion: "AWARDS & CERTIFICATIONS",
+      title: "нагороди",
+      expansion: "НАГОРОДИ ТА СЕРТИФІКАЦІЇ",
     },
     // { Title: "", content: [] },
     {

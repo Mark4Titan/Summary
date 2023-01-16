@@ -210,7 +210,7 @@
   width: 40vh;
   border-top-right-radius: 14px;
   margin-top: 45px;
-  margin-left: -330px;
+  margin-left: -276px;
   box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
   background-color: azure;
 }
@@ -218,10 +218,10 @@
   position: absolute;
   content: "";
   height: 30px;
-  width: 40vh;
+  width: 48vh;
   border-top-right-radius: 14px;
   margin-top: 45px;
-  margin-left: -274px;
+  margin-left: -397px;
   box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
   background-color: azure;
 }

@@ -79,7 +79,7 @@
 }
 .sidContent_lightStyle,
 .listSideBar_lightStyle {
-  left: calc((100vw - 1260px) / 2);
+  left: calc((100vw - 1230px) / 2);
 }
 
 .icoBt_darkStyle :last-child {

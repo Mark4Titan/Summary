@@ -1,4 +1,4 @@
-import avatar from "./avatar.png";
+import avatar from "./avatar2.png";
 
 export const Resume = {
   language: [{ EN: "EN" }],
