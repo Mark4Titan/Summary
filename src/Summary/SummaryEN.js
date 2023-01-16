@@ -16,7 +16,7 @@ export const Resume = {
     //   social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
     // },
     {
-      fullName: { name: "Clarence ", surname: "Taylor" },
+      fullName: { name: "Vasyl ", surname: "Andreychuk" },
       address: "3542 BERRY STREET · CHEYENNE WELLS",
       phone: "CO 80810 · (317) 585-8468",
       mail: "NAME@EMAIL.COM",
@@ -123,7 +123,7 @@ export const Resume = {
       title: "awards",
       expansion: "AWARDS & CERTIFICATIONS",
     },
-    // { Title: "", content: [] },    
+    // { Title: "", content: [] },
     {
       content: [
         "Google Analytics Certified Developer",

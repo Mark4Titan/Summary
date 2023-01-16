@@ -10,13 +10,16 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { SiSignal } from "react-icons/si";
+import { useSelector } from "react-redux";
+import { getLanguage } from "../../../redux/services/languageSlice";
 
 import { useInView } from "react-intersection-observer";
 import View from "./View";
 
 export const About = ({ theme, about, preview }) => {
+  const { language } = useSelector(getLanguage);
   const { ref, inView } = useInView(true);
-  View({about:inView});
+  View({ about: inView });
 
   const iconsSoCial = {
     linkedinIn: FaLinkedinIn,
@@ -54,7 +57,7 @@ export const About = ({ theme, about, preview }) => {
                     <h2
                       id={keys}
                       key={keys}
-                      className={`${keys}Items about ${keys}Items_${theme}`}
+                      className={`${keys}Items about ${keys}Items_${theme} ${keys}Items_${theme}_${language}`}
                     >
                       {element[key][keys]}
                     </h2>
