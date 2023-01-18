@@ -1,4 +1,5 @@
 import avatar from "./avatar2.png";
+import certificate from "./certificate.png";
 
 export const Resume = {
   language: [{ EN: "EN" }],
@@ -17,13 +18,13 @@ export const Resume = {
     // },
     {
       fullName: { name: "Vasyl ", surname: "Andreychuk" },
-      address: "3542 BERRY STREET · CHEYENNE WELLS",
-      phone: "CO 80810 · (317) 585-8468",
-      mail: "NAME@EMAIL.COM",
+      address: "Ukraine · Khmelnytskyi",
+      phone: "+380983366033",
+      mail: "andreychukvasiliy@gmail.com",
       aboutMe:
-        "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
+        "I have experience using flexible frameworks to provide a robust synopsis for high-level interactions.",
       social: {
-        linkedinIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
+        linkedIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
         github: "https://github.com/Mark4Titan?tab=repositories",
         telegram: "https://t.me/MArkTitan",
         youtube: "https://www.youtube.com/channel/UCWIV9JNJ6nFAI8P9_f1BPhA",
@@ -34,32 +35,32 @@ export const Resume = {
     { title: "experience" },
     // { position: "", period: "", company: "", content: "" },
     {
-      position: "SENIOR WEB DEVELOPER",
-      period: "March 2013 - Present",
-      company: "INTELITEC SOLUTIONS",
+      position: "Product Manager",
+      period: "July 2015 - June 2016",
+      company: "'Technospace'",
       content:
-        "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
+        "On Delphi 6 (Object Pascal), I created a site parser that helped in timely response to price changes.",
     },
     {
-      position: "WEB DEVELOPER",
-      period: "December 2011 - March 2013",
-      company: "INTELITEC SOLUTIONS",
+      position: "System administrator",
+      period: "June 2016 - April 2018",
+      company: "'SmartPhone'",
       content:
-        "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.",
+        "In this position, in addition to management, I was also involved in the development of small programs on Delphi 7 (Object Pascal) and the creation of dynamic custom reports on FastReport.",
     },
     {
-      position: "JUNIOR WEB DESIGNER",
-      period: "July 2010 - December 2011",
-      company: "SHOUT! MEDIA PRODUCTIONS",
+      position: "Regional director",
+      period: "January 2020",
+      company: "'Siti Case'",
       content:
-        "Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.",
+        "with the help of Delphi 7 (Object Pascal), automated the synchronous closing of cash registers in Ukraine and the output of standardized reports.",
     },
     {
-      position: "WEB DESIGN INTERN",
-      period: "September 2008 - June 2010",
-      company: "SHOUT! MEDIA PRODUCTIONS",
+      position: "Scrum Master / Front-end Developer",
+      period: "December 2021",
+      company: "'GoIt'",
       content:
-        "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+        "After training at Full-Stack Developer, he participated in team project development as a developer and as a Scrum Master.",
     },
   ],
 
@@ -67,18 +68,16 @@ export const Resume = {
     { title: "education" },
     // { institution: "", period: "", received: "", faculty: "", GPA: "" },
     {
-      institution: "UNIVERSITY OF COLORADO BOULDER",
-      period: "August 2006 - May 2010",
-      received: "BACHELOR OF SCIENCE",
-      faculty: "Computer Science - Web Development Track",
-      GPA: "3.23",
+      institution: "Khmelnytskyi Institute of Human Development Ukraine",
+      period: "September 2007 - June 2011",
+      received: "BACHELOR OF SCIENCES",
+      faculty: "0301 Social and political sciences 6.030102 Psychology",
     },
     {
-      institution: "JAMES BUCHANAN HIGH SCHOOL",
-      period: "August 2002 - May 2006",
-      received: "TECHNOLOGY MAGNET PROGRAM",
+      institution: "GoIt Academy",
+      period: "December 2020 - December 2022",
+      received: "Full Stack Developer",
       faculty: "",
-      GPA: "3.56",
     },
   ],
   skills: [
@@ -96,13 +95,18 @@ export const Resume = {
         "npm",
         "react",
         "redux",
+        "typeScript",
         "nodejs",
+        "mongodb",
+        "express",
+        "docker",
+        "postman",
       ],
       workflow: [
-        "Mobile-First, Responsive Design",
-        "Cross Browser Testing & Debugging",
-        "Cross Functional Teams",
-        "Agile Development & Scrum",
+        "Mobile first, responsive design",
+        "Cross-Browser Testing and Debugging",
+        "Cross-functional teams",
+        "Agile Development and Scrum",
       ],
     },
   ],
@@ -111,11 +115,11 @@ export const Resume = {
     // { content: "" },
     {
       content:
-        "Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.",
+        "I am passionate about electronics, I like to make electronics, which in my opinion is somehow not up to being 10/10.",
     },
     {
       content:
-        "When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.",
+        "I like to program micro controllers and integrate them into everyday life.",
     },
   ],
   awards: [
@@ -125,15 +129,7 @@ export const Resume = {
     },
     // { Title: "", content: [] },
     {
-      content: [
-        "Google Analytics Certified Developer",
-        "Mobile Web Specialist - Google Certification",
-        "1 st Place - University of Colorado Boulder - Emerging Tech Competition 2009",
-        "1 st Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)",
-        "2 nd Place - University of Colorado Boulder - Emerging Tech Competition 2008",
-        "1 st Place - James Buchanan High School - Hackathon 2006",
-        "3 rd Place - James Buchanan High School - Hackathon 2005",
-      ],
+      content: [certificate],
     },
   ],
 };

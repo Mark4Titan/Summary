@@ -17,7 +17,7 @@ export const Interests = ({ theme, interests, preview }) => {
             <h3
               id={key}
               key={key}
-              className={`${key}Items ${key}Items_${key} ${key}Items_${theme}`}
+              className={`${key}Items ${key}Items_${key} ${key}Items_${theme} ${key}Items_${theme}_${preview} `}
             >
               {element[key]}
             </h3>

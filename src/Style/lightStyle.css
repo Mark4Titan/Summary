@@ -2,10 +2,17 @@
   background-color: #fff;
 }
 .mailItems_lightStyle,
+.phoneItems_lightStyle,
 .lightStyle {
   color: dimgrey;
-  font-size: large;
+  font-size: 27px;
   font-family: revert;
+}
+.lightStyle {
+  font-size: 27px;
+}
+.mailItems_lightStyle{
+  font-size: 22px;
 }
 .sidebar_lightStyle {
   background-color: dimgrey;
@@ -42,6 +49,7 @@
 
 .aHref_lightStyle {
   color: rgb(232, 232, 232);
+  font-size: 18px;
 }
 .burgerMenu_lightStyle {
   background-color: dimgrey;

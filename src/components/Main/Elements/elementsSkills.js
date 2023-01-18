@@ -88,7 +88,7 @@ export const Skills = ({ theme, skills, preview }) => {
                 <h3
                   id={key}
                   key={key}
-                  className={`${key}Items titleItems_${theme} ${key}_Items_${theme}`}
+                  className={`${key}Items titleItems_${theme} ${key}_Items_${theme}_${preview} ${key}_Items_${theme}`}
                 >
                   {element[key]}
                 </h3>

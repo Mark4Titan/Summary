@@ -67,7 +67,7 @@ export const About = ({ theme, about, preview }) => {
                 <div
                   id={`full_${key}`}
                   key={`full_${key}`}
-                  className={`full_${key}Items full_${key}Items_${theme}`}
+                  className={`full_${key}Items full_${key}Items_${theme} full_${key}Items_${theme}_${preview}`}
                 >
                   {fullname}
                 </div>
@@ -113,8 +113,18 @@ export const About = ({ theme, about, preview }) => {
                   <a
                     id={`${key}`}
                     key={key}
-                    target={`_blank`}
-                    href={element[key]}
+                    href={`mailto:${element[key]}`}
+                    className={`${key}Items about ${key}Items_${theme}`}
+                  >
+                    {element[key]}
+                  </a>
+                );
+              key === "phone" &&
+                el.push(
+                  <a
+                    id={`${key}`}
+                    key={key}
+                    href={`tel:${element[key]}`}
                     className={`${key}Items about ${key}Items_${theme}`}
                   >
                     {element[key]}
@@ -126,6 +136,7 @@ export const About = ({ theme, about, preview }) => {
                 key !== "fullName" &&
                 key !== "social" &&
                 key !== "mail" &&
+                key !== "phone" &&
                 el.push(
                   <div
                     id={`${key}`}

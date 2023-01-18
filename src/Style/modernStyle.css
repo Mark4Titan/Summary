@@ -11,7 +11,7 @@
   background-color: #59a3e3;
   border-right: solid 5px #59a3e3;
   top: 0;
-  left: calc((100vw - 420px) / 2);
+  left: calc((100vw - 442px) / 2);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 4px 5px;
@@ -21,24 +21,32 @@
   border-top-left-radius: 23px;
 }
 .modernStyle,
+.phoneItems_modernStyle,
 .mailItems_modernStyle {
+  font-size: 27px;
   color: black;
   font-size: large;
   font-family: cursive;
 }
-
+.modernStyle {
+  font-size: 27px;
+}
 .aHref_modernStyle {
   color: black;
+  font-size: 17px;
 }
 .activ_modernStyle::before {
   position: absolute;
   height: 27px;
   width: 14px;
   content: "";
-  right: 125px;
+  right: 146px;
   background-color: #ce1010;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.listSideBar_redy_modernStyle ::before {
+  right: 124px;
 }
 
 .main_about_modernStyle {
@@ -60,7 +68,7 @@
   border-bottom-left-radius: 6px;
   padding-bottom: 20px;
   background-color: rgb(0, 128, 255);
-  box-shadow: rgb(0 0 0 / 20%) 3px -1px;
+  box-shadow: rgb(0 0 0 / 20%) -4px -2px;
 }
 .awards_modernStyle {
   padding-bottom: calc(100vh - 560px);
@@ -133,22 +141,10 @@
   border: transparent;
 }
 
-.periodItems_modernStyle::after {
-  position: absolute;
-  content: "";
-  height: 7px;
-  width: 270px;
-  background-color: #ce1010;
-  margin-top: 28px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
 .institutionItems_modernStyle {
   padding-bottom: 20px;
 }
-.periodItems_modernStyle {
-  padding-bottom: 40px;
-}
+
 .lis_modernStyle ::after {
   position: absolute;
   content: "";
@@ -172,11 +168,11 @@
 .githubItems_modernStyle :hover {
   color: #000000;
 }
-.linkedinInItems_modernStyle :hover {
-  color: #000000;
+.linkedInItems_modernStyle :hover {
+  color: #002fa6;
 }
 
-.linkedinInItems_modernStyle :last-child,
+.linkedInItems_modernStyle :last-child,
 .githubItems_modernStyle :last-child,
 .telegramItems_modernStyle :last-child,
 .youtubeItems_modernStyle :last-child {
@@ -203,64 +199,46 @@
   left: auto;
 }
 
-.nameItems_modernStyle::after {
+.titleItems_Desktop,
+.full_fullNameItems_modernStyle {
+  max-width: 700px;
+}
+.titleItems_modernStyle::after,
+.full_fullNameItems_modernStyle::after {
   position: absolute;
   content: "";
   height: 30px;
-  width: 40vh;
+  width: 80vh;
   border-top-right-radius: 14px;
   margin-top: 45px;
-  margin-left: -276px;
-  box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
-  background-color: azure;
-}
-.surnameItems_modernStyle::after {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 48vh;
-  border-top-right-radius: 14px;
-  margin-top: 45px;
-  margin-left: -397px;
-  box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
-  background-color: azure;
-}
-
-.titleItems_modernStyle::after {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 40vh;
-  border-top-right-radius: 14px;
-  margin-top: 30px;
   margin-left: -50px;
   box-shadow: rgb(0 0 0 / 20%) 1px -4px 2px 0px;
   background-color: azure;
+}
+.titleItems_modernStyle::after {
+  margin-top: 30px;
+}
+
+@media (max-width: 780px) {
+  .titleItems_modernStyle,
+  .full_fullNameItems_modernStyle {
+    max-width: 455px;
+  }
+  .full_fullNameItems_modernStyle::after {
+    width: 54vh;
+    margin-top: 120px;
+  }
+  .awards_titleItems_modernStyle::after {
+    margin-top: 70px;
+  }
+  .titleItems_modernStyle::after {
+    width: 54vh;
+  }
 }
 
 @media (max-width: 1280px) {
   .headCon_modernStyle {
     left: calc((100vw - 308px) / 2);
-  }
-}
-
-@media (max-width: 720px) {
-  .awards_titleItems_modernStyle::after {
-    width: 70vh;
-  }
-}
-
-@media (min-width: 720px) {
-  .awards_titleItems_modernStyle::after {
-    width: 80vh;
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 600px) {
-  .awards_titleItems_modernStyle::after {
-    width: 45vh;
-    margin-top: 70px;
   }
 }
 
@@ -273,6 +251,7 @@
   margin-top: 70px;
 }
 .content_modernStyle {
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -286,4 +265,42 @@
   .awards_modernStyle {
     padding-left: 5px;
   }
+}
+.aboutMeItems_modernStyle::before,
+.Title_Title_modernStyle::before, 
+.institutionItems_modernStyle::before, 
+.positionItems_modernStyle::before {
+  position: absolute;
+  content: "";
+  height: 44px;
+  width: 42px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: rgb(0, 128, 255);
+  box-shadow: rgb(0 0 0 / 20%) -4px -2px;
+  margin-left: -55px;
+}
+.titleItems_Tablet::after,
+.titleItems_modernStyle::after {
+  margin-top: 30px;
+}
+
+.awards_titleItems_modernStyle::after {
+  margin-top: 70px;
+}
+.titleItems_Desktop::after,
+.titleItems_Tablet::after{
+  margin-top: 30px;
+}
+.full_fullNameItems_modernStyle_Mobile::after,
+.title_Items_modernStyle_Mobile::after,
+.titleItems_modernStyle_Mobile::after {
+  width: 44vh;
+}
+.full_fullNameItems_modernStyle_Mobile::after {
+  margin-top: 120px;
+}
+.titleItems_modernStyle_Desktop,
+.title_Items_modernStyle_Desktop {
+  padding-bottom: 140px;
 }
