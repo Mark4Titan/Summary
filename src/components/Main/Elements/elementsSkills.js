@@ -6,13 +6,18 @@ import {
   SiSass,
   SiCsswizardry,
   SiRedux,
+  SiTypescript,
+  SiMongodb,
+  SiExpressvpn,
+  SiDocker,
+  SiPostman,
 } from "react-icons/si";
 import { FaLess, FaNodeJs, FaReact } from "react-icons/fa";
 import { IoLogoNpm } from "react-icons/io";
 import { ImCheckmark } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
 import View from "./View";
-//
+
 
 export const Skills = ({ theme, skills, preview }) => {
   const { ref, inView } = useInView(false);
@@ -29,6 +34,11 @@ export const Skills = ({ theme, skills, preview }) => {
     react: FaReact,
     redux: SiRedux,
     nodejs: FaNodeJs,
+    typeScript: SiTypescript,
+    mongodb: SiMongodb,
+    express: SiExpressvpn,
+    docker: SiDocker,
+    postman: SiPostman,
   };
 
   const Element = (element, classN, vari) => {

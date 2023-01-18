@@ -1,6 +1,5 @@
 import { useInView } from "react-intersection-observer";
 import View from "./View";
-import { GiTrophyCup } from "react-icons/gi";
 
 export const Awards = ({ theme, awards, preview }) => {
   const { ref, inView } = useInView(false);
@@ -21,7 +20,6 @@ export const Awards = ({ theme, awards, preview }) => {
           key === "title" &&
             elementDiv.push(
               <h3
-                id={`awards_${key}`}
                 key={`awards_${key}`}
                 className={`titleItems element_${key} titleItems_${theme} awards_titleItems_${theme} titleItems_${preview}`}
               >
@@ -33,14 +31,15 @@ export const Awards = ({ theme, awards, preview }) => {
             element[key].map((keys, pos) =>
               elementLi.push(
                 <li
-                  id={`${key}_${pos}`}
                   key={`${key}_${pos}`}
-                  className={`element_${key}  ${key}_${pos}_${theme} ${theme}`}
+                  className={`element_${key} ${key}_${pos}_${theme} ${theme}`}
                 >
-                  <span className={theme}>{GiTrophyCup()}</span>
-                  <p className={theme} key={`${key}_${pos}`}>
-                    {keys}
-                  </p>
+                  <img
+                    key={`${key}_${pos}`}
+                    src={keys}
+                    alt="certificate"
+                    className={`img_${key}_${pos}_${theme}`}
+                  />
                 </li>
               )
             );

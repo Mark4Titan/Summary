@@ -22,7 +22,7 @@ export const About = ({ theme, about, preview }) => {
   View({ about: inView });
 
   const iconsSoCial = {
-    linkedinIn: FaLinkedinIn,
+    linkedIn: FaLinkedinIn,
     github: FaGithub,
     twitter: FaTwitter,
     facebook: FaFacebookSquare,
