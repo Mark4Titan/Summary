@@ -9,26 +9,25 @@
 .main_darkStyle {
   background-color: #2c2d2dd1;
 }
+.phoneItems_darkStyle,
 .mailItems_darkStyle,
 .darkStyle {
   color: blanchedalmond;
   font-weight: 200;
-  font-size: large;
+  font-size: 27px;
   font-family: revert;
+}
+.darkStyle {
+  font-size: 27px;
+}
+.mailItems_darkStyle {
+  font-size: 22px;
 }
 
 .sidebar_darkStyle {
   background-color: #2c2d2d;
   border-right: solid 2px var(--accent-color);
   box-shadow: inset rgb(0 0 0 / 20%) -13px 15px 17px 13px;
-}
-.sidebar_darkStyle::before {
-  position: absolute;
-  height: 59px;
-  width: 250px;
-  content: "";
-  /* background-color: #fa5f5f; */
-  box-shadow: rgb(0 0 0 / 20%) -19px 9px 11px 11px;
 }
 
 #darkStyle {
@@ -51,6 +50,9 @@
 }
 .aHref_darkStyle:focus {
   color: var(--color-focus);
+}
+.aHref_darkStyle {
+  font-size: 17px;
 }
 
 .periodItems_darkStyle {
@@ -114,4 +116,34 @@
 .main_item_Mobile {
   padding-bottom: 100px;
   margin-top: 40px;
+}
+
+.awards_darkStyle {
+  padding-bottom: calc(100vh - 560px);
+}
+.content_darkStyle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img_content_0_darkStyle {
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .awards_darkStyle {
+    padding-left: 5px;
+  }
+}
+
+.sidebar_darkStyle ::before {
+  position: absolute;
+  height: 59px;
+  width: 235px;
+  top: -307px;
+  left: -16px;
+  content: "";
+  background-color: #fa5f5f;
+  box-shadow: rgb(0 0 0 / 20%) -15px 3px 7px 9px;
 }

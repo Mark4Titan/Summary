@@ -2,17 +2,22 @@
   background-color: #fff;
 }
 .mailItems_lightStyle,
+.phoneItems_lightStyle,
 .lightStyle {
   color: dimgrey;
-  font-size: large;
+  font-size: 27px;
   font-family: revert;
+}
+.lightStyle {
+  font-size: 27px;
+}
+.mailItems_lightStyle{
+  font-size: 22px;
 }
 .sidebar_lightStyle {
   background-color: dimgrey;
   margin-right: 15px;
   min-width: 208px;
-}
-.listSideBar_redy {
 }
 
 #lightStyle {
@@ -44,6 +49,7 @@
 
 .aHref_lightStyle {
   color: rgb(232, 232, 232);
+  font-size: 18px;
 }
 .burgerMenu_lightStyle {
   background-color: dimgrey;
@@ -79,7 +85,7 @@
 }
 .sidContent_lightStyle,
 .listSideBar_lightStyle {
-  left: calc((100vw - 1260px) / 2);
+  left: calc((100vw - 1230px) / 2);
 }
 
 .icoBt_darkStyle :last-child {
@@ -92,4 +98,23 @@
 .listSideBar_activ_lightStyle {
   right: 75px;
   left: auto;
+}
+
+.awards_lightStyle {
+  padding-bottom: calc(100vh - 560px);
+}
+.content_lightStyle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img_content_0_lightStyle {
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .awards_lightStyle {
+    padding-left: 5px;
+  }
 }

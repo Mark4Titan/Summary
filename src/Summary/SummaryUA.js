@@ -1,4 +1,5 @@
 import avatar from "./avatar.png";
+import certificate from "./certificate.png";
 
 export const Resume = {
   language: [{ UA: "UA" }],
@@ -16,14 +17,14 @@ export const Resume = {
     //   social: { linkedinIn: "", github: "", twitter: "", facebook: "" },
     // },
     {
-      fullName: { name: "Clarence ", surname: "Taylor" },
-      address: "3542 BERRY STREET · CHEYENNE WELLS",
-      phone: "CO 80810 · (317) 585-8468",
-      mail: "NAME@EMAIL.COM",
+      fullName: { name: "Василь ", surname: "Андрейчук" },
+      address: "Україна · м. Хмельницький",
+      phone: "+380983366033",
+      mail: "andreychukvasiliy@gmail.com",
       aboutMe:
-        "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
+        "Я маю досвід використання гнучких фреймворків, щоб забезпечити надійний синопсис для ваємодії на високому рівні.",
       social: {
-        linkedinIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
+        linkedIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
         github: "https://github.com/Mark4Titan?tab=repositories",
         telegram: "https://t.me/MArkTitan",
         youtube: "https://www.youtube.com/channel/UCWIV9JNJ6nFAI8P9_f1BPhA",
@@ -31,61 +32,59 @@ export const Resume = {
     },
   ],
   experience: [
-    { title: "experience" },
+    { title: "Досвід" },
     // { position: "", period: "", company: "", content: "" },
     {
-      position: "SENIOR WEB DEVELOPER",
-      period: "March 2013 - Present",
-      company: "INTELITEC SOLUTIONS",
+      position: "Продакт-Менеджер",
+      period: "Липень 2015 - Червень 2016",
+      company: "'Технопростір'",
       content:
-        "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
+        "На Delphi 6 (Object Pascal), створив парсер сайтів, який допомагав в актуальному реагуванні на зміну цін.",
     },
     {
-      position: "WEB DEVELOPER",
-      period: "December 2011 - March 2013",
-      company: "INTELITEC SOLUTIONS",
+      position: "Адміністратор системи",
+      period: "Червень 2016 - Квітень 2018",
+      company: "'SmartPhone'",
       content:
-        "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.",
+        "На данній посаді, окрім управління, також займався розробкою невеличких програмок на Delphi 7 (Object Pascal), і створення динамічно-кастомних звітів на FastReport.",
     },
     {
-      position: "JUNIOR WEB DESIGNER",
-      period: "July 2010 - December 2011",
-      company: "SHOUT! MEDIA PRODUCTIONS",
+      position: "Регіональний директор",
+      period: "Січень 2020",
+      company: "'Siti Case'",
       content:
-        "Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.",
+        "за допомогою Delphi 7 (Object Pascal), автоматизував синхронне закриття кас по україні і виводом стандартизованих звітів.",
     },
     {
-      position: "WEB DESIGN INTERN",
-      period: "September 2008 - June 2010",
-      company: "SHOUT! MEDIA PRODUCTIONS",
+      position: "Scrum Master / Front-end Developer",
+      period: "Грудень 2021",
+      company: "'GoIt'",
       content:
-        "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+        "Після навчання на Full-Stack Developer прийняв участь у розробці командного проекту як розробник і як Scrum Master.",
     },
   ],
 
   education: [
-    { title: "education" },
+    { title: "освіта" },
     // { institution: "", period: "", received: "", faculty: "", GPA: "" },
     {
-      institution: "UNIVERSITY OF COLORADO BOULDER",
-      period: "August 2006 - May 2010",
-      received: "BACHELOR OF SCIENCE",
-      faculty: "Computer Science - Web Development Track",
-      GPA: "3.23",
+      institution: "Хмельницький Інститут Розвитку Людини Україна",
+      period: "Вересень 2007 - Червень 2011",
+      received: "БАКАЛАВР НАУК",
+      faculty: "0301 Соціально-політичні науки 6.030102 Психологія",
     },
     {
-      institution: "JAMES BUCHANAN HIGH SCHOOL",
-      period: "August 2002 - May 2006",
-      received: "TECHNOLOGY MAGNET PROGRAM",
+      institution: "GoIt Academy",
+      period: "Грудень 2020 - Грудень 2022",
+      received: "Full Stack Developer",
       faculty: "",
-      GPA: "3.56",
     },
   ],
   skills: [
-    { title: "skills" },
+    { title: "навички" },
     // { Title: "", workflow: [], tools: [] },
     {
-      Title: "PROGRAMMING LANGUAGES & TOOLS",
+      Title: "МОВИ ПРОГРАМУВАННЯ ТА ІНСТРУМЕНТИ",
       tools: [
         "html5",
         "css3",
@@ -96,44 +95,41 @@ export const Resume = {
         "npm",
         "react",
         "redux",
+        "typeScript",
         "nodejs",
+        "mongodb",
+        "express",
+        "docker",
+        "postman",
       ],
       workflow: [
-        "Mobile-First, Responsive Design",
-        "Cross Browser Testing & Debugging",
-        "Cross Functional Teams",
-        "Agile Development & Scrum",
+        "Мобільний спочатку, адаптивний дизайн",
+        "Кросбраузерне тестування та налагодження",
+        "Міжфункціональні команди",
+        "Гнучка розробка та Scrum",
       ],
     },
   ],
   interests: [
-    { title: "interests" },
+    { title: "інтереси" },
     // { content: "" },
     {
       content:
-        "Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.",
+        "Захоплююсь електронікою, полюбляю до робляти електроніку, яка на мою думку в чомусь не дотягує щоб бути 10/10.",
     },
     {
       content:
-        "When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.",
+        "Полюбляю програмувати мікро контролери, і інтегрувати їх в побут.",
     },
   ],
   awards: [
     {
-      title: "awards",
-      expansion: "AWARDS & CERTIFICATIONS",
+      title: "нагороди",
+      expansion: "НАГОРОДИ ТА СЕРТИФІКАТИ",
     },
     // { Title: "", content: [] },
     {
-      content: [
-        "Google Analytics Certified Developer",
-        "Mobile Web Specialist - Google Certification",
-        "1 st Place - University of Colorado Boulder - Emerging Tech Competition 2009",
-        "1 st Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)",
-        "2 nd Place - University of Colorado Boulder - Emerging Tech Competition 2008",
-        "1 st Place - James Buchanan High School - Hackathon 2006",
-        "3 rd Place - James Buchanan High School - Hackathon 2005",
-      ],
+      content: [certificate],
     },
   ],
 };
