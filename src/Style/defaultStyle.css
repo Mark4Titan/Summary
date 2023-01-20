@@ -477,3 +477,10 @@ a {
 .lis_darkStyle {
   font-variant: petite-caps;
 }
+.main_item_Desktop,
+.main_item_Tablet,
+.main_item_Mobile {
+  padding-bottom: calc(100vh - 400px);
+  /* margin-top: 40px;   */
+  height: auto;
+}
