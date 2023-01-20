@@ -53,9 +53,9 @@
   background-color: azure;
   padding-left: 50px;
   padding-right: 20px;
-  margin-bottom: 40px;
   padding-top: 0;
   height: auto;
+  margin-top: 40px;
   padding-bottom: calc(100vh - 300px);
 }
 .main_about_modernStyle::before {
