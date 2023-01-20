@@ -22,7 +22,7 @@ export const Resume = {
       phone: "+380983366033",
       mail: "andreychukvasiliy@gmail.com",
       aboutMe:
-        "I have experience using flexible frameworks to provide a robust synopsis for high-level interactions.",
+        "I have experiencef using flexible frameworks to provide a robust synopsis for high-level interactions.",
       social: {
         linkedIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
         github: "https://github.com/Mark4Titan?tab=repositories",
@@ -60,7 +60,7 @@ export const Resume = {
       period: "December 2021",
       company: "'GoIt'",
       content:
-        "After training at Full-Stack Developer, he participated in team project development as a developer and as a Scrum Master.",
+        "After training as a Full Stack Developer, I joined the team as a developer and a Scrum Master on the project development.",
     },
   ],
 
@@ -115,11 +115,11 @@ export const Resume = {
     // { content: "" },
     {
       content:
-        "I am passionate about electronics, I like to make electronics, which in my opinion is somehow not up to being 10/10.",
+        "I am passionate about electronics and I like to fix electronics, which are not perfect in some ways to be 10/10, in my opinion.",
     },
     {
       content:
-        "I like to program micro controllers and integrate them into everyday life.",
+        "My other passion is programming microcontrollers and integrating them into everyday life.",
     },
   ],
   awards: [
