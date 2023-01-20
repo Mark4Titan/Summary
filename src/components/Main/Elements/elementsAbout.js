@@ -85,6 +85,7 @@ export const About = ({ theme, about, preview }) => {
                         key={`a_${keys}`}
                         href={element[key][keys]}
                         target={`_blank`}
+                        aria-label={`link ${keys}`}
                         className={`${keys}Items icoBt icoBt_${theme} ${keys}Items_${theme}`}
                       >
                         {iconsSoCial[keys]()}
@@ -112,6 +113,7 @@ export const About = ({ theme, about, preview }) => {
                     id={`${key}`}
                     key={key}
                     href={`mailto:${element[key]}`}
+                    aria-label={`link ${key}`}
                     className={`${key}Items about ${key}Items_${theme}`}
                   >
                     {element[key]}
@@ -123,6 +125,7 @@ export const About = ({ theme, about, preview }) => {
                     id={`${key}`}
                     key={key}
                     href={`tel:${element[key]}`}
+                    aria-label={`link ${key}`}
                     className={`${key}Items about ${key}Items_${theme}`}
                   >
                     {element[key]}

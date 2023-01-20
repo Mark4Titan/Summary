@@ -1,5 +1,5 @@
-import avatar from "./avatar.png";
-import certificate from "./certificate.png";
+import avatar from "./avatar.webp";
+import certificate from "./certificate.webp";
 
 export const Resume = {
   language: [{ UA: "UA" }],
