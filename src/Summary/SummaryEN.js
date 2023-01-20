@@ -22,7 +22,7 @@ export const Resume = {
       phone: "+380983366033",
       mail: "andreychukvasiliy@gmail.com",
       aboutMe:
-        "I have experiencef using flexible frameworks to provide a robust synopsis for high-level interactions.",
+        "I have experience of using flexible frameworks to provide a robust synopsis for high-level interactions.",
       social: {
         linkedIn: "https://www.linkedin.com/in/vasiliy-andreichuk-8a6945211/",
         github: "https://github.com/Mark4Titan?tab=repositories",
