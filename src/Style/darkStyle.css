@@ -142,3 +142,6 @@
   background-color: #fa5f5f;
   box-shadow: rgb(0 0 0 / 20%) -15px 3px 7px 9px;
 }
+.lis_darkStyle {
+  font-variant: petite-caps;
+}

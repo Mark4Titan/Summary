@@ -250,8 +250,8 @@
   }
 }
 
-.lis_modernStyle:hover:before,
-.icoSkills_modernStyle:hover:before {
+.lis_modernStyle:hover::before,
+.icoSkills_modernStyle:hover::before {
   box-shadow: rgb(0 0 0 / 20%) -1px -4px 2px 0px;
 }
 .titleItems_Mobile::after {
