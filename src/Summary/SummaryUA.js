@@ -101,6 +101,7 @@ export const Resume = {
         "express",
         "docker",
         "postman",
+        "gitHub",
       ],
       workflow: [
         "Мобільний спочатку, адаптивний дизайн",

@@ -94,12 +94,10 @@ export const About = ({ theme, about, preview }) => {
                 );
               el.push(
                 <div
-                  id="elsocial"
                   key="elsocial"
                   className={`elsocial div_elsocial_${theme} elsocial_${theme}`}
                 >
                   <ul
-                    id="ul_social"
                     key="ul_social"
                     className={`ul_social ul_social_${theme} ul_social_${theme}`}
                   >

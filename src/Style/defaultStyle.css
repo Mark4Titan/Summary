@@ -344,9 +344,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 25px;
-  margin-top: 50px;
 }
+
 .ul_social {
   display: flex;
   flex-wrap: wrap;
@@ -357,11 +356,7 @@ a {
   height: 50px;
   width: 50px;
 }
-.icoSkills {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
-}
+
 .ulSkills {
   display: inline-flex;
   padding-bottom: 40px;
@@ -428,11 +423,22 @@ a {
   user-select: none;
   transition: all 0.09s ease-out;
 }
+.lis {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+}
+.icoSkills {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  cursor: auto;
+}
 .lis:before,
 .icoSkills:before {
   content: attr(id);
   position: absolute;
-  bottom: 68px;
+  bottom: 78px;
   font-size: 16px;
   visibility: hidden;
   z-index: -1;
@@ -441,16 +447,13 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
-.lis:before {
-  left: 30%;
-}
 
 .icoSkills:hover:before,
 .lis:hover:before {
   opacity: 1;
   visibility: visible;
   z-index: 1;
-  bottom: calc(62px - 5px);
+  bottom: calc(68px - 5px);
 }
 .Title_Title,
 .title_workflow {

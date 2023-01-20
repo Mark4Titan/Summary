@@ -11,9 +11,10 @@ import {
   SiExpressvpn,
   SiDocker,
   SiPostman,
+  SiGithub,
+  SiReact,
 } from "react-icons/si";
-import { FaLess, FaNodeJs, FaReact } from "react-icons/fa";
-import { IoLogoNpm } from "react-icons/io";
+import { FaLess, FaNode, FaNpm } from "react-icons/fa";
 import { ImCheckmark } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
 import View from "./View";
@@ -30,15 +31,16 @@ export const Skills = ({ theme, skills, preview }) => {
     sass: SiSass,
     css: SiCsswizardry,
     less: FaLess,
-    npm: IoLogoNpm,
-    react: FaReact,
+    npm: FaNpm,
+    react: SiReact,
     redux: SiRedux,
-    nodejs: FaNodeJs,
+    nodejs: FaNode,
     typeScript: SiTypescript,
     mongodb: SiMongodb,
     express: SiExpressvpn,
     docker: SiDocker,
     postman: SiPostman,
+    gitHub: SiGithub,
   };
 
   const Element = (element, classN, vari) => {
