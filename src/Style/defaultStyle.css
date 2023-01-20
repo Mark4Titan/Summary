@@ -441,7 +441,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
-.lis:before{
+.lis:before {
   left: 30%;
 }
 
@@ -476,12 +476,14 @@ a {
 .surnameItems,
 .element_content :last-child {
   font-size: 38px;
+  display: flex;
+  align-items: center;
 }
 
 .main_item_Desktop,
 .main_item_Tablet,
 .main_item_Mobile {
   padding-bottom: calc(100vh - 400px);
-  margin-top: 40px;  
+  margin-top: 40px;
   height: auto;
 }
