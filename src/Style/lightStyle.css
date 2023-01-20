@@ -11,7 +11,7 @@
 .lightStyle {
   font-size: 27px;
 }
-.mailItems_lightStyle{
+.mailItems_lightStyle {
   font-size: 22px;
 }
 .sidebar_lightStyle {
@@ -117,4 +117,12 @@
   .awards_lightStyle {
     padding-left: 5px;
   }
+}
+.main_about_lightStyle {
+  padding-bottom: calc(100vh - 300px);
+  
+}
+.awards_lightStyle {
+  margin-bottom: 0px;
+  height: auto;
 }
