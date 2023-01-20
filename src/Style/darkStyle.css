@@ -36,7 +36,7 @@
 }
 
 .surnameItems_darkStyle {
-  color: var(--accent-color);
+  color: rgb(235, 0, 0);
 }
 .icoBt_darkStyle {
   background-color: rgb(255 255 255 / 28%);
@@ -125,6 +125,7 @@
 .img_content_0_darkStyle {
   object-fit: cover;
   width: 100%;
+  height: auto;
 }
 @media (max-width: 780px) {
   .awards_darkStyle {

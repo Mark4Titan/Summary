@@ -152,6 +152,7 @@ h6 {
 
 .avatar {
   max-width: 100px;
+  height: auto;
   border: solid 3px;
   border-radius: 10%;
 }
