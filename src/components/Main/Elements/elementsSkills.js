@@ -13,10 +13,10 @@ import {
   SiPostman,
   SiGithub,
   SiReact,
-  SlGrid,
   SiStylelint,
 } from "react-icons/si";
 import { FaLess, FaNode, FaNpm } from "react-icons/fa";
+import { CiGrid31 } from "react-icons/ci";
 import { ImCheckmark } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
 import View from "./View";
@@ -43,7 +43,7 @@ export const Skills = ({ theme, skills, preview }) => {
     docker: SiDocker,
     postman: SiPostman,
     gitHub: SiGithub,
-    grid: SlGrid,
+    grid: CiGrid31,
     emotionStyled: SiStylelint,
   };
 
