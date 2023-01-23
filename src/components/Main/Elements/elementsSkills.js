@@ -13,6 +13,8 @@ import {
   SiPostman,
   SiGithub,
   SiReact,
+  SlGrid,
+  SiStylelint,
 } from "react-icons/si";
 import { FaLess, FaNode, FaNpm } from "react-icons/fa";
 import { ImCheckmark } from "react-icons/im";
@@ -41,6 +43,8 @@ export const Skills = ({ theme, skills, preview }) => {
     docker: SiDocker,
     postman: SiPostman,
     gitHub: SiGithub,
+    grid: SlGrid,
+    emotionStyled: SiStylelint,
   };
 
   const Element = (element, classN, vari) => {
