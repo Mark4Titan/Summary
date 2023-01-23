@@ -110,6 +110,7 @@ export const Resume = {
         "Cross-Browser Testing and Debugging",
         "Cross-functional teams",
         "Agile Development and Scrum",
+        "The entire layout is on a grid",
       ],
     },
   ],

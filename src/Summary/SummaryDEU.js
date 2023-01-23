@@ -110,7 +110,7 @@ export const Resume = {
         "Browserübergreifendes Testen und Debuggen",
         "Funktionsübergreifende Teams",
         "Agile Entwicklung und Scrum",
-        "The entire layout is on a grid",
+        "Das gesamte Layout befindet sich auf einem Raster",
       ],
     },
   ],
