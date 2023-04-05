@@ -14,6 +14,7 @@ import {
   SiGithub,
   SiReact,
   SiStylelint,
+  SiMaterialdesign,
 } from "react-icons/si";
 import { FaLess, FaNode, FaNpm } from "react-icons/fa";
 import { CiGrid31 } from "react-icons/ci";
@@ -44,7 +45,8 @@ export const Skills = ({ theme, skills, preview }) => {
     postman: SiPostman,
     gitHub: SiGithub,
     grid: CiGrid31,
-    emotionStyled: SiStylelint,
+    emotionUi: SiStylelint,
+    muiMaterial: SiMaterialdesign,
   };
 
   const Element = (element, classN, vari) => {

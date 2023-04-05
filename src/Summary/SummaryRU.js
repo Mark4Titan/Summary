@@ -103,7 +103,8 @@ export const Resume = {
         "postman",
         "gitHub",
         "grid",
-        "emotionStyled",
+        "emotionUi",
+        "muiMaterial",
       ],
       workflow: [
         "Мобильный изначально, адаптивный дизайн",
