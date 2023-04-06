@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import useMedia from "use-media";
 import Converter from "../Converter/Converter";
@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { getPreview } from "../../redux/services/PreviewSlice";
 import { getBurger } from "../../redux/services/BurgerSlice";
 import element from "../Main/Elements/Element";
+import { FMotion } from "../Main/Elements/PatternFMotion/PatternFMotion";
 
 const Menu = ({ theme }) => {
   const isWide = useMedia({ maxWidth: 1280 });
@@ -31,7 +32,7 @@ const Menu = ({ theme }) => {
       if (!burger && preview !== "Desktop") return "close";
       if (burger && preview !== "Desktop") return "activ";
       if (preview === "Desktop") return "redy";
-    } else { 
+    } else {
       if (burger && preview === "Desktop") return "activ";
       if (!burger && preview === "Desktop") return "close";
       if (preview === "Desktop") return "redy";
@@ -44,22 +45,24 @@ const Menu = ({ theme }) => {
       "| isWide = ",
       isWide
     );
-    
   };
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
       className={`listSideBar listSideBar_${trogle()} listSideBar_${theme} listSideBar_${trogle()}_${theme}`}
     >
       <ul className={`ulSideBar ulSideBar_${theme}`}>
-        {Object.keys(keys).map((key) => (
-          <li
-            id={`liItem_${key}`}
+        {Object.keys(keys).map((key, pos) => (
+          <motion.li
+            custom={{ pos: pos, multiplier: 0.2, move: "y" }}
+            variants={FMotion}
             key={key}
             className={`sidebarItems sidebarItems_${key} sidebarItems_${theme}`}
           >
             <a
-              id={`a_${key}`}
               key={key}
               href={`#${key}`}
               aria-label={`link ${key}`}
@@ -69,10 +72,10 @@ const Menu = ({ theme }) => {
             >
               {keys[key]}
             </a>
-          </li>
+          </motion.li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 export default Menu;

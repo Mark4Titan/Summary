@@ -112,6 +112,7 @@ export const Resume = {
         "grid",
         "emotionUi",
         "muiMaterial",
+        "framerMotion",
       ],
       workflow: [
         "Mobile First, Responsive Design",

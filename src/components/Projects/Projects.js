@@ -1,17 +1,21 @@
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import View from "../Main/Elements/View";
 import { AiFillApi } from "react-icons/ai";
+import { FMotion } from "../Main/Elements/PatternFMotion/PatternFMotion";
 
 const Projects = ({ projects, theme, preview }) => {
   const { ref, inView } = useInView(false);
   View({ projects: inView });
 
-  const Element = (element, key) => {
+  const Element = (element, key, pos) => {
     const key0 = Object.keys(element)[0];
     const key1 = Object.keys(element)[1];
     const key2 = Object.keys(element)[2];
     return (
-      <div
+      <motion.div
+        custom={{ pos: pos + 1, multiplier: 0.1, move: "y" }}
+        variants={FMotion}
         key={`key_${key0}`}
         className={`${key0}_box_item ${key0}_box_item_${theme}`}
       >
@@ -36,34 +40,38 @@ const Projects = ({ projects, theme, preview }) => {
             {element.comit}
           </span>
         </a>
-      </div>
+      </motion.div>
     );
   };
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
       key="projects"
       id="projects"
       ref={ref}
       className={`main_item main_item_${preview} main_about_${theme} projects projects_${theme} ${theme}`}
     >
-      {projects.map((element) =>
+      {projects.map((element, pos) =>
         Object.keys(element).map((key) => {
           const item = [];
-          key === "project" && item.push(Element(element, key));
+          key === "project" && item.push(Element(element, key, pos));
           key === "title" &&
             item.push(
-              <h3
-                id={key}
+              <motion.h3
+                custom={{ pos: 1, multiplier: 0.1, move: "y" }}
+                variants={FMotion}
                 key={key}
                 className={`${key}Items ${key}Items_${theme} ${key}Items_${theme}_${preview}`}
               >
                 {element[key]}
-              </h3>
+              </motion.h3>
             );
           return item;
         })
       )}
-    </div>
+    </motion.div>
   );
 };
 export default Projects;

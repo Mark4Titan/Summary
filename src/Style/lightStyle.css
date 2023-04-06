@@ -154,4 +154,12 @@
   fill: aliceblue;
 }
 
+.youtube_lis_lightStyle a:hover, 
+.telegram_lis_lightStyle a:hover, 
+.github_lis_lightStyle a:hover, 
+.linkedIn_lis_lightStyle a:hover{
+ box-shadow: rgb(0 0 0 / 20%) 1px 1px 16px 10px;
+ border-radius: 10px;
+}
+
 
