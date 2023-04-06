@@ -1,3 +1,4 @@
+
 .main_lightStyle {
   background-color: #fff;
 }
@@ -121,9 +122,36 @@
 }
 .main_about_lightStyle {
   padding-bottom: calc(100vh - 300px);
-  
 }
 .awards_lightStyle {
   margin-bottom: 0px;
   height: auto;
 }
+
+.linkItem_lightStyle {
+  background-color: dimgrey;
+  border: solid 10px dimgrey;  
+}
+.linkItem_lightStyle:hover {
+  border: solid 10px #fff;
+}
+@keyframes border {
+  from {
+    border: solid 10px dimgrey;
+  }
+  to {
+    border: solid 10px #fff;
+  }
+}
+.project_box_lightStyle:hover {
+    animation: border 250ms linear;
+}
+.projectItem_lightStyle,
+.comitItem_lightStyle {
+  color: aliceblue;
+}
+.Ico_project_lightStyle {
+  fill: aliceblue;
+}
+
+

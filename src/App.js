@@ -1,3 +1,4 @@
+
 import Header from "./components/Header/Header";
 import { getTheme } from "./redux/services/ThemeSlice";
 import { useSelector } from "react-redux";
@@ -31,3 +32,4 @@ function App() {
 }
 
 export default App;
+

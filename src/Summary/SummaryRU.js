@@ -1,3 +1,4 @@
+
 import avatar from "./avatar.webp";
 import certificate from "./certificate.webp";
 
@@ -62,6 +63,12 @@ export const Resume = {
       content:
         "После обучения на Full-Stack Developer принял участие в разработке командного проекта как разработчик и Scrum Master.",
     },
+    {
+      position: "Front-end Developer",
+      period: "Декабрь 2022 и по сей день",
+      company: "'PRGRSS'",
+      content: "Не штатный разработчик приложений в компании PRGRSS.",
+    },
   ],
 
   education: [
@@ -125,6 +132,44 @@ export const Resume = {
     {
       content:
         "Люблю программировать микроконтроллеры, и интегрировать их в быт.",
+    },
+  ],
+  projects: [
+    { title: "Проекты" },
+    // { link: "" },
+    {
+      project: "Кастомный модуль редактора комиксов",
+      link: "https://mark4titan.github.io/division_of_book_pages/",
+      comit: "Библиотеки: 're-resizable' 'react-draggable' 'ImageDragger'",
+    },
+    {
+      project:
+        "Модуль тестирования скоростей между абонентами и сетью серверов",
+      link: "https://mark4titan.github.io/test_2/",
+      comit:
+        "Библиотеки: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
+    },
+    {
+      project: "Статический интернет магазин (single page application)",
+      link: "https://mark4titan.github.io/simple-shop-react/",
+      comit:
+        "Библиотеки: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
+    },
+    {
+      project: "Индивидуальный калькулятор калорий (single page application)",
+      link: "https://ds-slimmoms.netlify.app/",
+      comit:
+        "Библиотеки: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
+    },
+    {
+      project: "Лендинг фирмы 'Bullion Network' (single page application)",
+      link: "https://mark4titan.github.io/Bullion_network/",
+      comit: "Библиотеки: 'webpack -> air-datepicker' 'jQuery'",
+    },
+    {
+      project: "Лендинг фирмы 'Tlayen Web Builder'",
+      link: "https://tlayen-builder.progressio.agency/",
+      comit: "Библиотеки: 'JavaScript' 'CSS' 'html'",
     },
   ],
   awards: [

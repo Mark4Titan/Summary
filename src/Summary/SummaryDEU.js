@@ -1,3 +1,4 @@
+
 import avatar from "./avatar.webp";
 import certificate from "./certificate.webp";
 
@@ -61,6 +62,12 @@ export const Resume = {
       company: "'GoIt'",
       content:
         "Nach der Ausbildung zum Full Stack Developer trat ich als Entwickler und Scrum Master in die Projektentwicklung bei.",
+    },
+    {
+      position: "Front-end Developer",
+      period: "Dezember 2022 und bis jetzt",
+      company: "'PRGRSS'",
+      content: "Anwendungsentwickler in Teilzeit bei der Firma PRGRSS.",
     },
   ],
 
@@ -127,6 +134,45 @@ export const Resume = {
         "Meine andere Leidenschaft ist das Programmieren von Mikrocontrollern und deren Integration in den Alltag.",
     },
   ],
+  projects: [
+    { title: "Projekte" },
+    // { link: "" },
+    {
+      project: "Benutzerdefiniertes Comic-Editor-Modul",
+      link: "https://mark4titan.github.io/division_of_book_pages/",
+      comit: "Bibliotheken: 're-resizable' 'react-draggable' 'ImageDragger'",
+    },
+    {
+      project:
+        "Geschwindigkeitstestmodul zwischen Abonnenten und dem Servernetzwerk",
+      link: "https://mark4titan.github.io/test_2/",
+      comit:
+        "Bibliotheken: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
+    },
+    {
+      project: "Statischer Online-Shop (single page application)",
+      link: "https://mark4titan.github.io/simple-shop-react/",
+      comit:
+        "Bibliotheken: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
+    },
+    {
+      project: "Individueller Kalorienrechner (single page application)",
+      link: "https://ds-slimmoms.netlify.app/",
+      comit:
+        "Bibliotheken: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
+    },
+    {
+      project:
+        "Landungsunternehmen 'Bullion Network' (single page application)",
+      link: "https://mark4titan.github.io/Bullion_network/",
+      comit: "Bibliotheken: 'webpack -> air-datepicker' 'jQuery'",
+    },
+    {
+      project: "Landungsunternehmen 'Tlayen Web Builder'",
+      link: "https://tlayen-builder.progressio.agency/",
+      comit: "Bibliotheken: 'JavaScript' 'CSS' 'html'",
+    },
+  ],
   awards: [
     {
       title: "Auszeich.",
@@ -140,3 +186,4 @@ export const Resume = {
 };
 
 export default Resume;
+
