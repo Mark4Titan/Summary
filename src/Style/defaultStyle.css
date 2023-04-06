@@ -493,3 +493,26 @@ a {
   margin-top: 40px;
   height: auto;
 }
+
+
+.link_Item {
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Ico_project_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.comitItem {
+  font-size: 20px;
+  text-align: center;
+}
+.project_Item {
+  text-align: center;
+}

@@ -127,6 +127,44 @@ export const Resume = {
         "My other passion is programming microcontrollers and integrating them into everyday life.",
     },
   ],
+  projects: [
+    { title: "Projects" },
+    // { link: "" },
+    {
+      project: "Custom comic editor module",
+      link: "https://mark4titan.github.io/division_of_book_pages/",
+      comit: "libraries: 're-resizable' 'react-draggable' 'ImageDragger'",
+    },
+    {
+      project:
+        "Speed ​​testing module between subscribers and the server network",
+      link: "https://mark4titan.github.io/test_2/",
+      comit:
+        "libraries: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
+    },
+    {
+      project: "Static online store (single page application)",
+      link: "https://mark4titan.github.io/simple-shop-react/",
+      comit:
+        "libraries: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
+    },
+    {
+      project: "Individual calorie calculator (single page application)",
+      link: "https://ds-slimmoms.netlify.app/",
+      comit:
+        "libraries: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
+    },
+    {
+      project: "Landing company 'Bullion Network' (single page application)",
+      link: "https://mark4titan.github.io/Bullion_network/",
+      comit: "libraries: 'webpack -> air-datepicker' 'jQuery'",
+    },
+    {
+      project: "Landing company 'Tlayen Web Builder'",
+      link: "https://tlayen-builder.progressio.agency/",
+      comit: "libraries: 'JavaScript' 'CSS' 'html'",
+    },
+  ],
   awards: [
     {
       title: "awards",

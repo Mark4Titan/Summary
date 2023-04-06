@@ -110,8 +110,7 @@
   left: auto;
 }
 
-
-.awards_darkStyle {  
+.awards_darkStyle {
   margin-bottom: 0px;
   height: auto;
 }
@@ -143,4 +142,11 @@
 }
 .lis_darkStyle {
   font-variant: petite-caps;
+}
+
+.linkItem_darkStyle  {
+  border: solid 1px red;
+}
+.linkItem_darkStyle:hover {
+  box-shadow: rgb(0 0 0 / 20%) 14px 14px 20px 0px;
 }

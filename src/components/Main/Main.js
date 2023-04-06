@@ -7,6 +7,7 @@ import Education from "./Elements/elementsEducation";
 import Skills from "./Elements/elementsSkills";
 import Interests from "./Elements/elementsInterests";
 import Awards from "./Elements/elementsAwards";
+import Projects from "../Projects/Projects";
 
 const Main = ({ preview }) => {
   const { theme } = useSelector(getTheme);
@@ -38,6 +39,7 @@ const Main = ({ preview }) => {
           theme={theme}
           preview={preview}
         />
+        <Projects projects={Summary.projects} theme={theme} preview={preview} />
         <Awards awards={Summary.awards} theme={theme} preview={preview} />
       </div>
     </>

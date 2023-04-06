@@ -127,6 +127,43 @@ export const Resume = {
         "Полюбляю програмувати мікроконтролери, і інтегрувати їх в побут.",
     },
   ],
+  projects: [
+    { title: "Проєкти" },
+    // { project:"", link: "", comit: "" },
+    {
+      project: "Кастомний модуль редактора коміксів",
+      link: "https://mark4titan.github.io/division_of_book_pages/",
+      comit: "бібліотеки: 're-resizable' 'react-draggable' 'ImageDragger'",
+    },
+    {
+      project: "Модуль тестування швидкостей між абонентами і мережею серверів",
+      link: "https://mark4titan.github.io/test_2/",
+      comit:
+        "бібліотеки: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
+    },
+    {
+      project: "Статичний інтернет магазин (single page application)",
+      link: "https://mark4titan.github.io/simple-shop-react/",
+      comit:
+        "бібліотеки: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
+    },
+    {
+      project: "Індивідуальний калькулятор калорій (single page application)",
+      link: "https://ds-slimmoms.netlify.app/",
+      comit:
+        "бібліотеки: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
+    },
+    {
+      project: "Лендінг фірми 'Bullion Network' (single page application)",
+      link: "https://mark4titan.github.io/Bullion_network/",
+      comit: "бібліотеки: 'webpack -> air-datepicker' 'jQuery'",
+    },
+    {
+      project: "Лендінг фірми 'Tlayen Web Builder'",
+      link: "https://tlayen-builder.progressio.agency/",
+      comit: "бібліотеки: 'JavaScript' 'CSS' 'html'",
+    },
+  ],
   awards: [
     {
       title: "нагороди",

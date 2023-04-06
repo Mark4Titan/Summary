@@ -57,6 +57,7 @@ export const About = ({ theme, about, preview }) => {
                     <h2
                       id={keys}
                       key={keys}
+                      data-content={element[key][keys]}
                       className={`${keys}Items about ${keys}Items_${theme} ${keys}Items_${theme}_${language}`}
                     >
                       {element[key][keys]}

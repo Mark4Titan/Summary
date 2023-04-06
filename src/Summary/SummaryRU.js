@@ -127,6 +127,44 @@ export const Resume = {
         "Люблю программировать микроконтроллеры, и интегрировать их в быт.",
     },
   ],
+  projects: [
+    { title: "Проекты" },
+    // { link: "" },
+    {
+      project: "Кастомный модуль редактора комиксов",
+      link: "https://mark4titan.github.io/division_of_book_pages/",
+      comit: "библиотеки: 're-resizable' 'react-draggable' 'ImageDragger'",
+    },
+    {
+      project:
+        "Модуль тестирования скоростей между абонентами и сетью серверов",
+      link: "https://mark4titan.github.io/test_2/",
+      comit:
+        "библиотеки: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
+    },
+    {
+      project: "Статический интернет магазин (single page application)",
+      link: "https://mark4titan.github.io/simple-shop-react/",
+      comit:
+        "библиотеки: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
+    },
+    {
+      project: "Индивидуальный калькулятор калорий (single page application)",
+      link: "https://ds-slimmoms.netlify.app/",
+      comit:
+        "библиотеки: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
+    },
+    {
+      project: "Лендинг фирмы 'Bullion Network' (single page application)",
+      link: "https://mark4titan.github.io/Bullion_network/",
+      comit: "библиотеки: 'webpack -> air-datepicker' 'jQuery'",
+    },
+    {
+      project: "Лендинг фирмы 'Tlayen Web Builder'",
+      link: "https://tlayen-builder.progressio.agency/",
+      comit: "библиотеки: 'JavaScript' 'CSS' 'html'",
+    },
+  ],
   awards: [
     {
       title: "награды",
