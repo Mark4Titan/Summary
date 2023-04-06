@@ -6,7 +6,7 @@ import "../../Style/modernStyle.css";
 export const ConstantThemse = {
   darkStyle: "Dark",
   lightStyle: "Light",
-  modernStyle: "Modern",
+  modernStyle: "Patriotic",
 };
 
 
