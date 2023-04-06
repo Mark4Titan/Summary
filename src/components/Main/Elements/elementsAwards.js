@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FMotion, visibleMotion } from "./PatternFMotion/PatternFMotion";
 import View from "./View";
 
 export const Awards = ({ theme, awards, preview }) => {
@@ -6,7 +8,10 @@ export const Awards = ({ theme, awards, preview }) => {
   View({ awards: inView });
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
       key="awards"
       id="awards"
       ref={ref}
@@ -19,18 +24,22 @@ export const Awards = ({ theme, awards, preview }) => {
 
           key === "title" &&
             elementDiv.push(
-              <h3
+              <motion.h3
+                custom={{ pos: 1, multiplier: 0.1, move: "y" }}
+                variants={FMotion}
                 key={`awards_${key}`}
                 className={`titleItems element_${key} titleItems_${theme} awards_titleItems_${theme} titleItems_${preview}`}
               >
                 {element.expansion}
-              </h3>
+              </motion.h3>
             );
 
           key === "content" &&
             element[key].map((keys, pos) =>
               elementLi.push(
-                <li
+                <motion.li
+                  custom={{ pos: pos, multiplier: 0.3 }}
+                  variants={visibleMotion}
                   key={`${key}_${pos}`}
                   className={`element_${key} ${key}_${pos}_${theme} ${theme}`}
                 >
@@ -40,7 +49,7 @@ export const Awards = ({ theme, awards, preview }) => {
                     alt="certificate"
                     className={`img_${key}_${pos}_${theme}`}
                   />
-                </li>
+                </motion.li>
               )
             );
           return key === "content" ? (
@@ -56,7 +65,7 @@ export const Awards = ({ theme, awards, preview }) => {
           );
         })
       )}
-    </div>
+    </motion.div>
   );
 };
 export default Awards;

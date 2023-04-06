@@ -154,6 +154,10 @@
   background-color: rgb(23 139 255);
   margin-top: 60px;
 }
+.lis_modernStyle:hover ::after {
+  background-color: #ffdd33;
+}
+
 .lis_modernStyle {
   padding-right: 10px;
   display: flex;

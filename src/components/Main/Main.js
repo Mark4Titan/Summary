@@ -16,13 +16,12 @@ const Main = ({ preview }) => {
   
 
   return (
-    <>
+   
       <div
         key="main"
         id="main"
         className={`main main_${theme} main_${preview}`}
-      >
-        {/*  */}
+      >        
         <About about={Summary.about} theme={theme} preview={preview} />
         <Experience
           experience={Summary.experience}
@@ -43,7 +42,7 @@ const Main = ({ preview }) => {
         <Projects projects={Summary.projects} theme={theme} preview={preview} />
         <Awards awards={Summary.awards} theme={theme} preview={preview} />
       </div>
-    </>
+   
   );
 };
 

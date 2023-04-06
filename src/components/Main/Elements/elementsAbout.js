@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import {
   FaLinkedinIn,
@@ -16,6 +16,10 @@ import { getLanguage } from "../../../redux/services/languageSlice";
 
 import { useInView } from "react-intersection-observer";
 import View from "./View";
+import {
+  FMotion,
+  visibleMotion,
+} from "./PatternFMotion/PatternFMotion";
 
 export const About = ({ theme, about, preview }) => {
   const { language } = useSelector(getLanguage);
@@ -36,17 +40,16 @@ export const About = ({ theme, about, preview }) => {
 
   return (
     <IconContext.Provider value={{ className: "about_react_icons" }}>
-      <div
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.2 }}
         key="about"
         id="about"
         ref={ref}
         className={`main_item main_item_${preview} about main_about_${theme} about_${theme} ${theme}`}
       >
-        <div
-          key="aboutEl"
-          id="aboutEl"
-          className={`aboutEl aboutEl_${theme} ${theme}`}
-        >
+        <div key="aboutEl" className={`aboutEl aboutEl_${theme} ${theme}`}>
           {about.map((element) =>
             Object.keys(element).map((key) => {
               const el = [];
@@ -55,19 +58,19 @@ export const About = ({ theme, about, preview }) => {
               key === "fullName" &&
                 Object.keys(element[key]).map((keys) =>
                   fullname.push(
-                    <h2
-                      id={keys}
+                    <motion.h2
+                      custom={{ pos: 1, multiplier: 0.2, move: "x" }}
+                      variants={FMotion}
                       key={keys}
                       data-content={element[key][keys]}
                       className={`${keys}Items about ${keys}Items_${theme} ${keys}Items_${theme}_${language}`}
                     >
                       {element[key][keys]}
-                    </h2>
+                    </motion.h2>
                   )
                 );
               el.push(
                 <div
-                  id={`full_${key}`}
                   key={`full_${key}`}
                   className={`full_${key}Items full_${key}Items_${theme} full_${key}Items_${theme}_${preview}`}
                 >
@@ -76,14 +79,15 @@ export const About = ({ theme, about, preview }) => {
               );
               key === "social" &&
                 elsocial.push(
-                  Object.keys(element[key]).map((keys) => (
-                    <li
-                      id={keys}
+                  Object.keys(element[key]).map((keys, pos) => (
+                    <motion.li
+                      custom={{ pos: pos, multiplier: 0.1, move: "y" }}
+                      variants={FMotion}
                       key={keys}
+                      id={keys}
                       className={`lis_${keys}_Items lis lis_${theme} ${keys}_lis_${theme}`}
                     >
                       <a
-                        id={`a_${keys}`}
                         key={`a_${keys}`}
                         href={element[key][keys]}
                         target={`_blank`}
@@ -92,7 +96,7 @@ export const About = ({ theme, about, preview }) => {
                       >
                         {iconsSoCial[keys]()}
                       </a>
-                    </li>
+                    </motion.li>
                   ))
                 );
               el.push(
@@ -111,27 +115,29 @@ export const About = ({ theme, about, preview }) => {
 
               key === "mail" &&
                 el.push(
-                  <a
-                    id={`${key}`}
+                  <motion.a
+                    custom={{ pos: 3, multiplier: 0.2, move: "x" }}
+                    variants={FMotion}
                     key={key}
                     href={`mailto:${element[key]}`}
                     aria-label={`link ${key}`}
                     className={`${key}Items about ${key}Items_${theme}`}
                   >
                     {element[key]}
-                  </a>
+                  </motion.a>
                 );
               key === "phone" &&
                 el.push(
-                  <a
-                    id={`${key}`}
+                  <motion.a
+                    custom={{ pos: 2, multiplier: 0.2, move: "x" }}
+                    variants={FMotion}
                     key={key}
                     href={`tel:${element[key]}`}
                     aria-label={`link ${key}`}
                     className={`${key}Items about ${key}Items_${theme}`}
                   >
                     {element[key]}
-                  </a>
+                  </motion.a>
                 );
 
               key !== "title" &&
@@ -141,19 +147,20 @@ export const About = ({ theme, about, preview }) => {
                 key !== "mail" &&
                 key !== "phone" &&
                 el.push(
-                  <div
-                    id={`${key}`}
+                  <motion.div
+                    custom={{ pos: 1, multiplier: 0.3 }}
+                    variants={visibleMotion}
                     key={key}
                     className={`${key}Items about ${key}Items_${theme} ${theme}`}
                   >
                     {element[key]}
-                  </div>
+                  </motion.div>
                 );
               return el;
             })
           )}
         </div>
-      </div>
+      </motion.div>
     </IconContext.Provider>
   );
 };
