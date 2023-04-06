@@ -63,6 +63,12 @@ export const Resume = {
       content:
         "Nach der Ausbildung zum Full Stack Developer trat ich als Entwickler und Scrum Master in die Projektentwicklung bei.",
     },
+    {
+      position: "Front-end Developer",
+      period: "Dezember 2022 und bis jetzt",
+      company: "'PRGRSS'",
+      content: "Anwendungsentwickler in Teilzeit bei der Firma PRGRSS.",
+    },
   ],
 
   education: [
@@ -138,7 +144,7 @@ export const Resume = {
     },
     {
       project:
-        "Moduł testowania prędkości pomiędzy abonentami a siecią serwerów",
+        "Geschwindigkeitstestmodul zwischen Abonnenten und dem Servernetzwerk",
       link: "https://mark4titan.github.io/test_2/",
       comit:
         "Bibliotheken: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",

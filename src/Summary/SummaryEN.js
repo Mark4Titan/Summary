@@ -63,6 +63,12 @@ export const Resume = {
       content:
         "After training as a Full Stack Developer, I joined the team as a developer and a Scrum Master on the project development.",
     },
+    {
+      position: "Front-end Developer",
+      period: "December 2022 and until now",
+      company: "'PRGRSS'",
+      content: "Part-time application developer at PRGRSS company.",
+    },
   ],
 
   education: [
@@ -134,36 +140,36 @@ export const Resume = {
     {
       project: "Custom comic editor module",
       link: "https://mark4titan.github.io/division_of_book_pages/",
-      comit: "libraries: 're-resizable' 'react-draggable' 'ImageDragger'",
+      comit: "Libraries: 're-resizable' 'react-draggable' 'ImageDragger'",
     },
     {
       project:
         "Speed ​​testing module between subscribers and the server network",
       link: "https://mark4titan.github.io/test_2/",
       comit:
-        "libraries: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
+        "Libraries: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
     },
     {
       project: "Static online store (single page application)",
       link: "https://mark4titan.github.io/simple-shop-react/",
       comit:
-        "libraries: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
+        "Libraries: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
     },
     {
       project: "Individual calorie calculator (single page application)",
       link: "https://ds-slimmoms.netlify.app/",
       comit:
-        "libraries: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
+        "Libraries: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
     },
     {
       project: "Landing company 'Bullion Network' (single page application)",
       link: "https://mark4titan.github.io/Bullion_network/",
-      comit: "libraries: 'webpack -> air-datepicker' 'jQuery'",
+      comit: "Libraries: 'webpack -> air-datepicker' 'jQuery'",
     },
     {
       project: "Landing company 'Tlayen Web Builder'",
       link: "https://tlayen-builder.progressio.agency/",
-      comit: "libraries: 'JavaScript' 'CSS' 'html'",
+      comit: "Libraries: 'JavaScript' 'CSS' 'html'",
     },
   ],
   awards: [

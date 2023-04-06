@@ -11,16 +11,17 @@ const Projects = ({ projects, theme, preview }) => {
     const key1 = Object.keys(element)[1];
     const key2 = Object.keys(element)[2];
     return (
-      <div className={`${key0}_box_item ${key0}_box_item_${theme}`}>
+      <div
+        key={`key_${key0}`}
+        className={`${key0}_box_item ${key0}_box_item_${theme}`}
+      >
         <a
-          key={`a_${key1}`}
           href={element.link}
           target={`_blank`}
           aria-label={`link ${key1}`}
           className={`${key1}_Item ${key1}Item_${theme} ${key1}Item_${theme}_${preview} ${theme}`}
         >
           <p
-            key={key0}
             className={`${key0}_Item ${key0}Item_${theme} ${key0}Item_${theme}_${preview}`}
           >
             {element[key]}
@@ -29,7 +30,6 @@ const Projects = ({ projects, theme, preview }) => {
             <AiFillApi className={`Ico_project Ico_project_${theme}`} />
           </div>
           <span
-            key={key2}
             ref={ref}
             className={`${key2}Item ${key2}Item_${theme} ${key2}Item_${theme}_${preview}`}
           >

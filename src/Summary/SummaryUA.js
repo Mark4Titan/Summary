@@ -63,6 +63,12 @@ export const Resume = {
       content:
         "Після навчання на Full-Stack Developer прийняв участь у розробці командного проєкту як розробник і як Scrum Master.",
     },
+    {
+      position: "Front-end Developer",
+      period: "Грудень 2022 і до тепер",
+      company: "'PRGRSS'",
+      content: "Не штатний розробник додатків в компанії PRGRSS.",
+    },
   ],
 
   education: [
@@ -134,35 +140,35 @@ export const Resume = {
     {
       project: "Кастомний модуль редактора коміксів",
       link: "https://mark4titan.github.io/division_of_book_pages/",
-      comit: "бібліотеки: 're-resizable' 'react-draggable' 'ImageDragger'",
+      comit: "Бібліотеки: 're-resizable' 'react-draggable' 'ImageDragger'",
     },
     {
       project: "Модуль тестування швидкостей між абонентами і мережею серверів",
       link: "https://mark4titan.github.io/test_2/",
       comit:
-        "бібліотеки: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
+        "Бібліотеки: 'emotion/styled' 'reduxjs/toolkit' 'reduxjs-toolkit-persist' 'testing-library/user-event'",
     },
     {
       project: "Статичний інтернет магазин (single page application)",
       link: "https://mark4titan.github.io/simple-shop-react/",
       comit:
-        "бібліотеки: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
+        "Бібліотеки: 'reduxjs/toolkit' 'react-icons' 'redux-persist' 'emotion/styled' 'emailjs'",
     },
     {
       project: "Індивідуальний калькулятор калорій (single page application)",
       link: "https://ds-slimmoms.netlify.app/",
       comit:
-        "бібліотеки: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
+        "Бібліотеки: 'reduxjs/toolkit' 'react-icons' 'axios' 'notiflix' 'react-redux' 'react-loader-spinner' 'moment'",
     },
     {
       project: "Лендінг фірми 'Bullion Network' (single page application)",
       link: "https://mark4titan.github.io/Bullion_network/",
-      comit: "бібліотеки: 'webpack -> air-datepicker' 'jQuery'",
+      comit: "Бібліотеки: 'webpack -> air-datepicker' 'jQuery'",
     },
     {
       project: "Лендінг фірми 'Tlayen Web Builder'",
       link: "https://tlayen-builder.progressio.agency/",
-      comit: "бібліотеки: 'JavaScript' 'CSS' 'html'",
+      comit: "Бібліотеки: 'JavaScript' 'CSS' 'html'",
     },
   ],
   awards: [
