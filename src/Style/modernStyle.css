@@ -9,8 +9,8 @@
 }
 .headCon_modernStyle {
   position: fixed;
-  background-color: #59a3e3;
-  border-right: solid 5px #59a3e3;
+  background-color: rgb(74, 164, 255);
+  border-right: solid 5px rgb(74, 164, 255);
   top: 0;
   left: calc((100vw - 442px) / 2);
   border-bottom-right-radius: 10px;
@@ -18,7 +18,7 @@
   box-shadow: rgb(0 0 0 / 20%) 0px 4px 5px;
 }
 .burgerMenu_modernStyle {
-  background-color: #59a3e3;
+  background-color: rgb(74, 164, 255);
   border-top-left-radius: 23px;
 }
 .modernStyle,
@@ -42,7 +42,7 @@
   width: 14px;
   content: "";
   right: 160px;
-  background-color: #ce1010;
+  background-color: #ffdd33;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -68,7 +68,7 @@
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   padding-bottom: 20px;
-  background-color: rgb(0, 128, 255);
+  background-color: rgb(23 139 255);
   box-shadow: rgb(0 0 0 / 20%) -4px -2px;
 }
 .awards_modernStyle {
@@ -127,8 +127,8 @@
   min-height: 500px;
   max-height: 56vh;
   width: 60px;
-  border-right: 147px solid rgb(0, 128, 255);
-  border-bottom: 43px solid #ce1010;
+  border-right: 147px solid rgb(23 139 255);
+  border-bottom: 43px solid #ffdd33;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: inset rgb(0 0 0 / 20%) -12px -5px 10px 1px;
@@ -151,7 +151,7 @@
   content: "";
   height: 4px;
   width: 65px;
-  background-color: #ce1010;
+  background-color: rgb(23 139 255);
   margin-top: 60px;
 }
 .lis_modernStyle {
@@ -272,7 +272,7 @@
   width: 42px;
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
-  background-color: #ce1010;
+  background-color: #ffdd33;
   box-shadow: rgb(0 0 0 / 20%) -4px -2px;
   margin-left: -55px;
 }
@@ -297,9 +297,9 @@
   width: 42px;
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
-  background-color: #ce1010;
+  background-color: #ffdd33;
   box-shadow: rgb(0 0 0 / 20%) -4px -2px;
-  margin-left: -60px;
+  margin-left: -54px;
 }
 .linkItem_modernStyle {
   box-shadow: rgb(0 0 0 / 20%) -1px -4px 2px 0px;
@@ -318,7 +318,7 @@
 }
 .surnameItems_modernStyle {
   position: relative;
-  color: rgb(0, 128, 255);
+  color: #ffdd33;
 }
 .surnameItems_modernStyle::before {
   content: attr(data-content);
@@ -328,7 +328,7 @@
 }
 .nameItems_modernStyle {
   position: relative;
-  color: #ce1010;
+  color: rgb(74, 164, 255);
 }
 .nameItems_modernStyle::before {
   content: attr(data-content);
