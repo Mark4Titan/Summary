@@ -57,7 +57,7 @@ const Menu = ({ theme }) => {
       <ul className={`ulSideBar ulSideBar_${theme}`}>
         {Object.keys(keys).map((key, pos) => (
           <motion.li
-            custom={{ pos: pos, multiplier: 0.2, move: "y" }}
+            custom={{ pos: pos, multiplier: 0.03, move: "y" }}
             variants={FMotion}
             key={key}
             className={`sidebarItems sidebarItems_${key} sidebarItems_${theme}`}
