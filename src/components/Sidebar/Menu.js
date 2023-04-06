@@ -61,6 +61,7 @@ const Menu = ({ theme }) => {
               id={`a_${key}`}
               key={key}
               href={`#${key}`}
+              aria-label={`link ${key}`}
               className={`${
                 state[key] === true ? `activ activ_${theme}` : key
               } aHref aHref_${key} aHref_${theme} ${theme}`}

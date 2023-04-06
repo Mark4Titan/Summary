@@ -1,5 +1,5 @@
-import avatar from "./avatar.png";
-import certificate from "./certificate.png";
+import avatar from "./avatar.webp";
+import certificate from "./certificate.webp";
 
 export const Resume = {
   language: [{ DEU: "DEU" }],
@@ -102,12 +102,16 @@ export const Resume = {
         "docker",
         "postman",
         "gitHub",
+        "grid",
+        "emotionUi",
+        "muiMaterial",
       ],
       workflow: [
         "Mobile First, Responsive Design",
         "Browserübergreifendes Testen und Debuggen",
         "Funktionsübergreifende Teams",
         "Agile Entwicklung und Scrum",
+        "Das gesamte Layout befindet sich auf einem Raster",
       ],
     },
   ],

@@ -28,6 +28,7 @@
   background-color: dimgrey;
 }
 .nameItems_lightStyle {
+  letter-spacing: 2px;
   color: dimgrey;
   background: #fff;
   box-shadow: rgb(0 0 0 / 20%) 14px 14px 20px 0px;

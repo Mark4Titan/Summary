@@ -33,10 +33,11 @@ const Preview = ({ preview, theme }) => {
           key="Desktop"
           placement="bottom"
           onClick={previewClick}
+          aria-label="Button Desktop"
           ngbtooltip="Desktop_Preview"
           className="previewButton btn_icon btn active"
         >
-          <div id="Tablet" key="Tablet" className="preview_Tablet previewIco ">
+          <div key="Tablet" className="preview_Tablet previewIco ">
             <AiOutlineDesktop />
           </div>
         </button>
@@ -49,10 +50,11 @@ const Preview = ({ preview, theme }) => {
             key="Tablet"
             placement="bottom"
             onClick={previewClick}
+            aria-label="Button Tablet"
             ngbtooltip="Tablet_Preview"
             className="previewButton btn_icon btn active"
           >
-            <div id="Tablet" key="Tablet" className="preview_Tablet previewIco">
+            <div key="Tablet" className="preview_Tablet previewIco">
               <AiOutlineTablet />
             </div>
           </button>
@@ -61,16 +63,17 @@ const Preview = ({ preview, theme }) => {
         {preview === "Mobile" ? (
           <Burger preview={preview} theme={theme} />
         ) : (
-          <button
+          <button           
             id="Mobile"
             key="Mobile"
             placement="bottom"
             onClick={previewClick}
+            aria-label="Button Mobile"
             ngbtooltip="Mobile_Preview"
             className="previewButton btn_icon btn active"
           >
             <div
-              id="Mobile"
+             
               key="Mobile"
               className="preview_Mobile previewIco "
             >
