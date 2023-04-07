@@ -108,6 +108,8 @@ export const Resume = {
         "express",
         "docker",
         "postman",
+        "jira",
+        "trello",
         "gitHub",
         "grid",
         "emotionUi",

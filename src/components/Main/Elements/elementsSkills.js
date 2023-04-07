@@ -16,6 +16,8 @@ import {
   SiReact,
   SiStylelint,
   SiMaterialdesign,
+  SiTrello,
+  SiJirasoftware,
 } from "react-icons/si";
 import { FaLess, FaNode, FaNpm } from "react-icons/fa";
 import { CiGrid31 } from "react-icons/ci";
@@ -46,6 +48,8 @@ const iconsSkills = {
   emotionUi: SiStylelint,
   muiMaterial: SiMaterialdesign,
   framerMotion: FiFramer,
+  jira: SiJirasoftware,
+  trello: SiTrello,
 };
 
 export const Skills = ({ theme, skills, preview }) => {
