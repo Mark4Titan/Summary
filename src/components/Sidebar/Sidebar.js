@@ -1,7 +1,7 @@
 import Converter from "../Converter/Converter";
 import Menu from "./Menu";
 
-const Sidebar = ({ preview, theme }) => {
+const Sidebar = ({ preview, theme, activ }) => {
   const { avatar } = Converter();
 
   return (
@@ -23,7 +23,7 @@ const Sidebar = ({ preview, theme }) => {
           </span>
         </div>
       </div>
-      <Menu theme={theme} />
+      <Menu theme={theme} activ={activ}/>
     </>
   );
 };

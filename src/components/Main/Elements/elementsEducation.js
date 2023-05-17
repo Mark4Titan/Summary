@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FMotion } from "./PatternFMotion/PatternFMotion";
-import View from "./View";
+import { useEffect } from "react";
 
-export const Education = ({ theme, education, preview }) => {
+export const Education = ({ theme, education, preview, activ, autoActive }) => {
   const { ref, inView } = useInView(false);
-  View({ education: inView });
+
+  useEffect(() => {
+    if (inView !== activ.education) {
+      autoActive(inView, "education");
+    }
+  }, [activ.education, autoActive, inView]);
 
   return (
     <motion.div

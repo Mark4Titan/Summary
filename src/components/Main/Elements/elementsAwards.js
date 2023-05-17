@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FMotion, visibleMotion } from "./PatternFMotion/PatternFMotion";
-import View from "./View";
+import { useEffect } from "react";
 
-export const Awards = ({ theme, awards, preview }) => {
+export const Awards = ({ theme, awards, preview, activ, autoActive }) => {
   const { ref, inView } = useInView(false);
-  View({ awards: inView });
+
+  useEffect(() => {
+    if (inView !== activ.awards) {
+      autoActive(inView, "awards");
+    }
+  }, [activ.awards, autoActive, inView]);
 
   return (
     <motion.div

@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FMotion } from "./PatternFMotion/PatternFMotion";
-import View from "./View";
+import { useEffect } from "react";
 
-export const Interests = ({ theme, interests, preview }) => {
+export const Interests = ({ theme, interests, preview, activ, autoActive }) => {
   const { ref, inView } = useInView(false);
-  View({ interests: inView });
+
+  useEffect(() => {
+    if (inView !== activ.interests) {
+      autoActive(inView, "interests");
+    }
+  }, [activ.interests, autoActive, inView]);
+
   return (
     <motion.div
       initial="hidden"

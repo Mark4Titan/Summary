@@ -141,6 +141,11 @@ export const Resume = {
     { title: "Projekte" },
     // { link: "" },
     {
+      project: "Testaufgabe 'Quick note'",
+      link: "https://mark4titan.github.io/notes_as_on_apple_macos/",
+      comit: "Bibliotheken: 'emotion/styled' 'react-icons' 'nanoid' 'moment' 'axios'",
+    },
+    {
       project: "Benutzerdefiniertes Comic-Editor-Modul",
       link: "https://mark4titan.github.io/division_of_book_pages/",
       comit: "Bibliotheken: 're-resizable' 'react-draggable' 'ImageDragger'",

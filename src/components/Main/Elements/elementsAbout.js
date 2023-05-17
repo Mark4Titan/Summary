@@ -15,16 +15,19 @@ import { useSelector } from "react-redux";
 import { getLanguage } from "../../../redux/services/languageSlice";
 
 import { useInView } from "react-intersection-observer";
-import View from "./View";
-import {
-  FMotion,
-  visibleMotion,
-} from "./PatternFMotion/PatternFMotion";
+import { FMotion, visibleMotion } from "./PatternFMotion/PatternFMotion";
+import { useEffect } from "react";
 
-export const About = ({ theme, about, preview }) => {
+export const About = ({ theme, about, preview, activ, autoActive }) => {
   const { language } = useSelector(getLanguage);
   const { ref, inView } = useInView(true);
-  View({ about: inView });
+  // View({ about: inView });
+
+  useEffect(() => {
+    if (inView !== activ.about) {
+      autoActive(inView, "about");
+    }
+  }, [activ.about, autoActive, inView]);
 
   const iconsSoCial = {
     linkedIn: FaLinkedinIn,

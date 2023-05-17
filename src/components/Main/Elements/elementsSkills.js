@@ -24,8 +24,8 @@ import { CiGrid31 } from "react-icons/ci";
 import { FiFramer } from "react-icons/fi";
 import { ImCheckmark } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
-import View from "./View";
 import { FMotion } from "./PatternFMotion/PatternFMotion";
+import { useEffect } from "react";
 
 const iconsSkills = {
   html5: SiHtml5,
@@ -52,9 +52,14 @@ const iconsSkills = {
   trello: SiTrello,
 };
 
-export const Skills = ({ theme, skills, preview }) => {
+export const Skills = ({ theme, skills, preview, activ, autoActive }) => {
   const { ref, inView } = useInView(false);
-  View({ skills: inView });
+
+  useEffect(() => {
+    if (inView !== activ.skills) {
+      autoActive(inView, "skills");
+    }
+  }, [activ.skills, autoActive, inView]);
 
   const Element = (element, classN, vari) => {
     const liItems = [];

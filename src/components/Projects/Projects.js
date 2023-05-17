@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import View from "../Main/Elements/View";
 import { AiFillApi } from "react-icons/ai";
 import { FMotion } from "../Main/Elements/PatternFMotion/PatternFMotion";
+import { useEffect } from "react";
 
-const Projects = ({ projects, theme, preview }) => {
+const Projects = ({ projects, theme, preview, activ, autoActive }) => {
   const { ref, inView } = useInView(false);
-  View({ projects: inView });
+
+  useEffect(() => {
+    if (inView !== activ.projects) {
+      autoActive(inView, "projects");
+    }
+  }, [activ.projects, autoActive, inView]);
 
   const Element = (element, key, pos) => {
     const key0 = Object.keys(element)[0];
