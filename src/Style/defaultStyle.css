@@ -5,11 +5,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background-color: rgb(112, 128, 144);
+  font-family: 'Poppins', sans-serif, "Courier New", monospace;
 }
 
-code {
-  font-family: sans-serif, "Courier New", monospace;
-}
 ul,
 ol {
   margin: 0;
@@ -472,18 +470,30 @@ a {
   width: 15px;
   padding-right: 3px;
 }
+.ul_element_content {
+  display: grid;
+  width: 100%;
+  grid-template: 1fr /1fr;
+  grid-gap: 40px;
+}
 .element_content {
   width: fit-content;
-  display: flex;
+  display: grid;
+  width: 100%;
   padding-bottom: 10px;
-}
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  background-color: dimgrey;
+  }
 .workflowItems {
-  padding-left: 20px;
-}
+    padding-left: 20px;
+  }
 .surnameItems,
 .element_content :last-child {
   font-size: 38px;
   display: flex;
+  width: 100%;
   align-items: center;
 }
 
@@ -517,4 +527,3 @@ a {
 .project_Item {
   text-align: center;
 }
-

@@ -12,7 +12,7 @@
   background-color: rgb(74, 164, 255);
   border-right: solid 5px rgb(74, 164, 255);
   top: 0;
-  left: calc((100vw - 442px) / 2);
+  left: calc((100vw - 480px) / 2);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: rgb(0 0 0 / 20%) 0px 4px 5px;
@@ -252,9 +252,6 @@
 }
 .content_modernStyle {
   margin-top: 90px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }
 
 .img_content_0_modernStyle {

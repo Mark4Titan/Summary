@@ -1,6 +1,7 @@
 
 import avatar from "./avatar2.webp";
 import certificate from "./certificate.webp";
+import studpoint from "./studpoint.webp";
 
 export const Resume = {
   language: [{ EN: "EN" }],
@@ -187,7 +188,7 @@ export const Resume = {
     },
     // { Title: "", content: [] },
     {
-      content: [certificate],
+      content: [certificate, studpoint],
     },
   ],
 };
