@@ -4,9 +4,9 @@ import "../../Style/lightStyle.css";
 import "../../Style/modernStyle.css";
 
 export const ConstantThemse = {
-  modernStyle: "Patriotic",
-  darkStyle: "Dark",
   lightStyle: "Light",
+  darkStyle: "Dark",
+  modernStyle: "Patriotic",
 };
 
 
