@@ -2,10 +2,9 @@ import { useSelector } from "react-redux";
 import { getLanguage } from "../../redux/services/languageSlice";
 import SummaryEN from "../../Summary/SummaryEN";
 import SummaryUA from "../../Summary/SummaryUA";
-import SummaryRU from "../../Summary/SummaryRU";
 import SummaryDEU from "../../Summary/SummaryDEU";
 
-const AllSummary = { SummaryEN, SummaryUA, SummaryRU, SummaryDEU };
+const AllSummary = { SummaryEN, SummaryUA, SummaryDEU };
 
 const Converter = () => {
   const { language } = useSelector(getLanguage);
